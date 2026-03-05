@@ -1,9 +1,9 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useAppStore } from '@/lib/store';
 import { t } from '@/lib/i18n';
-import { CheckCircle, XCircle, ArrowRight, RotateCcw } from 'lucide-react';
+import { CheckCircle, XCircle, ArrowRight, RotateCcw, Shuffle } from 'lucide-react';
 
 // ==================== Flashcard Component ====================
 interface FlashcardProps {
@@ -91,6 +91,17 @@ export function MultipleChoice({ question, options, correctAnswer, explanation, 
   const [showResult, setShowResult] = useState(false);
   const { uiLanguage } = useAppStore();
 
+  // Shuffle options once per question render (stable via key)
+  const shuffledOptions = useMemo(() => {
+    const arr = [...options];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [question]);
+
   const handleSelect = (option: string) => {
     if (showResult) return;
     setSelected(option);
@@ -103,7 +114,7 @@ export function MultipleChoice({ question, options, correctAnswer, explanation, 
       <h3 className="text-lg font-semibold text-gray-800 mb-4">{question}</h3>
 
       <div className="space-y-3">
-        {options.map((option) => {
+        {shuffledOptions.map((option) => {
           let btnClass = 'border-gray-200 hover:border-indigo-300 hover:bg-indigo-50';
           if (showResult) {
             if (option === correctAnswer) {
@@ -357,10 +368,11 @@ interface ScoreCardProps {
   score: number;
   total: number;
   onRetry?: () => void;
+  onNewPractice?: () => void;
   onContinue?: () => void;
 }
 
-export function ScoreCard({ score, total, onRetry, onContinue }: ScoreCardProps) {
+export function ScoreCard({ score, total, onRetry, onNewPractice, onContinue }: ScoreCardProps) {
   const percentage = Math.round((score / total) * 100);
   const passed = percentage >= 70;
   const { uiLanguage } = useAppStore();
@@ -383,20 +395,29 @@ export function ScoreCard({ score, total, onRetry, onContinue }: ScoreCardProps)
         {score} / {total} {t('common.correct', uiLanguage).replace('!', '')}
       </p>
 
-      <div className="flex gap-3 justify-center">
+      <div className="flex flex-col sm:flex-row gap-3 justify-center">
         {onRetry && (
           <button
             onClick={onRetry}
-            className="flex items-center gap-2 px-6 py-3 bg-gray-100 text-gray-700 rounded-xl font-medium hover:bg-gray-200 transition"
+            className="flex items-center justify-center gap-2 px-6 py-3 bg-gray-100 text-gray-700 rounded-xl font-medium hover:bg-gray-200 transition"
           >
             <RotateCcw className="w-4 h-4" />
             {t('common.tryAgain', uiLanguage)}
           </button>
         )}
+        {onNewPractice && (
+          <button
+            onClick={onNewPractice}
+            className="flex items-center justify-center gap-2 px-6 py-3 bg-amber-100 text-amber-700 rounded-xl font-medium hover:bg-amber-200 transition"
+          >
+            <Shuffle className="w-4 h-4" />
+            New Questions
+          </button>
+        )}
         {onContinue && (
           <button
             onClick={onContinue}
-            className="flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition"
+            className="flex items-center justify-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition"
           >
             {t('common.continue', uiLanguage)}
             <ArrowRight className="w-4 h-4" />

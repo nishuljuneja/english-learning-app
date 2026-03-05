@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { useAppStore } from '@/lib/store';
 import { t } from '@/lib/i18n';
@@ -10,6 +10,18 @@ import { ArrowLeft, BookOpen } from 'lucide-react';
 import Link from 'next/link';
 import { updateUserProfile, addXP, saveLessonProgress, updateStreak } from '@/lib/firestore';
 
+/** Fisher-Yates shuffle returning a new array */
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+const EXERCISES_PER_ROUND = 4;
+
 export default function GrammarLessonPage() {
   const params = useParams();
   const router = useRouter();
@@ -17,24 +29,34 @@ export default function GrammarLessonPage() {
   const lessonId = params.id as string;
   const lesson = getGrammarLessonById(lessonId);
 
+  const allExercises = lesson?.exercises ?? [];
+
   const [phase, setPhase] = useState<'learn' | 'practice' | 'result'>('learn');
   const [exerciseIndex, setExerciseIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [answered, setAnswered] = useState(false);
+  // Seed for shuffling — changes each "New Questions" click
+  const [shuffleSeed, setShuffleSeed] = useState(0);
 
-  const exercises = lesson?.exercises ?? [];
+  // Pick & shuffle a subset of exercises each round
+  // Re-calculated when shuffleSeed changes (new practice) or lesson changes
+  const roundExercises = useMemo(() => {
+    const shuffled = shuffle(allExercises);
+    return shuffled.slice(0, Math.min(EXERCISES_PER_ROUND, shuffled.length));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lessonId, shuffleSeed, allExercises.length]);
 
   // Advance to next exercise (called by the user via Next button)
   // MUST be declared before any conditional returns (Rules of Hooks)
   const advanceExercise = useCallback(() => {
     setAnswered(false);
-    if (exerciseIndex < exercises.length - 1) {
+    if (exerciseIndex < roundExercises.length - 1) {
       setExerciseIndex(exerciseIndex + 1);
     } else {
       setPhase('result');
       // Persist progress
       if (profile) {
-        const pct = Math.round((score / exercises.length) * 100);
+        const pct = Math.round((score / roundExercises.length) * 100);
         const newGrammarScore = Math.max(profile.skillScores.grammar, pct);
         const updates = {
           lessonsCompleted: profile.lessonsCompleted + 1,
@@ -57,7 +79,7 @@ export default function GrammarLessonPage() {
         setProfile({ ...profile, ...updates, xp: profile.xp + score * 10 });
       }
     }
-  }, [exerciseIndex, exercises.length, score, profile, lessonId, setProfile]);
+  }, [exerciseIndex, roundExercises.length, score, profile, lessonId, setProfile]);
 
   if (!lesson) {
     return (
@@ -69,7 +91,7 @@ export default function GrammarLessonPage() {
   }
 
   const title = lesson.titleTranslations[uiLanguage] || lesson.title;
-  const currentExercise = exercises[exerciseIndex];
+  const currentExercise = roundExercises[exerciseIndex];
 
   // Learn Phase - Show explanation
   if (phase === 'learn') {
@@ -140,7 +162,7 @@ export default function GrammarLessonPage() {
             onClick={() => setPhase('practice')}
             className="w-full py-4 bg-indigo-600 text-white rounded-xl font-bold text-lg hover:bg-indigo-700 transition-colors"
           >
-            {t('common.practice', uiLanguage)} ({exercises.length} questions) →
+            {t('common.practice', uiLanguage)} ({roundExercises.length} questions) →
           </button>
         </div>
       </div>
@@ -156,11 +178,11 @@ export default function GrammarLessonPage() {
         <div className="mb-6">
           <div className="flex justify-between items-center mb-2">
             <span className="text-sm text-gray-500">
-              {t('common.exercise', uiLanguage)} {exerciseIndex + 1} / {exercises.length}
+              {t('common.exercise', uiLanguage)} {exerciseIndex + 1} / {roundExercises.length}
             </span>
             <span className="text-sm font-medium text-indigo-600">{title}</span>
           </div>
-          <ProgressBar current={exerciseIndex + 1} total={exercises.length} />
+          <ProgressBar current={exerciseIndex + 1} total={roundExercises.length} />
         </div>
 
         {currentExercise.type === 'multiple-choice' && currentExercise.options && (
@@ -214,12 +236,22 @@ export default function GrammarLessonPage() {
     <div className="max-w-2xl mx-auto px-4 py-16">
       <ScoreCard
         score={score}
-        total={exercises.length}
+        total={roundExercises.length}
         onRetry={() => {
-          setPhase('learn');
+          setPhase('practice');
           setExerciseIndex(0);
           setScore(0);
         }}
+        onNewPractice={
+          allExercises.length > EXERCISES_PER_ROUND
+            ? () => {
+                setShuffleSeed((s) => s + 1);
+                setPhase('practice');
+                setExerciseIndex(0);
+                setScore(0);
+              }
+            : undefined
+        }
         onContinue={() => router.push('/grammar')}
       />
     </div>
