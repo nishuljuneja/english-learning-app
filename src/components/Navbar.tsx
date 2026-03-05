@@ -7,7 +7,7 @@ import { LANGUAGES } from '@/lib/i18n';
 import { logOut } from '@/lib/auth';
 import {
   BookOpen, Brain, Headphones, MessageSquare, PenTool, Trophy,
-  Home, User, Menu, X, Globe, LogOut, Flame,
+  Home, User, Menu, X, Globe, LogOut, Flame, TrendingUp,
 } from 'lucide-react';
 import { useState } from 'react';
 
@@ -24,6 +24,7 @@ export default function Navbar() {
     { href: '/listening', label: t('nav.listening', uiLanguage), icon: Headphones },
     { href: '/speaking', label: t('nav.speaking', uiLanguage), icon: MessageSquare },
     { href: '/writing', label: t('nav.writing', uiLanguage), icon: PenTool },
+    { href: '/progress', label: 'Progress', icon: TrendingUp },
   ];
 
   return (
