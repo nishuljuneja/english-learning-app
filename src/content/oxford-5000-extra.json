@@ -1,5 +1,25 @@
 [
   {
+    "word": "abolish",
+    "pos": "v.",
+    "level": "C1"
+  },
+  {
+    "word": "abortion",
+    "pos": "n.",
+    "level": "C1"
+  },
+  {
+    "word": "absence",
+    "pos": "n.",
+    "level": "C1"
+  },
+  {
+    "word": "absent",
+    "pos": "adj.",
+    "level": "C1"
+  },
+  {
     "word": "absorb",
     "pos": "v.",
     "level": "B2"
@@ -10,9 +30,44 @@
     "level": "B2"
   },
   {
+    "word": "absurd",
+    "pos": "adj.",
+    "level": "C1"
+  },
+  {
+    "word": "abundance",
+    "pos": "n.",
+    "level": "C1"
+  },
+  {
+    "word": "abuse",
+    "pos": "n., v.",
+    "level": "C1"
+  },
+  {
+    "word": "academy",
+    "pos": "n.",
+    "level": "C1"
+  },
+  {
+    "word": "accelerate",
+    "pos": "v.",
+    "level": "C1"
+  },
+  {
     "word": "accent",
     "pos": "n.",
     "level": "B2"
+  },
+  {
+    "word": "acceptance",
+    "pos": "n.",
+    "level": "C1"
+  },
+  {
+    "word": "accessible",
+    "pos": "adj.",
+    "level": "C1"
   },
   {
     "word": "accidentally",
@@ -30,9 +85,44 @@
     "level": "B2"
   },
   {
+    "word": "accomplishment",
+    "pos": "n.",
+    "level": "C1"
+  },
+  {
+    "word": "accordance",
+    "pos": "n.",
+    "level": "C1"
+  },
+  {
+    "word": "accordingly",
+    "pos": "adv.",
+    "level": "C1"
+  },
+  {
+    "word": "accountability",
+    "pos": "n.",
+    "level": "C1"
+  },
+  {
+    "word": "accountable",
+    "pos": "adj.",
+    "level": "C1"
+  },
+  {
     "word": "accountant",
     "pos": "n.",
     "level": "B2"
+  },
+  {
+    "word": "accumulate",
+    "pos": "v.",
+    "level": "C1"
+  },
+  {
+    "word": "accumulation",
+    "pos": "n.",
+    "level": "C1"
   },
   {
     "word": "accuracy",
@@ -45,14 +135,39 @@
     "level": "B2"
   },
   {
-    "word": "acid",
+    "word": "accusation",
     "pos": "n.",
+    "level": "C1"
+  },
+  {
+    "word": "accused",
+    "pos": "n.",
+    "level": "C1"
+  },
+  {
+    "word": "acid",
+    "pos": "n., adj.",
     "level": "B2"
+  },
+  {
+    "word": "acquisition",
+    "pos": "n.",
+    "level": "C1"
+  },
+  {
+    "word": "acre",
+    "pos": "n.",
+    "level": "C1"
   },
   {
     "word": "activate",
     "pos": "v.",
     "level": "B2"
+  },
+  {
+    "word": "activation",
+    "pos": "n.",
+    "level": "C1"
   },
   {
     "word": "activist",
@@ -201,12 +316,7 @@
   },
   {
     "word": "alien",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "alien",
-    "pos": "adj.",
+    "pos": "n., adj.",
     "level": "B2"
   },
   {
@@ -370,3221 +480,6 @@
     "level": "B2"
   },
   {
-    "word": "applicant",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "appropriately",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "arrow",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "artwork",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "aside",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "asset",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "assign",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "assistance",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "assumption",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "assure",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "astonishing",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "attachment",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "auction",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "audio",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "automatic",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "automatically",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "awareness",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "awkward",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "badge",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "balanced",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "ballet",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "balloon",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "barely",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "bargain",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "basement",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "basket",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "bat",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "beneficial",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "beside",
-    "pos": "prep.",
-    "level": "B2"
-  },
-  {
-    "word": "besides",
-    "pos": "prep., adv.",
-    "level": "B2"
-  },
-  {
-    "word": "bias",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "bid",
-    "pos": "n., v.",
-    "level": "B2"
-  },
-  {
-    "word": "biological",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "blanket",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "blow",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "bold",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "bombing",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "booking",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "boost",
-    "pos": "v., n.",
-    "level": "B2"
-  },
-  {
-    "word": "bound",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "brick",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "briefly",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "broadcaster",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "broadly",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "bug",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "cabin",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "canal",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "candle",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "carbon",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "casual",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "cave",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "certainty",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "certificate",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "challenging",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "championship",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "charming",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "chase",
-    "pos": "v., n.",
-    "level": "B2"
-  },
-  {
-    "word": "cheek",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "cheer",
-    "pos": "v., n.",
-    "level": "B2"
-  },
-  {
-    "word": "choir",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "chop",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "circuit",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "civilization",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "clarify",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "classify",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "clerk",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "cliff",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "clinic",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "clip",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "coincidence",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "collector",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "colony",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "colourful",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "comic",
-    "pos": "adj., n.",
-    "level": "B2"
-  },
-  {
-    "word": "commander",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "comparative",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "completion",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "compose",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "composer",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "compound",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "comprehensive",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "comprise",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "compulsory",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "concrete",
-    "pos": "adj., n.",
-    "level": "B2"
-  },
-  {
-    "word": "confess",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "confusion",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "consequently",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "conservation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "considerable",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "considerably",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "consistently",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "conspiracy",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "consult",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "consultant",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "consumption",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "controversial",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "controversy",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "convenience",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "convention",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "conventional",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "convey",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "convincing",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "cope",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "corporation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "corridor",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "counter (long flat surface)",
-    "pos": "",
-    "level": "B2"
-  },
-  {
-    "word": "coverage",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "crack",
-    "pos": "v., n.",
-    "level": "B2"
-  },
-  {
-    "word": "craft",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "creativity",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "critically",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "cruise",
-    "pos": "n., v.",
-    "level": "B2"
-  },
-  {
-    "word": "cue",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "curious",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "curriculum",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "cute",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "dairy",
-    "pos": "n., adj.",
-    "level": "B2"
-  },
-  {
-    "word": "dare",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "darkness",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "database",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "deadline",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "deadly",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "dealer",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "deck",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "defender",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "delete",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "democracy",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "democratic",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "demonstration",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "depart",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "dependent",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "deposit",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "depression",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "derive",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "desperately",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "destruction",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "determination",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "devote",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "differ",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "disability",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "disabled",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "disagreement",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "disappoint",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "disappointment",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "discourage",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "disorder",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "distant",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "distinct",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "distinguish",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "distract",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "disturb",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "dive",
-    "pos": "v., n.",
-    "level": "B2"
-  },
-  {
-    "word": "diverse",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "diversity",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "divorce",
-    "pos": "n., v.",
-    "level": "B2"
-  },
-  {
-    "word": "dominant",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "donation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "dot",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "downtown",
-    "pos": "n., adj., adv.",
-    "level": "B2"
-  },
-  {
-    "word": "dramatically",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "drought",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "dull",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "dump",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "duration",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "dynamic",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "economist",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "editorial",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "efficiently",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "elbow",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "electronics",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "elegant",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "elementary",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "eliminate",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "embrace",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "emission",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "emotionally",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "empire",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "enjoyable",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "entertaining",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "entrepreneur",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "envelope",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "equip",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "equivalent",
-    "pos": "n., adj.",
-    "level": "B2"
-  },
-  {
-    "word": "era",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "erupt",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "essentially",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "ethic",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "ethnic",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "evaluation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "evident",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "evolution",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "evolve",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "exceed",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "exception",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "excessive",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "exclude",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "exhibit",
-    "pos": "v., n.",
-    "level": "B2"
-  },
-  {
-    "word": "exit",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "exotic",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "expansion",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "expertise",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "exploit",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "exposure",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "extension",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "extensive",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "extensively",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "extract",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "fabric",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "fabulous",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "failed",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "fake",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "fame",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "fantasy",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "fare",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "federal",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "fever",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "firefighter",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "firework",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "firm",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "firmly",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "flavour",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "fond",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "fool",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "forbid",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "forecast",
-    "pos": "n., v.",
-    "level": "B2"
-  },
-  {
-    "word": "format",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "formation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "formerly",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "fortunate",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "forum",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "fossil",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "foundation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "founder",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "fraction",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "fragment",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "framework",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "fraud",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "freely",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "frequent",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "fulfil",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "full-time",
-    "pos": "adj./adv.",
-    "level": "B2"
-  },
-  {
-    "word": "fundamentally",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "furious",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "gaming",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "gay",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "gender",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "gene",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "genetic",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "genius",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "genuine",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "genuinely",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "gesture",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "gig",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "globalization",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "globe",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "golden",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "goodness",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "gorgeous",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "governor",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "graphic",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "graphics",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "greatly",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "greenhouse",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "grocery",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "guideline",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "habitat",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "harbour",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "headquarters",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "heal",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "healthcare",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "helmet",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "hence",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "herb",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "hidden",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "highway",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "hilarious",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "hip",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "historian",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "homeless",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "honesty",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "hook",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "hopefully",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "hunger",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "hypothesis",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "icon",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "id",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "identical",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "illusion",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "immigration",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "immune",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "implement",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "implication",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "incentive",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "incorporate",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "incorrect",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "independence",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "index",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "indication",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "inevitable",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "inevitably",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "infer",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "inflation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "info",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "infrastructure",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "inhabitant",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "inherit",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "ink",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "innovation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "innovative",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "input",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "insert",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "inspector",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "installation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "instant",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "instantly",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "integrate",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "intellectual",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "interact",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "interaction",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "interpretation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "interval",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "invade",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "invasion",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "investor",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "isolate",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "isolated",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "jail",
-    "pos": "n., v.",
-    "level": "B2"
-  },
-  {
-    "word": "jet",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "joint",
-    "pos": "adj., n.",
-    "level": "B2"
-  },
-  {
-    "word": "journalism",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "jury",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "kit",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "ladder",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "landing",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "lane",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "lately",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "leaflet",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "legend",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "lens",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "level",
-    "pos": "",
-    "level": "B2"
-  },
-  {
-    "word": "lifetime",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "lighting",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "likewise",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "limitation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "literally",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "literary",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "litre",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "litter",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "logo",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "lottery",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "loyal",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "lyric",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "magnificent",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "make-up",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "making",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "manufacture",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "manufacturing",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "marathon",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "margin",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "marker",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "martial",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "mate",
-    "pos": "n., v.",
-    "level": "B2"
-  },
-  {
-    "word": "mayor",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "mechanic",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "mechanical",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "mechanism",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "medal",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "medication",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "membership",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "memorable",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "metaphor",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "miner",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "miserable",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "mode",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "modest",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "monster",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "monthly",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "monument",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "moreover",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "mortgage",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "mosque",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "motion",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "motivate",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "motivation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "moving",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "myth",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "naked",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "nasty",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "navigation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "nearby",
-    "pos": "adj., adv.",
-    "level": "B2"
-  },
-  {
-    "word": "necessity",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "negotiate",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "negotiation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "neutral",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "newly",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "norm",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "notebook",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "novelist",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "nowadays",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "nursing",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "nutrition",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "obesity",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "observer",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "obstacle",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "occupation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "occupy",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "offender",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "ongoing",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "openly",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "opera",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "operator",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "optimistic",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "orchestra",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "organic",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "outfit",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "output",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "outstanding",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "overcome",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "overnight",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "overseas",
-    "pos": "adv., adj.",
-    "level": "B2"
-  },
-  {
-    "word": "ownership",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "oxygen",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "packet",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "palm",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "panic",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "parade",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "parallel",
-    "pos": "adj., n.",
-    "level": "B2"
-  },
-  {
-    "word": "part-time",
-    "pos": "adj./adv.",
-    "level": "B2"
-  },
-  {
-    "word": "participation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "partnership",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "passionate",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "password",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "patience",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "pause",
-    "pos": "v., n.",
-    "level": "B2"
-  },
-  {
-    "word": "peer",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "penalty",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "perceive",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "perception",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "permanently",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "pill",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "pity",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "placement",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "portion",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "potentially",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "precede",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "precious",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "precise",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "precisely",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "predictable",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "preference",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "press",
-    "pos": "",
-    "level": "B2"
-  },
-  {
-    "word": "press the",
-    "pos": "",
-    "level": "B2"
-  },
-  {
-    "word": "pride",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "primarily",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "principal",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "prior",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "probability",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "probable",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "proceed",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "programming",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "progressive",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "prohibit",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "promising",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "promotion",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "prompt",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "proportion",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "protein",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "protester",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "psychological",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "publicity",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "publishing",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "punk",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "purely",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "pursuit",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "puzzle",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "questionnaire",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "racial",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "racism",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "racist",
-    "pos": "adj., n.",
-    "level": "B2"
-  },
-  {
-    "word": "radiation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "rail",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "random",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "rat",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "rating",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "reasonably",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "rebuild",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "receiver",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "recession",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "reckon",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "recognition",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "recovery",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "recruit",
-    "pos": "v., n.",
-    "level": "B2"
-  },
-  {
-    "word": "recruitment",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "referee",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "refugee",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "registration",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "regulate",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "reinforce",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "relieve",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "relieved",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "remarkable",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "remarkably",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "reporting",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "resign",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "resolution",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "restore",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "restrict",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "restriction",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "retail",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "retirement",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "revenue",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "revision",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "ridiculous",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "risky",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "rival",
-    "pos": "n., adj.",
-    "level": "B2"
-  },
-  {
-    "word": "rob",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "robbery",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "rocket",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "romance",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "rose",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "roughly",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "ruin",
-    "pos": "v., n.",
-    "level": "B2"
-  },
-  {
-    "word": "satisfaction",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "scandal",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "scare",
-    "pos": "v., n.",
-    "level": "B2"
-  },
-  {
-    "word": "scenario",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "scholar",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "scholarship",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "scratch",
-    "pos": "v., n.",
-    "level": "B2"
-  },
-  {
-    "word": "screening",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "seeker",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "seminar",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "settler",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "spill",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "spite",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "spoil",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "spokesman",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "spokesperson",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "spokeswoman",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "sponsorship",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "sporting",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "stall",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "stance",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "starve",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "steadily",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "steam",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "stimulate",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "strengthen",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "strictly",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "stroke",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "stunning",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "subsequent",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "subsequently",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "suburb",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "suffering",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "sufficient",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "sufficiently",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "super",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "surgeon",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "survival",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "survivor",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "suspend",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "sustainable",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "swallow",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "sympathetic",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "tackle",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "tag",
-    "pos": "n., v.",
-    "level": "B2"
-  },
-  {
-    "word": "tap",
-    "pos": "v., n.",
-    "level": "B2"
-  },
-  {
-    "word": "technological",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "teens",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "temple",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "temporarily",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "tendency",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "tension",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "terminal",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "terms",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "terribly",
-    "pos": "adv.",
-    "level": "B2"
-  },
-  {
-    "word": "treasure",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "tribe",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "trigger",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "trillion",
-    "pos": "number",
-    "level": "B2"
-  },
-  {
-    "word": "troop",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "tsunami",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "ultimate",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "unacceptable",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "uncertainty",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "undergo",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "undertake",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "unfold",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "unfortunate",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "unite",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "unity",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "universal",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "urgent",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "usage",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "useless",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "valid",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "variation",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "vertical",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "viewpoint",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "visa",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "visible",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "voluntary",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "voting",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "wander",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "warming",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "weekly",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "weird",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "welfare",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "wheat",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "whoever",
-    "pos": "pron.",
-    "level": "B2"
-  },
-  {
-    "word": "widespread",
-    "pos": "adj.",
-    "level": "B2"
-  },
-  {
-    "word": "wisdom",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "withdraw",
-    "pos": "v.",
-    "level": "B2"
-  },
-  {
-    "word": "workforce",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "workplace",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "workshop",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "worm",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "wrist",
-    "pos": "n.",
-    "level": "B2"
-  },
-  {
-    "word": "abolish",
-    "pos": "v.",
-    "level": "C1"
-  },
-  {
-    "word": "abortion",
-    "pos": "n.",
-    "level": "C1"
-  },
-  {
-    "word": "absence",
-    "pos": "n.",
-    "level": "C1"
-  },
-  {
-    "word": "absent",
-    "pos": "adj.",
-    "level": "C1"
-  },
-  {
-    "word": "absurd",
-    "pos": "adj.",
-    "level": "C1"
-  },
-  {
-    "word": "abundance",
-    "pos": "n.",
-    "level": "C1"
-  },
-  {
-    "word": "abuse",
-    "pos": "n., v.",
-    "level": "C1"
-  },
-  {
-    "word": "academy",
-    "pos": "n.",
-    "level": "C1"
-  },
-  {
-    "word": "accelerate",
-    "pos": "v.",
-    "level": "C1"
-  },
-  {
-    "word": "acceptance",
-    "pos": "n.",
-    "level": "C1"
-  },
-  {
-    "word": "accessible",
-    "pos": "adj.",
-    "level": "C1"
-  },
-  {
-    "word": "accomplishment",
-    "pos": "n.",
-    "level": "C1"
-  },
-  {
-    "word": "accordance",
-    "pos": "n.",
-    "level": "C1"
-  },
-  {
-    "word": "accordingly",
-    "pos": "adv.",
-    "level": "C1"
-  },
-  {
-    "word": "accountability",
-    "pos": "n.",
-    "level": "C1"
-  },
-  {
-    "word": "accountable",
-    "pos": "adj.",
-    "level": "C1"
-  },
-  {
-    "word": "accumulate",
-    "pos": "v.",
-    "level": "C1"
-  },
-  {
-    "word": "accumulation",
-    "pos": "n.",
-    "level": "C1"
-  },
-  {
-    "word": "accusation",
-    "pos": "n.",
-    "level": "C1"
-  },
-  {
-    "word": "accused",
-    "pos": "n.",
-    "level": "C1"
-  },
-  {
-    "word": "acid",
-    "pos": "adj.",
-    "level": "C1"
-  },
-  {
-    "word": "acquisition",
-    "pos": "n.",
-    "level": "C1"
-  },
-  {
-    "word": "acre",
-    "pos": "n.",
-    "level": "C1"
-  },
-  {
-    "word": "activation",
-    "pos": "n.",
-    "level": "C1"
-  },
-  {
     "word": "apparatus",
     "pos": "n.",
     "level": "C1"
@@ -3610,6 +505,11 @@
     "level": "C1"
   },
   {
+    "word": "applicant",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "appoint",
     "pos": "v.",
     "level": "C1"
@@ -3618,6 +518,11 @@
     "word": "appreciation",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "appropriately",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "arbitrary",
@@ -3645,14 +550,14 @@
     "level": "C1"
   },
   {
-    "word": "arm",
-    "pos": "v.",
-    "level": "C1"
-  },
-  {
     "word": "array",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "arrow",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "articulate",
@@ -3660,9 +565,19 @@
     "level": "C1"
   },
   {
+    "word": "artwork",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "ash",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "aside",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "aspiration",
@@ -3705,9 +620,39 @@
     "level": "C1"
   },
   {
+    "word": "asset",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "assign",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "assistance",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "assumption",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "assurance",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "assure",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "astonishing",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "asylum",
@@ -3718,6 +663,11 @@
     "word": "atrocity",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "attachment",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "attain",
@@ -3740,6 +690,16 @@
     "level": "C1"
   },
   {
+    "word": "auction",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "audio",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "audit",
     "pos": "n.",
     "level": "C1"
@@ -3760,6 +720,16 @@
     "level": "C1"
   },
   {
+    "word": "automatic",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "automatically",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
     "word": "autonomy",
     "pos": "n.",
     "level": "C1"
@@ -3773,6 +743,16 @@
     "word": "await",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "awareness",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "awkward",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "backdrop",
@@ -3790,9 +770,29 @@
     "level": "C1"
   },
   {
+    "word": "badge",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "bail",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "balanced",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "ballet",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "balloon",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "ballot",
@@ -3810,19 +810,39 @@
     "level": "C1"
   },
   {
+    "word": "barely",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
+    "word": "bargain",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "barrel",
     "pos": "n.",
     "level": "C1"
   },
   {
-    "word": "bass1",
+    "word": "basement",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "basket",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "bass",
     "pos": "n.",
     "level": "C1"
   },
   {
     "word": "bat",
-    "pos": "v.",
-    "level": "C1"
+    "pos": "n., v.",
+    "level": "B2"
   },
   {
     "word": "battlefield",
@@ -3870,14 +890,39 @@
     "level": "C1"
   },
   {
+    "word": "beneficial",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "beneficiary",
     "pos": "n.",
     "level": "C1"
   },
   {
+    "word": "beside",
+    "pos": "prep.",
+    "level": "B2"
+  },
+  {
+    "word": "besides",
+    "pos": "prep., adv.",
+    "level": "B2"
+  },
+  {
     "word": "betray",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "bias",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "bid",
+    "pos": "n., v.",
+    "level": "B2"
   },
   {
     "word": "bind",
@@ -3888,6 +933,11 @@
     "word": "biography",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "biological",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "bishop",
@@ -3903,6 +953,11 @@
     "word": "blade",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "blanket",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "blast",
@@ -3935,9 +990,24 @@
     "level": "C1"
   },
   {
+    "word": "bold",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "bombing",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "bonus",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "booking",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "boom",
@@ -3945,9 +1015,19 @@
     "level": "C1"
   },
   {
+    "word": "boost",
+    "pos": "v., n.",
+    "level": "B2"
+  },
+  {
     "word": "bounce",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "bound",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "boundary",
@@ -3955,7 +1035,7 @@
     "level": "C1"
   },
   {
-    "word": "bow1",
+    "word": "bow",
     "pos": "v., n.",
     "level": "C1"
   },
@@ -3980,9 +1060,29 @@
     "level": "C1"
   },
   {
+    "word": "brick",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "briefly",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
     "word": "broadband",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "broadcaster",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "broadly",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "browser",
@@ -4010,6 +1110,11 @@
     "level": "C1"
   },
   {
+    "word": "bug",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "bulk",
     "pos": "n.",
     "level": "C1"
@@ -4035,6 +1140,11 @@
     "level": "C1"
   },
   {
+    "word": "cabin",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "cabinet",
     "pos": "n.",
     "level": "C1"
@@ -4043,6 +1153,16 @@
     "word": "calculation",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "canal",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "candle",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "canvas",
@@ -4065,6 +1185,11 @@
     "level": "C1"
   },
   {
+    "word": "carbon",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "cargo",
     "pos": "n.",
     "level": "C1"
@@ -4083,6 +1208,11 @@
     "word": "casino",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "casual",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "casualty",
@@ -4115,6 +1245,11 @@
     "level": "C1"
   },
   {
+    "word": "cave",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "cease",
     "pos": "v.",
     "level": "C1"
@@ -4125,9 +1260,29 @@
     "level": "C1"
   },
   {
+    "word": "certainty",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "certificate",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "challenging",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "chamber",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "championship",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "chaos",
@@ -4145,9 +1300,39 @@
     "level": "C1"
   },
   {
+    "word": "charming",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "charter",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "chase",
+    "pos": "v., n.",
+    "level": "B2"
+  },
+  {
+    "word": "cheek",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "cheer",
+    "pos": "v., n.",
+    "level": "B2"
+  },
+  {
+    "word": "choir",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "chop",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "chronic",
@@ -4158,6 +1343,11 @@
     "word": "chunk",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "circuit",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "circulate",
@@ -4185,6 +1375,16 @@
     "level": "C1"
   },
   {
+    "word": "civilization",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "clarify",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "clarity",
     "pos": "n.",
     "level": "C1"
@@ -4200,14 +1400,39 @@
     "level": "C1"
   },
   {
+    "word": "classify",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "clerk",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "cliff",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "cling",
     "pos": "v.",
     "level": "C1"
   },
   {
+    "word": "clinic",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "clinical",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "clip",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "closure",
@@ -4245,6 +1470,11 @@
     "level": "C1"
   },
   {
+    "word": "coincidence",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "collaborate",
     "pos": "v.",
     "level": "C1"
@@ -4260,6 +1490,11 @@
     "level": "C1"
   },
   {
+    "word": "collector",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "collision",
     "pos": "n.",
     "level": "C1"
@@ -4270,6 +1505,16 @@
     "level": "C1"
   },
   {
+    "word": "colony",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "colourful",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "columnist",
     "pos": "n.",
     "level": "C1"
@@ -4278,6 +1523,16 @@
     "word": "combat",
     "pos": "n., v.",
     "level": "C1"
+  },
+  {
+    "word": "comic",
+    "pos": "adj., n.",
+    "level": "B2"
+  },
+  {
+    "word": "commander",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "commence",
@@ -4325,6 +1580,11 @@
     "level": "C1"
   },
   {
+    "word": "comparative",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "compassion",
     "pos": "n.",
     "level": "C1"
@@ -4370,6 +1630,11 @@
     "level": "C1"
   },
   {
+    "word": "completion",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "complexity",
     "pos": "n.",
     "level": "C1"
@@ -4390,14 +1655,44 @@
     "level": "C1"
   },
   {
+    "word": "compose",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "composer",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "composition",
     "pos": "n.",
     "level": "C1"
   },
   {
+    "word": "compound",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "comprehensive",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "comprise",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "compromise",
     "pos": "n., v.",
     "level": "C1"
+  },
+  {
+    "word": "compulsory",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "compute",
@@ -4430,6 +1725,11 @@
     "level": "C1"
   },
   {
+    "word": "concrete",
+    "pos": "adj., n.",
+    "level": "B2"
+  },
+  {
     "word": "condemn",
     "pos": "v.",
     "level": "C1"
@@ -4438,6 +1738,11 @@
     "word": "confer",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "confess",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "confession",
@@ -4468,6 +1773,11 @@
     "word": "confrontation",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "confusion",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "congratulate",
@@ -4515,9 +1825,29 @@
     "level": "C1"
   },
   {
+    "word": "consequently",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
+    "word": "conservation",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "conserve",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "considerable",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "considerably",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "consistency",
@@ -4525,9 +1855,19 @@
     "level": "C1"
   },
   {
+    "word": "consistently",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
     "word": "consolidate",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "conspiracy",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "constituency",
@@ -4555,9 +1895,24 @@
     "level": "C1"
   },
   {
+    "word": "consult",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "consultant",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "consultation",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "consumption",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "contemplate",
@@ -4577,11 +1932,6 @@
   {
     "word": "contender",
     "pos": "n.",
-    "level": "C1"
-  },
-  {
-    "word": "content2",
-    "pos": "adj.",
     "level": "C1"
   },
   {
@@ -4615,9 +1965,39 @@
     "level": "C1"
   },
   {
+    "word": "controversial",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "controversy",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "convenience",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "convention",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "conventional",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "conversion",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "convey",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "convict",
@@ -4628,6 +2008,11 @@
     "word": "conviction",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "convincing",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "cooperate",
@@ -4660,6 +2045,11 @@
     "level": "C1"
   },
   {
+    "word": "cope",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "copper",
     "pos": "n.",
     "level": "C1"
@@ -4668,6 +2058,11 @@
     "word": "copyright",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "corporation",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "correction",
@@ -4705,6 +2100,11 @@
     "level": "C1"
   },
   {
+    "word": "corridor",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "corrupt",
     "pos": "adj.",
     "level": "C1"
@@ -4735,9 +2135,9 @@
     "level": "C1"
   },
   {
-    "word": "counter (argue against)",
+    "word": "counter",
     "pos": "",
-    "level": "C1"
+    "level": "B2"
   },
   {
     "word": "counterpart",
@@ -4760,14 +2160,29 @@
     "level": "C1"
   },
   {
+    "word": "coverage",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "crack",
+    "pos": "v., n.",
+    "level": "B2"
+  },
+  {
     "word": "craft",
-    "pos": "v.",
-    "level": "C1"
+    "pos": "n., v.",
+    "level": "B2"
   },
   {
     "word": "crawl",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "creativity",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "creator",
@@ -4790,6 +2205,11 @@
     "level": "C1"
   },
   {
+    "word": "critically",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
     "word": "critique",
     "pos": "n.",
     "level": "C1"
@@ -4805,6 +2225,11 @@
     "level": "C1"
   },
   {
+    "word": "cruise",
+    "pos": "n., v.",
+    "level": "B2"
+  },
+  {
     "word": "crush",
     "pos": "v.",
     "level": "C1"
@@ -4813,6 +2238,11 @@
     "word": "crystal",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "cue",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "cult",
@@ -4830,9 +2260,24 @@
     "level": "C1"
   },
   {
+    "word": "curious",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "curriculum",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "custody",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "cute",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "cutting",
@@ -4845,6 +2290,11 @@
     "level": "C1"
   },
   {
+    "word": "dairy",
+    "pos": "n., adj.",
+    "level": "B2"
+  },
+  {
     "word": "dam",
     "pos": "n.",
     "level": "C1"
@@ -4855,9 +2305,39 @@
     "level": "C1"
   },
   {
+    "word": "dare",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "darkness",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "database",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "dawn",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "deadline",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "deadly",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "dealer",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "debris",
@@ -4878,6 +2358,11 @@
     "word": "decisive",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "deck",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "declaration",
@@ -4915,6 +2400,11 @@
     "level": "C1"
   },
   {
+    "word": "defender",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "defensive",
     "pos": "adj.",
     "level": "C1"
@@ -4945,14 +2435,34 @@
     "level": "C1"
   },
   {
+    "word": "delete",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "delicate",
     "pos": "adj.",
     "level": "C1"
   },
   {
+    "word": "democracy",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "democratic",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "demon",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "demonstration",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "denial",
@@ -4975,9 +2485,19 @@
     "level": "C1"
   },
   {
+    "word": "depart",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "dependence",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "dependent",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "depict",
@@ -4996,8 +2516,13 @@
   },
   {
     "word": "deposit",
-    "pos": "v.",
-    "level": "C1"
+    "pos": "n., v.",
+    "level": "B2"
+  },
+  {
+    "word": "depression",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "deprive",
@@ -5008,6 +2533,11 @@
     "word": "deputy",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "derive",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "descend",
@@ -5035,6 +2565,16 @@
     "level": "C1"
   },
   {
+    "word": "desperately",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
+    "word": "destruction",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "destructive",
     "pos": "adj.",
     "level": "C1"
@@ -5060,6 +2600,11 @@
     "level": "C1"
   },
   {
+    "word": "determination",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "devastate",
     "pos": "v.",
     "level": "C1"
@@ -5075,6 +2620,11 @@
     "level": "C1"
   },
   {
+    "word": "devote",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "diagnose",
     "pos": "v.",
     "level": "C1"
@@ -5088,6 +2638,11 @@
     "word": "dictator",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "differ",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "differentiate",
@@ -5135,6 +2690,31 @@
     "level": "C1"
   },
   {
+    "word": "disability",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "disabled",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "disagreement",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "disappoint",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "disappointment",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "disastrous",
     "pos": "adj.",
     "level": "C1"
@@ -5160,6 +2740,11 @@
     "level": "C1"
   },
   {
+    "word": "discourage",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "discourse",
     "pos": "n.",
     "level": "C1"
@@ -5178,6 +2763,11 @@
     "word": "dismissal",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "disorder",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "displace",
@@ -5215,6 +2805,16 @@
     "level": "C1"
   },
   {
+    "word": "distant",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "distinct",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "distinction",
     "pos": "n.",
     "level": "C1"
@@ -5225,9 +2825,19 @@
     "level": "C1"
   },
   {
+    "word": "distinguish",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "distort",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "distract",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "distress",
@@ -5235,9 +2845,29 @@
     "level": "C1"
   },
   {
+    "word": "disturb",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "disturbing",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "dive",
+    "pos": "v., n.",
+    "level": "B2"
+  },
+  {
+    "word": "diverse",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "diversity",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "divert",
@@ -5248,6 +2878,11 @@
     "word": "divine",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "divorce",
+    "pos": "n., v.",
+    "level": "B2"
   },
   {
     "word": "doctrine",
@@ -5270,6 +2905,16 @@
     "level": "C1"
   },
   {
+    "word": "dominant",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "donation",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "donor",
     "pos": "n.",
     "level": "C1"
@@ -5280,9 +2925,24 @@
     "level": "C1"
   },
   {
+    "word": "dot",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "downtown",
+    "pos": "n., adj., adv.",
+    "level": "B2"
+  },
+  {
     "word": "drain",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "dramatically",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "drift",
@@ -5290,9 +2950,9 @@
     "level": "C1"
   },
   {
-    "word": "driving",
-    "pos": "adj.",
-    "level": "C1"
+    "word": "drought",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "drown",
@@ -5310,9 +2970,19 @@
     "level": "C1"
   },
   {
+    "word": "dull",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "dumb",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "dump",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "duo",
@@ -5320,9 +2990,14 @@
     "level": "C1"
   },
   {
-    "word": "dynamic",
+    "word": "duration",
     "pos": "n.",
-    "level": "C1"
+    "level": "B2"
+  },
+  {
+    "word": "dynamic",
+    "pos": "adj., n.",
+    "level": "B2"
   },
   {
     "word": "eager",
@@ -5350,6 +3025,16 @@
     "level": "C1"
   },
   {
+    "word": "economist",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "editorial",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "educator",
     "pos": "n.",
     "level": "C1"
@@ -5365,6 +3050,11 @@
     "level": "C1"
   },
   {
+    "word": "efficiently",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
     "word": "ego",
     "pos": "n.",
     "level": "C1"
@@ -5375,9 +3065,29 @@
     "level": "C1"
   },
   {
+    "word": "elbow",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "electoral",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "electronics",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "elegant",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "elementary",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "elevate",
@@ -5388,6 +3098,11 @@
     "word": "eligible",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "eliminate",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "elite",
@@ -5420,9 +3135,29 @@
     "level": "C1"
   },
   {
+    "word": "embrace",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "emergence",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "emission",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "emotionally",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
+    "word": "empire",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "empirical",
@@ -5500,6 +3235,11 @@
     "level": "C1"
   },
   {
+    "word": "enjoyable",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "enquire",
     "pos": "v.",
     "level": "C1"
@@ -5525,6 +3265,11 @@
     "level": "C1"
   },
   {
+    "word": "entertaining",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "enthusiast",
     "pos": "n.",
     "level": "C1"
@@ -5538,6 +3283,16 @@
     "word": "entity",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "entrepreneur",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "envelope",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "epidemic",
@@ -5555,9 +3310,29 @@
     "level": "C1"
   },
   {
+    "word": "equip",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "equivalent",
+    "pos": "n., adj.",
+    "level": "B2"
+  },
+  {
+    "word": "era",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "erect",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "erupt",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "escalate",
@@ -5570,6 +3345,11 @@
     "level": "C1"
   },
   {
+    "word": "essentially",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
     "word": "establishment",
     "pos": "n.",
     "level": "C1"
@@ -5580,9 +3360,29 @@
     "level": "C1"
   },
   {
+    "word": "ethic",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "ethnic",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "evacuate",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "evaluation",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "evident",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "evoke",
@@ -5590,9 +3390,19 @@
     "level": "C1"
   },
   {
+    "word": "evolution",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "evolutionary",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "evolve",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "exaggerate",
@@ -5600,9 +3410,19 @@
     "level": "C1"
   },
   {
+    "word": "exceed",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "excellence",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "exception",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "exceptional",
@@ -5613,6 +3433,16 @@
     "word": "excess",
     "pos": "n., adj.",
     "level": "C1"
+  },
+  {
+    "word": "excessive",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "exclude",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "exclusion",
@@ -5645,14 +3475,29 @@
     "level": "C1"
   },
   {
+    "word": "exhibit",
+    "pos": "v., n.",
+    "level": "B2"
+  },
+  {
     "word": "exile",
     "pos": "n.",
     "level": "C1"
   },
   {
     "word": "exit",
-    "pos": "v.",
-    "level": "C1"
+    "pos": "n., v.",
+    "level": "B2"
+  },
+  {
+    "word": "exotic",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "expansion",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "expenditure",
@@ -5663,6 +3508,11 @@
     "word": "experimental",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "expertise",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "expire",
@@ -5680,6 +3530,11 @@
     "level": "C1"
   },
   {
+    "word": "exploit",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "exploitation",
     "pos": "n.",
     "level": "C1"
@@ -5690,14 +3545,44 @@
     "level": "C1"
   },
   {
+    "word": "exposure",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "extension",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "extensive",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "extensively",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
     "word": "extract",
-    "pos": "v.",
-    "level": "C1"
+    "pos": "n., v.",
+    "level": "B2"
   },
   {
     "word": "extremist",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "fabric",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "fabulous",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "facilitate",
@@ -5720,9 +3605,34 @@
     "level": "C1"
   },
   {
+    "word": "failed",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "fairness",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "fake",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "fame",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "fantasy",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "fare",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "fatal",
@@ -5745,9 +3655,19 @@
     "level": "C1"
   },
   {
+    "word": "federal",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "feminist",
     "pos": "adj., n.",
     "level": "C1"
+  },
+  {
+    "word": "fever",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "fibre",
@@ -5770,24 +3690,34 @@
     "level": "C1"
   },
   {
-    "word": "fine",
-    "pos": "n., v.",
-    "level": "C1"
-  },
-  {
     "word": "firearm",
     "pos": "n.",
     "level": "C1"
   },
   {
-    "word": "fit",
+    "word": "firefighter",
     "pos": "n.",
-    "level": "C1"
+    "level": "B2"
+  },
+  {
+    "word": "firework",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "firmly",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "fixture",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "flavour",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "flaw",
@@ -5830,9 +3760,29 @@
     "level": "C1"
   },
   {
+    "word": "fond",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "fool",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "footage",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "forbid",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "forecast",
+    "pos": "n., v.",
+    "level": "B2"
   },
   {
     "word": "foreigner",
@@ -5843,6 +3793,21 @@
     "word": "forge",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "format",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "formation",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "formerly",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "formula",
@@ -5865,14 +3830,54 @@
     "level": "C1"
   },
   {
+    "word": "fortunate",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "forum",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "fossil",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "foster",
     "pos": "v.",
     "level": "C1"
   },
   {
+    "word": "foundation",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "founder",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "fraction",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "fragile",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "fragment",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "framework",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "franchise",
@@ -5883,6 +3888,21 @@
     "word": "frankly",
     "pos": "adv.",
     "level": "C1"
+  },
+  {
+    "word": "fraud",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "freely",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
+    "word": "frequent",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "frustrated",
@@ -5900,9 +3920,24 @@
     "level": "C1"
   },
   {
+    "word": "fulfil",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "full-time",
+    "pos": "adj./adv.",
+    "level": "B2"
+  },
+  {
     "word": "functional",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "fundamentally",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "fundraising",
@@ -5915,6 +3950,11 @@
     "level": "C1"
   },
   {
+    "word": "furious",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "gallon",
     "pos": "n.",
     "level": "C1"
@@ -5925,9 +3965,19 @@
     "level": "C1"
   },
   {
+    "word": "gaming",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "gathering",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "gay",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "gaze",
@@ -5940,14 +3990,54 @@
     "level": "C1"
   },
   {
+    "word": "gender",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "gene",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "generic",
     "pos": "adj.",
     "level": "C1"
   },
   {
+    "word": "genetic",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "genius",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "genocide",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "genuine",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "genuinely",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
+    "word": "gesture",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "gig",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "glance",
@@ -5960,6 +4050,16 @@
     "level": "C1"
   },
   {
+    "word": "globalization",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "globe",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "glorious",
     "pos": "adj.",
     "level": "C1"
@@ -5970,9 +4070,29 @@
     "level": "C1"
   },
   {
+    "word": "golden",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "goodness",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "gorgeous",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "governance",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "governor",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "grace",
@@ -5980,17 +4100,22 @@
     "level": "C1"
   },
   {
+    "word": "graphic",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "graphics",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "grasp",
     "pos": "v., n.",
     "level": "C1"
   },
   {
-    "word": "grave (for dead person)",
-    "pos": "",
-    "level": "C1"
-  },
-  {
-    "word": "grave (serious)",
+    "word": "grave",
     "pos": "adj.",
     "level": "C1"
   },
@@ -5998,6 +4123,16 @@
     "word": "gravity",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "greatly",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
+    "word": "greenhouse",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "grid",
@@ -6025,6 +4160,11 @@
     "level": "C1"
   },
   {
+    "word": "grocery",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "gross",
     "pos": "adj.",
     "level": "C1"
@@ -6040,6 +4180,11 @@
     "level": "C1"
   },
   {
+    "word": "guideline",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "guilt",
     "pos": "n.",
     "level": "C1"
@@ -6048,6 +4193,11 @@
     "word": "gut",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "habitat",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "hail",
@@ -6085,6 +4235,11 @@
     "level": "C1"
   },
   {
+    "word": "harbour",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "hardware",
     "pos": "n.",
     "level": "C1"
@@ -6120,14 +4275,49 @@
     "level": "C1"
   },
   {
+    "word": "headquarters",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "heal",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "healthcare",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "heighten",
     "pos": "v.",
     "level": "C1"
   },
   {
+    "word": "helmet",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "hence",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
+    "word": "herb",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "heritage",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "hidden",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "hierarchy",
@@ -6140,9 +4330,29 @@
     "level": "C1"
   },
   {
+    "word": "highway",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "hilarious",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "hint",
     "pos": "n., v.",
     "level": "C1"
+  },
+  {
+    "word": "hip",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "historian",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "homeland",
@@ -6150,14 +4360,29 @@
     "level": "C1"
   },
   {
+    "word": "homeless",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "honesty",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "hook",
-    "pos": "v.",
-    "level": "C1"
+    "pos": "n., v.",
+    "level": "B2"
   },
   {
     "word": "hopeful",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "hopefully",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "horizon",
@@ -6200,9 +4425,34 @@
     "level": "C1"
   },
   {
+    "word": "hunger",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "hydrogen",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "hypothesis",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "icon",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "id",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "identical",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "identification",
@@ -6230,6 +4480,11 @@
     "level": "C1"
   },
   {
+    "word": "illusion",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "imagery",
     "pos": "n.",
     "level": "C1"
@@ -6240,14 +4495,34 @@
     "level": "C1"
   },
   {
+    "word": "immigration",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "imminent",
     "pos": "adj.",
     "level": "C1"
   },
   {
+    "word": "immune",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "implement",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "implementation",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "implication",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "imprison",
@@ -6275,6 +4550,11 @@
     "level": "C1"
   },
   {
+    "word": "incentive",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "incidence",
     "pos": "n.",
     "level": "C1"
@@ -6290,9 +4570,34 @@
     "level": "C1"
   },
   {
+    "word": "incorporate",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "incorrect",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "incur",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "independence",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "index",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "indication",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "indicator",
@@ -6325,6 +4630,16 @@
     "level": "C1"
   },
   {
+    "word": "inevitable",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "inevitably",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
     "word": "infamous",
     "pos": "adj.",
     "level": "C1"
@@ -6333,6 +4648,16 @@
     "word": "infant",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "infer",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "inflation",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "inflict",
@@ -6345,9 +4670,29 @@
     "level": "C1"
   },
   {
+    "word": "info",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "infrastructure",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "inhabitant",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "inherent",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "inherit",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "inhibit",
@@ -6375,9 +4720,34 @@
     "level": "C1"
   },
   {
+    "word": "ink",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "inmate",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "innovation",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "innovative",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "input",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "insert",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "insertion",
@@ -6400,9 +4770,29 @@
     "level": "C1"
   },
   {
+    "word": "inspector",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "inspiration",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "installation",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "instant",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "instantly",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "instinct",
@@ -6450,6 +4840,11 @@
     "level": "C1"
   },
   {
+    "word": "integrate",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "integrated",
     "pos": "adj.",
     "level": "C1"
@@ -6466,8 +4861,8 @@
   },
   {
     "word": "intellectual",
-    "pos": "n.",
-    "level": "C1"
+    "pos": "adj., n.",
+    "level": "B2"
   },
   {
     "word": "intensify",
@@ -6488,6 +4883,16 @@
     "word": "intent",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "interact",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "interaction",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "interactive",
@@ -6525,6 +4930,16 @@
     "level": "C1"
   },
   {
+    "word": "interpretation",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "interval",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "intervene",
     "pos": "v.",
     "level": "C1"
@@ -6545,9 +4960,24 @@
     "level": "C1"
   },
   {
+    "word": "invade",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "invasion",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "investigator",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "investor",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "invisible",
@@ -6585,9 +5015,39 @@
     "level": "C1"
   },
   {
+    "word": "isolate",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "isolated",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "isolation",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "jail",
+    "pos": "n., v.",
+    "level": "B2"
+  },
+  {
+    "word": "jet",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "joint",
+    "pos": "adj., n.",
+    "level": "B2"
+  },
+  {
+    "word": "journalism",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "judicial",
@@ -6605,9 +5065,9 @@
     "level": "C1"
   },
   {
-    "word": "just",
-    "pos": "adj.",
-    "level": "C1"
+    "word": "jury",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "justification",
@@ -6630,9 +5090,24 @@
     "level": "C1"
   },
   {
+    "word": "kit",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "lad",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "ladder",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "landing",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "landlord",
@@ -6643,6 +5118,11 @@
     "word": "landmark",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "lane",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "lap",
@@ -6658,6 +5138,11 @@
     "word": "laser",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "lately",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "latter",
@@ -6685,6 +5170,11 @@
     "level": "C1"
   },
   {
+    "word": "leaflet",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "leak",
     "pos": "v., n.",
     "level": "C1"
@@ -6698,6 +5188,11 @@
     "word": "legacy",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "legend",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "legendary",
@@ -6728,6 +5223,11 @@
     "word": "lengthy",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "lens",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "lesbian",
@@ -6775,14 +5275,34 @@
     "level": "C1"
   },
   {
+    "word": "lifetime",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "lighting",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "likelihood",
     "pos": "n.",
     "level": "C1"
   },
   {
+    "word": "likewise",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
     "word": "limb",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "limitation",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "line-up",
@@ -6810,6 +5330,26 @@
     "level": "C1"
   },
   {
+    "word": "literally",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
+    "word": "literary",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "litre",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "litter",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "liver",
     "pos": "n.",
     "level": "C1"
@@ -6828,6 +5368,11 @@
     "word": "logic",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "logo",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "long-standing",
@@ -6850,9 +5395,24 @@
     "level": "C1"
   },
   {
+    "word": "lottery",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "loyal",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "loyalty",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "lyric",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "machinery",
@@ -6875,6 +5435,11 @@
     "level": "C1"
   },
   {
+    "word": "magnificent",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "magnitude",
     "pos": "n.",
     "level": "C1"
@@ -6893,6 +5458,16 @@
     "word": "maintenance",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "make-up",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "making",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "mandate",
@@ -6920,14 +5495,29 @@
     "level": "C1"
   },
   {
+    "word": "manufacture",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "manufacturing",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "manuscript",
     "pos": "n.",
     "level": "C1"
   },
   {
-    "word": "march",
-    "pos": "n., v.",
-    "level": "C1"
+    "word": "marathon",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "margin",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "marginal",
@@ -6940,9 +5530,19 @@
     "level": "C1"
   },
   {
+    "word": "marker",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "marketplace",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "martial",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "mask",
@@ -6953,6 +5553,11 @@
     "word": "massacre",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "mate",
+    "pos": "n., v.",
+    "level": "B2"
   },
   {
     "word": "mathematical",
@@ -6970,6 +5575,11 @@
     "level": "C1"
   },
   {
+    "word": "mayor",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "meaningful",
     "pos": "adj.",
     "level": "C1"
@@ -6978,6 +5588,31 @@
     "word": "meantime",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "mechanic",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "mechanical",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "mechanism",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "medal",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "medication",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "medieval",
@@ -6995,6 +5630,11 @@
     "level": "C1"
   },
   {
+    "word": "membership",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "memo",
     "pos": "n.",
     "level": "C1"
@@ -7003,6 +5643,11 @@
     "word": "memoir",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "memorable",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "memorial",
@@ -7050,6 +5695,11 @@
     "level": "C1"
   },
   {
+    "word": "metaphor",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "methodology",
     "pos": "n.",
     "level": "C1"
@@ -7080,6 +5730,11 @@
     "level": "C1"
   },
   {
+    "word": "miner",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "minimal",
     "pos": "adj.",
     "level": "C1"
@@ -7100,14 +5755,14 @@
     "level": "C1"
   },
   {
-    "word": "minute2",
-    "pos": "adj.",
-    "level": "C1"
-  },
-  {
     "word": "miracle",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "miserable",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "misery",
@@ -7140,9 +5795,19 @@
     "level": "C1"
   },
   {
+    "word": "mode",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "moderate",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "modest",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "modification",
@@ -7165,9 +5830,54 @@
     "level": "C1"
   },
   {
+    "word": "monster",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "monthly",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "monument",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "morality",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "moreover",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
+    "word": "mortgage",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "mosque",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "motion",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "motivate",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "motivation",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "motive",
@@ -7180,6 +5890,11 @@
     "level": "C1"
   },
   {
+    "word": "moving",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "municipal",
     "pos": "adj.",
     "level": "C1"
@@ -7190,9 +5905,24 @@
     "level": "C1"
   },
   {
+    "word": "myth",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "naked",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "namely",
     "pos": "adv.",
     "level": "C1"
+  },
+  {
+    "word": "nasty",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "nationwide",
@@ -7205,9 +5935,34 @@
     "level": "C1"
   },
   {
+    "word": "navigation",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "nearby",
+    "pos": "adj., adv.",
+    "level": "B2"
+  },
+  {
+    "word": "necessity",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "neglect",
     "pos": "v., n.",
     "level": "C1"
+  },
+  {
+    "word": "negotiate",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "negotiation",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "neighbouring",
@@ -7220,9 +5975,14 @@
     "level": "C1"
   },
   {
-    "word": "net",
+    "word": "neutral",
     "pos": "adj.",
-    "level": "C1"
+    "level": "B2"
+  },
+  {
+    "word": "newly",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "newsletter",
@@ -7280,6 +6040,11 @@
     "level": "C1"
   },
   {
+    "word": "norm",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "notable",
     "pos": "adj.",
     "level": "C1"
@@ -7288,6 +6053,11 @@
     "word": "notably",
     "pos": "adv.",
     "level": "C1"
+  },
+  {
+    "word": "notebook",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "notify",
@@ -7300,14 +6070,34 @@
     "level": "C1"
   },
   {
-    "word": "novel",
-    "pos": "adj.",
-    "level": "C1"
+    "word": "novelist",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "nowadays",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "nursery",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "nursing",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "nutrition",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "obesity",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "objection",
@@ -7320,6 +6110,11 @@
     "level": "C1"
   },
   {
+    "word": "observer",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "obsess",
     "pos": "v.",
     "level": "C1"
@@ -7330,9 +6125,24 @@
     "level": "C1"
   },
   {
+    "word": "obstacle",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "occasional",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "occupation",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "occupy",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "occurrence",
@@ -7345,6 +6155,11 @@
     "level": "C1"
   },
   {
+    "word": "offender",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "offering",
     "pos": "n.",
     "level": "C1"
@@ -7355,9 +6170,29 @@
     "level": "C1"
   },
   {
+    "word": "ongoing",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "openly",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
+    "word": "opera",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "operational",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "operator",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "opt",
@@ -7375,9 +6210,24 @@
     "level": "C1"
   },
   {
+    "word": "optimistic",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "oral",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "orchestra",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "organic",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "organizational",
@@ -7400,6 +6250,11 @@
     "level": "C1"
   },
   {
+    "word": "outfit",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "outing",
     "pos": "n.",
     "level": "C1"
@@ -7415,6 +6270,11 @@
     "level": "C1"
   },
   {
+    "word": "output",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "outrage",
     "pos": "n., v.",
     "level": "C1"
@@ -7425,6 +6285,16 @@
     "level": "C1"
   },
   {
+    "word": "outstanding",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "overcome",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "overlook",
     "pos": "v.",
     "level": "C1"
@@ -7433,6 +6303,16 @@
     "word": "overly",
     "pos": "adv.",
     "level": "C1"
+  },
+  {
+    "word": "overnight",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
+    "word": "overseas",
+    "pos": "adv., adj.",
+    "level": "B2"
   },
   {
     "word": "oversee",
@@ -7455,9 +6335,44 @@
     "level": "C1"
   },
   {
+    "word": "ownership",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "oxygen",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "packet",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "pad",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "palm",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "panic",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "parade",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "parallel",
+    "pos": "adj., n.",
+    "level": "B2"
   },
   {
     "word": "parameter",
@@ -7480,6 +6395,11 @@
     "level": "C1"
   },
   {
+    "word": "part-time",
+    "pos": "adj./adv.",
+    "level": "B2"
+  },
+  {
     "word": "partial",
     "pos": "adj.",
     "level": "C1"
@@ -7490,14 +6410,34 @@
     "level": "C1"
   },
   {
+    "word": "participation",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "partnership",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "passing",
     "pos": "n.",
     "level": "C1"
   },
   {
+    "word": "passionate",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "passive",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "password",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "pastor",
@@ -7520,6 +6460,11 @@
     "level": "C1"
   },
   {
+    "word": "patience",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "patrol",
     "pos": "n., v.",
     "level": "C1"
@@ -7528,6 +6473,11 @@
     "word": "patron",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "pause",
+    "pos": "v., n.",
+    "level": "B2"
   },
   {
     "word": "peak",
@@ -7543,6 +6493,31 @@
     "word": "peculiar",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "peer",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "penalty",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "perceive",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "perception",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "permanently",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "persist",
@@ -7585,6 +6560,11 @@
     "level": "C1"
   },
   {
+    "word": "pill",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "pioneer",
     "pos": "n., v.",
     "level": "C1"
@@ -7603,6 +6583,16 @@
     "word": "pit",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "pity",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "placement",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "plea",
@@ -7645,14 +6635,14 @@
     "level": "C1"
   },
   {
-    "word": "pop",
-    "pos": "v.",
-    "level": "C1"
-  },
-  {
     "word": "portfolio",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "portion",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "portray",
@@ -7670,6 +6660,11 @@
     "level": "C1"
   },
   {
+    "word": "potentially",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
     "word": "practitioner",
     "pos": "n.",
     "level": "C1"
@@ -7680,9 +6675,29 @@
     "level": "C1"
   },
   {
+    "word": "precede",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "precedent",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "precious",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "precise",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "precisely",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "precision",
@@ -7700,9 +6715,19 @@
     "level": "C1"
   },
   {
+    "word": "predictable",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "predominantly",
     "pos": "adv.",
     "level": "C1"
+  },
+  {
+    "word": "preference",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "pregnancy",
@@ -7770,11 +6795,6 @@
     "level": "C1"
   },
   {
-    "word": "press the",
-    "pos": "",
-    "level": "C1"
-  },
-  {
     "word": "prestigious",
     "pos": "adj.",
     "level": "C1"
@@ -7810,9 +6830,24 @@
     "level": "C1"
   },
   {
-    "word": "principal",
+    "word": "pride",
     "pos": "n.",
-    "level": "C1"
+    "level": "B2"
+  },
+  {
+    "word": "primarily",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
+    "word": "principal",
+    "pos": "adj., n.",
+    "level": "B2"
+  },
+  {
+    "word": "prior",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "privatization",
@@ -7825,6 +6860,16 @@
     "level": "C1"
   },
   {
+    "word": "probability",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "probable",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "probe",
     "pos": "n., v.",
     "level": "C1"
@@ -7833,6 +6878,11 @@
     "word": "problematic",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "proceed",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "proceedings",
@@ -7880,6 +6930,21 @@
     "level": "C1"
   },
   {
+    "word": "programming",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "progressive",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "prohibit",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "projection",
     "pos": "n.",
     "level": "C1"
@@ -7890,6 +6955,21 @@
     "level": "C1"
   },
   {
+    "word": "promising",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "promotion",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "prompt",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "pronounced",
     "pos": "adj.",
     "level": "C1"
@@ -7898,6 +6978,11 @@
     "word": "propaganda",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "proportion",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "proposition",
@@ -7935,6 +7020,16 @@
     "level": "C1"
   },
   {
+    "word": "protein",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "protester",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "protocol",
     "pos": "n.",
     "level": "C1"
@@ -7965,6 +7060,21 @@
     "level": "C1"
   },
   {
+    "word": "psychological",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "publicity",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "publishing",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "pulse",
     "pos": "n.",
     "level": "C1"
@@ -7980,6 +7090,26 @@
     "level": "C1"
   },
   {
+    "word": "punk",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "purely",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
+    "word": "pursuit",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "puzzle",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "query",
     "pos": "n.",
     "level": "C1"
@@ -7990,14 +7120,39 @@
     "level": "C1"
   },
   {
+    "word": "questionnaire",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "quota",
     "pos": "n.",
     "level": "C1"
   },
   {
+    "word": "racial",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "racism",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "racist",
+    "pos": "adj., n.",
+    "level": "B2"
+  },
+  {
     "word": "radar",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "radiation",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "radical",
@@ -8015,9 +7170,19 @@
     "level": "C1"
   },
   {
+    "word": "rail",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "rally",
     "pos": "n., v.",
     "level": "C1"
+  },
+  {
+    "word": "random",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "ranking",
@@ -8028,6 +7193,16 @@
     "word": "rape",
     "pos": "n., v.",
     "level": "C1"
+  },
+  {
+    "word": "rat",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "rating",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "ratio",
@@ -8065,6 +7240,11 @@
     "level": "C1"
   },
   {
+    "word": "reasonably",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
     "word": "reasoning",
     "pos": "n.",
     "level": "C1"
@@ -8085,9 +7265,34 @@
     "level": "C1"
   },
   {
+    "word": "rebuild",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "receiver",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "recession",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "recipient",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "reckon",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "recognition",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "reconstruction",
@@ -8095,9 +7300,29 @@
     "level": "C1"
   },
   {
-    "word": "recount1",
+    "word": "recount",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "recovery",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "recruit",
+    "pos": "v., n.",
+    "level": "B2"
+  },
+  {
+    "word": "recruitment",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "referee",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "referendum",
@@ -8120,6 +7345,11 @@
     "level": "C1"
   },
   {
+    "word": "refugee",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "refusal",
     "pos": "n.",
     "level": "C1"
@@ -8138,6 +7368,16 @@
     "word": "regime",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "registration",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "regulate",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "regulator",
@@ -8160,6 +7400,11 @@
     "level": "C1"
   },
   {
+    "word": "reinforce",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "rejection",
     "pos": "n.",
     "level": "C1"
@@ -8175,6 +7420,16 @@
     "level": "C1"
   },
   {
+    "word": "relieve",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "relieved",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "reluctant",
     "pos": "adj.",
     "level": "C1"
@@ -8188,6 +7443,16 @@
     "word": "remains",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "remarkable",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "remarkably",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "remedy",
@@ -8235,6 +7500,11 @@
     "level": "C1"
   },
   {
+    "word": "reporting",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "representation",
     "pos": "n.",
     "level": "C1"
@@ -8280,6 +7550,11 @@
     "level": "C1"
   },
   {
+    "word": "resign",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "resignation",
     "pos": "n.",
     "level": "C1"
@@ -8288,6 +7563,11 @@
     "word": "resistance",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "resolution",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "respective",
@@ -8305,14 +7585,39 @@
     "level": "C1"
   },
   {
+    "word": "restore",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "restraint",
     "pos": "n.",
     "level": "C1"
   },
   {
+    "word": "restrict",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "restriction",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "resume",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "retail",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "retirement",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "retreat",
@@ -8335,9 +7640,19 @@
     "level": "C1"
   },
   {
+    "word": "revenue",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "reverse",
     "pos": "v. , n., adj.",
     "level": "C1"
+  },
+  {
+    "word": "revision",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "revival",
@@ -8360,6 +7675,11 @@
     "level": "C1"
   },
   {
+    "word": "ridiculous",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "rifle",
     "pos": "n.",
     "level": "C1"
@@ -8375,9 +7695,29 @@
     "level": "C1"
   },
   {
+    "word": "risky",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "ritual",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "rival",
+    "pos": "n., adj.",
+    "level": "B2"
+  },
+  {
+    "word": "rob",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "robbery",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "robust",
@@ -8385,14 +7725,24 @@
     "level": "C1"
   },
   {
-    "word": "rock",
-    "pos": "v.",
-    "level": "C1"
+    "word": "rocket",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "rod",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "romance",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "rose",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "rotate",
@@ -8403,6 +7753,16 @@
     "word": "rotation",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "roughly",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
+    "word": "ruin",
+    "pos": "v., n.",
+    "level": "B2"
   },
   {
     "word": "ruling",
@@ -8445,9 +7805,19 @@
     "level": "C1"
   },
   {
-    "word": "say",
+    "word": "satisfaction",
     "pos": "n.",
-    "level": "C1"
+    "level": "B2"
+  },
+  {
+    "word": "scandal",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "scare",
+    "pos": "v., n.",
+    "level": "B2"
   },
   {
     "word": "scattered",
@@ -8455,14 +7825,39 @@
     "level": "C1"
   },
   {
+    "word": "scenario",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "sceptical",
     "pos": "adj.",
     "level": "C1"
   },
   {
+    "word": "scholar",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "scholarship",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "scope",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "scratch",
+    "pos": "v., n.",
+    "level": "B2"
+  },
+  {
+    "word": "screening",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "screw",
@@ -8483,6 +7878,11 @@
     "word": "secular",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "seeker",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "seemingly",
@@ -8508,6 +7908,11 @@
     "word": "selective",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "seminar",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "senator",
@@ -8548,6 +7953,11 @@
     "word": "settlement",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "settler",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "severely",
@@ -8597,11 +8007,6 @@
   {
     "word": "shocking",
     "pos": "adj.",
-    "level": "C1"
-  },
-  {
-    "word": "shoot",
-    "pos": "n.",
     "level": "C1"
   },
   {
@@ -8800,11 +8205,6 @@
     "level": "C1"
   },
   {
-    "word": "sound",
-    "pos": "adj.",
-    "level": "C1"
-  },
-  {
     "word": "sovereignty",
     "pos": "n.",
     "level": "C1"
@@ -8821,12 +8221,7 @@
   },
   {
     "word": "spare",
-    "pos": "adj.",
-    "level": "C1"
-  },
-  {
-    "word": "spare",
-    "pos": "v.",
+    "pos": "adj., v.",
     "level": "C1"
   },
   {
@@ -8890,11 +8285,6 @@
     "level": "C1"
   },
   {
-    "word": "spell",
-    "pos": "n.",
-    "level": "C1"
-  },
-  {
     "word": "sphere",
     "pos": "n.",
     "level": "C1"
@@ -8905,6 +8295,11 @@
     "level": "C1"
   },
   {
+    "word": "spill",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "spin",
     "pos": "v., n.",
     "level": "C1"
@@ -8913,6 +8308,41 @@
     "word": "spine",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "spite",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "spoil",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "spokesman",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "spokesperson",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "spokeswoman",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "sponsorship",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "sporting",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "spotlight",
@@ -8960,6 +8390,16 @@
     "level": "C1"
   },
   {
+    "word": "stall",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "stance",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "standing",
     "pos": "adj.",
     "level": "C1"
@@ -8970,9 +8410,24 @@
     "level": "C1"
   },
   {
+    "word": "starve",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "statistical",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "steadily",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
+    "word": "steam",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "steer",
@@ -8988,6 +8443,11 @@
     "word": "stereotype",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "stimulate",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "stimulus",
@@ -9025,17 +8485,22 @@
     "level": "C1"
   },
   {
+    "word": "strengthen",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "strictly",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
     "word": "striking",
     "pos": "adj.",
     "level": "C1"
   },
   {
-    "word": "strip (long narrow",
-    "pos": "",
-    "level": "C1"
-  },
-  {
-    "word": "strip (remove clothes/a",
+    "word": "strip",
     "pos": "",
     "level": "C1"
   },
@@ -9043,6 +8508,11 @@
     "word": "strive",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "stroke",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "structural",
@@ -9060,6 +8530,11 @@
     "level": "C1"
   },
   {
+    "word": "stunning",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "submission",
     "pos": "n.",
     "level": "C1"
@@ -9073,6 +8548,16 @@
     "word": "subscription",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "subsequent",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "subsequently",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "subsidy",
@@ -9105,6 +8590,11 @@
     "level": "C1"
   },
   {
+    "word": "suburb",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "suburban",
     "pos": "adj.",
     "level": "C1"
@@ -9135,6 +8625,21 @@
     "level": "C1"
   },
   {
+    "word": "suffering",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "sufficient",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "sufficiently",
+    "pos": "adv.",
+    "level": "B2"
+  },
+  {
     "word": "suicide",
     "pos": "n.",
     "level": "C1"
@@ -9148,6 +8653,11 @@
     "word": "summit",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "super",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "superb",
@@ -9205,6 +8715,11 @@
     "level": "C1"
   },
   {
+    "word": "surgeon",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "surgical",
     "pos": "adj.",
     "level": "C1"
@@ -9223,6 +8738,21 @@
     "word": "surveillance",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "survival",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "survivor",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "suspend",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "suspension",
@@ -9245,6 +8775,16 @@
     "level": "C1"
   },
   {
+    "word": "sustainable",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "swallow",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "swing",
     "pos": "v., n.",
     "level": "C1"
@@ -9258,6 +8798,11 @@
     "word": "symbolic",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "sympathetic",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "syndrome",
@@ -9276,8 +8821,8 @@
   },
   {
     "word": "tackle",
-    "pos": "n.",
-    "level": "C1"
+    "pos": "v., n.",
+    "level": "B2"
   },
   {
     "word": "tactic",
@@ -9290,9 +8835,39 @@
     "level": "C1"
   },
   {
+    "word": "tag",
+    "pos": "n., v.",
+    "level": "B2"
+  },
+  {
+    "word": "tap",
+    "pos": "v., n.",
+    "level": "B2"
+  },
+  {
     "word": "taxpayer",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "technological",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "teens",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "temple",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "temporarily",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "tempt",
@@ -9305,9 +8880,19 @@
     "level": "C1"
   },
   {
+    "word": "tendency",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "tender",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "tension",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "tenure",
@@ -9316,8 +8901,8 @@
   },
   {
     "word": "terminal",
-    "pos": "adj.",
-    "level": "C1"
+    "pos": "n., adj.",
+    "level": "B2"
   },
   {
     "word": "terminate",
@@ -9325,9 +8910,19 @@
     "level": "C1"
   },
   {
+    "word": "terms",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "terrain",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "terribly",
+    "pos": "adv.",
+    "level": "B2"
   },
   {
     "word": "terrific",
@@ -9525,22 +9120,12 @@
     "level": "C1"
   },
   {
-    "word": "top",
-    "pos": "v.",
-    "level": "C1"
-  },
-  {
     "word": "torture",
     "pos": "n., v.",
     "level": "C1"
   },
   {
     "word": "toss",
-    "pos": "v.",
-    "level": "C1"
-  },
-  {
-    "word": "total",
     "pos": "v.",
     "level": "C1"
   },
@@ -9556,12 +9141,7 @@
   },
   {
     "word": "trace",
-    "pos": "v.",
-    "level": "C1"
-  },
-  {
-    "word": "trace",
-    "pos": "n.",
+    "pos": "v., n.",
     "level": "C1"
   },
   {
@@ -9655,6 +9235,11 @@
     "level": "C1"
   },
   {
+    "word": "treasure",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "treaty",
     "pos": "n.",
     "level": "C1"
@@ -9670,6 +9255,11 @@
     "level": "C1"
   },
   {
+    "word": "tribe",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "tribunal",
     "pos": "n.",
     "level": "C1"
@@ -9681,8 +9271,13 @@
   },
   {
     "word": "trigger",
-    "pos": "n.",
-    "level": "C1"
+    "pos": "v., n.",
+    "level": "B2"
+  },
+  {
+    "word": "trillion",
+    "pos": "number",
+    "level": "B2"
   },
   {
     "word": "trio",
@@ -9693,6 +9288,11 @@
     "word": "triumph",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "troop",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "trophy",
@@ -9708,6 +9308,11 @@
     "word": "trustee",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "tsunami",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "tuition",
@@ -9730,6 +9335,26 @@
     "level": "C1"
   },
   {
+    "word": "ultimate",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "unacceptable",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "uncertainty",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "undergo",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "undergraduate",
     "pos": "n.",
     "level": "C1"
@@ -9745,14 +9370,44 @@
     "level": "C1"
   },
   {
+    "word": "undertake",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "undoubtedly",
     "pos": "adv.",
     "level": "C1"
   },
   {
+    "word": "unfold",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "unfortunate",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "unify",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "unite",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
+    "word": "unity",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "universal",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "unprecedented",
@@ -9780,6 +9435,21 @@
     "level": "C1"
   },
   {
+    "word": "urgent",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "usage",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "useless",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "utility",
     "pos": "n.",
     "level": "C1"
@@ -9805,6 +9475,11 @@
     "level": "C1"
   },
   {
+    "word": "valid",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "validity",
     "pos": "n.",
     "level": "C1"
@@ -9818,6 +9493,11 @@
     "word": "variable",
     "pos": "n., adj.",
     "level": "C1"
+  },
+  {
+    "word": "variation",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "varied",
@@ -9860,6 +9540,11 @@
     "level": "C1"
   },
   {
+    "word": "vertical",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "vessel",
     "pos": "n.",
     "level": "C1"
@@ -9890,6 +9575,11 @@
     "level": "C1"
   },
   {
+    "word": "viewpoint",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "villager",
     "pos": "n.",
     "level": "C1"
@@ -9910,9 +9600,29 @@
     "level": "C1"
   },
   {
+    "word": "visa",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "visible",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
     "word": "vocal",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "voluntary",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "voting",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "vow",
@@ -9930,6 +9640,11 @@
     "level": "C1"
   },
   {
+    "word": "wander",
+    "pos": "v.",
+    "level": "B2"
+  },
+  {
     "word": "ward",
     "pos": "n.",
     "level": "C1"
@@ -9943,6 +9658,11 @@
     "word": "warfare",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "warming",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "warrant",
@@ -9970,9 +9690,19 @@
     "level": "C1"
   },
   {
-    "word": "well",
+    "word": "weekly",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "weird",
+    "pos": "adj.",
+    "level": "B2"
+  },
+  {
+    "word": "welfare",
     "pos": "n.",
-    "level": "C1"
+    "level": "B2"
   },
   {
     "word": "well-being",
@@ -9983,6 +9713,11 @@
     "word": "whatsoever",
     "pos": "adv.",
     "level": "C1"
+  },
+  {
+    "word": "wheat",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "whereby",
@@ -10000,6 +9735,11 @@
     "level": "C1"
   },
   {
+    "word": "whoever",
+    "pos": "pron.",
+    "level": "B2"
+  },
+  {
     "word": "wholly",
     "pos": "adv.",
     "level": "C1"
@@ -10008,6 +9748,11 @@
     "word": "widen",
     "pos": "v.",
     "level": "C1"
+  },
+  {
+    "word": "widespread",
+    "pos": "adj.",
+    "level": "B2"
   },
   {
     "word": "widow",
@@ -10030,9 +9775,19 @@
     "level": "C1"
   },
   {
+    "word": "wisdom",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "wit",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "withdraw",
+    "pos": "v.",
+    "level": "B2"
   },
   {
     "word": "withdrawal",
@@ -10040,9 +9795,29 @@
     "level": "C1"
   },
   {
+    "word": "workforce",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
     "word": "workout",
     "pos": "n.",
     "level": "C1"
+  },
+  {
+    "word": "workplace",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "workshop",
+    "pos": "n.",
+    "level": "B2"
+  },
+  {
+    "word": "worm",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "worship",
@@ -10058,6 +9833,11 @@
     "word": "worthy",
     "pos": "adj.",
     "level": "C1"
+  },
+  {
+    "word": "wrist",
+    "pos": "n.",
+    "level": "B2"
   },
   {
     "word": "yell",

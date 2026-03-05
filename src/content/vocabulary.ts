@@ -22,7 +22,16 @@ const emptyTranslations: Record<SupportedLanguage, string> = {
 };
 
 function cleanWord(w: string): string {
-  return w.split(/[,/]/)[0].trim().toLowerCase();
+  let c = w;
+  // Strip parenthetical annotations: "bank (money)" → "bank"
+  c = c.replace(/\s*\(.*$/, '');
+  // Strip grammar labels: "each det./pron./adv." → "each"
+  c = c.replace(/\s+(det|pron|adv|adj|conj|prep|exclam|n|v)\..*/i, '');
+  // Strip trailing numbers: "last1" → "last"
+  c = c.replace(/\d+$/, '');
+  // Split on comma/slash for any remaining noise
+  c = c.split(/[,/]/)[0];
+  return c.trim().toLowerCase();
 }
 
 function oxfordToVocabularyWord(entry: OxfordEntry, index: number): VocabularyWord {
