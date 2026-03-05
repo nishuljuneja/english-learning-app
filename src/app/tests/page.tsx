@@ -55,6 +55,7 @@ export default function TestsPage() {
   const [answers, setAnswers] = useState<{ questionId: string; answer: string; correct: boolean }[]>([]);
   const [assignedLevel, setAssignedLevel] = useState<CEFRLevel | null>(null);
   const [history, setHistory] = useState<TestHistoryEntry[]>([]);
+  const [hasAnswered, setHasAnswered] = useState(false);
 
   useEffect(() => {
     setHistory(getTestHistory());
@@ -68,6 +69,7 @@ export default function TestsPage() {
     setCurrentIndex(0);
     setAnswers([]);
     setAssignedLevel(null);
+    setHasAnswered(false);
     setPhase('test');
   };
 
@@ -81,14 +83,16 @@ export default function TestsPage() {
       },
     ];
     setAnswers(newAnswers);
+    setHasAnswered(true);
+  };
 
-    setTimeout(() => {
-      if (currentIndex < totalQuestions - 1) {
-        setCurrentIndex(currentIndex + 1);
-      } else {
-        finishTest(newAnswers);
-      }
-    }, 1500);
+  const handleNext = () => {
+    setHasAnswered(false);
+    if (currentIndex < totalQuestions - 1) {
+      setCurrentIndex(currentIndex + 1);
+    } else {
+      finishTest(answers);
+    }
   };
 
   const handleSkip = () => {
@@ -267,17 +271,20 @@ export default function TestsPage() {
           options={currentQuestion.options || []}
           correctAnswer={currentQuestion.correctAnswer}
           onAnswer={handleAnswer}
+          onNext={handleNext}
         />
 
-        <div className="mt-6 text-center">
-          <button
-            onClick={handleSkip}
-            className="text-gray-400 hover:text-gray-600 text-sm font-medium flex items-center gap-1 mx-auto transition-colors"
-          >
-            <SkipForward className="w-4 h-4" />
-            Skip
-          </button>
-        </div>
+        {!hasAnswered && (
+          <div className="mt-6 text-center">
+            <button
+              onClick={handleSkip}
+              className="text-gray-400 hover:text-gray-600 text-sm font-medium flex items-center gap-1 mx-auto transition-colors"
+            >
+              <SkipForward className="w-4 h-4" />
+              Skip
+            </button>
+          </div>
+        )}
       </div>
     );
   }
