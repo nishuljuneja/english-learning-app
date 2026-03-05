@@ -1221,6 +1221,1048 @@ Indian democracy defies simplistic narratives. It is simultaneously vibrant and 
       },
     ],
   },
+
+  // ==================== A1 - Set 3 (05–08) ====================
+  {
+    id: 'a1-read-05',
+    level: 'A1',
+    title: 'My Favourite Festival',
+    content: `My favourite festival is Diwali. Diwali comes in October or November. It is the festival of lights.
+
+Before Diwali, we clean our house. My mother and I make rangoli at the door. My father buys new diyas and candles. We also buy sweets and dry fruits.
+
+On Diwali night, we light the diyas. The whole house looks very beautiful. We wear new clothes. My grandmother gives me money as a gift. We eat many sweets like ladoo and barfi.
+
+After dinner, we go to the terrace. We watch the fireworks in the sky. The sky looks colourful. I feel very happy on Diwali. It is the best day of the year.`,
+    wordCount: 120,
+    topic: 'Festivals',
+    indianContext: true,
+    vocabulary: ['festival', 'clean', 'candle', 'beautiful', 'fireworks'],
+    questions: [
+      {
+        id: 'a1-r5-q1',
+        type: 'multiple-choice',
+        question: 'When does Diwali come?',
+        questionTranslations: { hi: 'दिवाली कब आती है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['January or February', 'March or April', 'October or November', 'December'],
+        correctAnswer: 'October or November',
+        explanation: 'The passage says "Diwali comes in October or November."',
+      },
+      {
+        id: 'a1-r5-q2',
+        type: 'multiple-choice',
+        question: 'What does the family make at the door?',
+        questionTranslations: { hi: 'परिवार दरवाज़े पर क्या बनाता है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['A painting', 'Rangoli', 'A sign', 'Flowers'],
+        correctAnswer: 'Rangoli',
+        explanation: 'The passage says "My mother and I make rangoli at the door."',
+      },
+      {
+        id: 'a1-r5-q3',
+        type: 'multiple-choice',
+        question: 'Who gives money as a gift?',
+        questionTranslations: { hi: 'पैसे उपहार में कौन देता है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Her father', 'Her mother', 'Her grandmother', 'Her teacher'],
+        correctAnswer: 'Her grandmother',
+        explanation: 'The passage says "My grandmother gives me money as a gift."',
+      },
+    ],
+  },
+  {
+    id: 'a1-read-06',
+    level: 'A1',
+    title: 'The Vegetable Seller',
+    content: `Every morning, a vegetable seller comes to our street. His name is Ramu Kaka. He pushes a big cart. The cart has many vegetables.
+
+He has tomatoes, potatoes, onions, and spinach. He also has green chillies and coriander. The vegetables are fresh. He brings them from the mandi.
+
+My mother buys vegetables every day. Today she bought one kilo of tomatoes and half a kilo of beans. She paid fifty rupees. Ramu Kaka also gave her some free coriander.
+
+Ramu Kaka is a kind man. He gives extra vegetables to old people. Everyone in our neighbourhood likes him. He comes at 7 o'clock and leaves at 10 o'clock.`,
+    wordCount: 115,
+    topic: 'Community',
+    indianContext: true,
+    vocabulary: ['vegetable', 'morning', 'fresh', 'kind', 'neighbourhood'],
+    questions: [
+      {
+        id: 'a1-r6-q1',
+        type: 'multiple-choice',
+        question: 'How does Ramu Kaka carry his vegetables?',
+        questionTranslations: { hi: 'रामू काका सब्ज़ियाँ कैसे ले जाते हैं?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['In a bag', 'On a bicycle', 'On a big cart', 'In a truck'],
+        correctAnswer: 'On a big cart',
+        explanation: 'The passage says "He pushes a big cart."',
+      },
+      {
+        id: 'a1-r6-q2',
+        type: 'multiple-choice',
+        question: 'Where does Ramu Kaka get his vegetables?',
+        questionTranslations: { hi: 'रामू काका सब्ज़ियाँ कहाँ से लाते हैं?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['From a shop', 'From the mandi', 'From his garden', 'From the mall'],
+        correctAnswer: 'From the mandi',
+        explanation: 'The passage says "He brings them from the mandi."',
+      },
+      {
+        id: 'a1-r6-q3',
+        type: 'multiple-choice',
+        question: 'What does Ramu Kaka do for old people?',
+        questionTranslations: { hi: 'रामू काका बूढ़े लोगों के लिए क्या करते हैं?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['He gives them free delivery', 'He gives them extra vegetables', 'He visits their homes', 'He cooks for them'],
+        correctAnswer: 'He gives them extra vegetables',
+        explanation: 'The passage says "He gives extra vegetables to old people."',
+      },
+    ],
+  },
+  {
+    id: 'a1-read-07',
+    level: 'A1',
+    title: 'A Letter to My Friend',
+    content: `Dear Priya,
+
+How are you? I am fine. I am writing this letter from my new house. We moved to Lucknow last month.
+
+My new house is bigger than the old one. It has four rooms and a nice balcony. From the balcony, I can see a big garden. There are many trees and flowers.
+
+My new school is good. The teachers are nice. I have made two new friends. Their names are Kavya and Simran. We sit together in class.
+
+I miss you very much. Please come to visit me in the holidays. We can go to the zoo. Lucknow also has very good chaat.
+
+Write back soon!
+Your friend,
+Deepa`,
+    wordCount: 120,
+    topic: 'Friendship',
+    indianContext: true,
+    vocabulary: ['letter', 'house', 'balcony', 'garden', 'visit'],
+    questions: [
+      {
+        id: 'a1-r7-q1',
+        type: 'multiple-choice',
+        question: 'Where did Deepa move to?',
+        questionTranslations: { hi: 'दीपा कहाँ गई?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Delhi', 'Jaipur', 'Lucknow', 'Kanpur'],
+        correctAnswer: 'Lucknow',
+        explanation: 'The letter says "We moved to Lucknow last month."',
+      },
+      {
+        id: 'a1-r7-q2',
+        type: 'multiple-choice',
+        question: 'How many new friends did Deepa make?',
+        questionTranslations: { hi: 'दीपा ने कितने नए दोस्त बनाए?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['One', 'Two', 'Three', 'Four'],
+        correctAnswer: 'Two',
+        explanation: 'The letter says "I have made two new friends."',
+      },
+      {
+        id: 'a1-r7-q3',
+        type: 'multiple-choice',
+        question: 'Where does Deepa want to go with Priya?',
+        questionTranslations: { hi: 'दीपा प्रिया के साथ कहाँ जाना चाहती है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['To the park', 'To the zoo', 'To the cinema', 'To the market'],
+        correctAnswer: 'To the zoo',
+        explanation: 'The letter says "We can go to the zoo."',
+      },
+    ],
+  },
+  {
+    id: 'a1-read-08',
+    level: 'A1',
+    title: 'Travelling by Train',
+    content: `Last week, my family went to visit my grandparents. They live in Varanasi. We went by train.
+
+We went to the railway station early in the morning. My father had two tickets. The train was very long. It had many compartments. We found our seats and sat down.
+
+The train started at 7:15 AM. I sat near the window. I could see fields, villages, and rivers outside. The trees looked very green.
+
+A man came and sold chai and samosas. My mother bought chai for my father and me. The samosa was hot and tasty. I also bought a magazine from a seller.
+
+We reached Varanasi at 3 o'clock. My grandfather was waiting at the station. I was very happy to see him.`,
+    wordCount: 130,
+    topic: 'Travel',
+    indianContext: true,
+    vocabulary: ['train', 'ticket', 'station', 'window', 'magazine'],
+    questions: [
+      {
+        id: 'a1-r8-q1',
+        type: 'multiple-choice',
+        question: 'Where do the grandparents live?',
+        questionTranslations: { hi: 'दादा-दादी कहाँ रहते हैं?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Delhi', 'Agra', 'Varanasi', 'Allahabad'],
+        correctAnswer: 'Varanasi',
+        explanation: 'The passage says "They live in Varanasi."',
+      },
+      {
+        id: 'a1-r8-q2',
+        type: 'multiple-choice',
+        question: 'What did the man sell on the train?',
+        questionTranslations: { hi: 'ट्रेन में आदमी ने क्या बेचा?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Biryani and juice', 'Chai and samosas', 'Bread and butter', 'Fruits and sweets'],
+        correctAnswer: 'Chai and samosas',
+        explanation: 'The passage says "A man came and sold chai and samosas."',
+      },
+      {
+        id: 'a1-r8-q3',
+        type: 'multiple-choice',
+        question: 'What time did the family reach Varanasi?',
+        questionTranslations: { hi: 'परिवार वाराणसी कितने बजे पहुँचा?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['12 o\'clock', '1 o\'clock', '2 o\'clock', '3 o\'clock'],
+        correctAnswer: '3 o\'clock',
+        explanation: 'The passage says "We reached Varanasi at 3 o\'clock."',
+      },
+    ],
+  },
+
+  // ==================== A2 - Set 3 (05–08) ====================
+  {
+    id: 'a2-read-05',
+    level: 'A2',
+    title: 'Learning to Cook',
+    content: `Sneha is 16 years old and lives in Hyderabad. She has always loved eating her mother's food, but she never tried cooking. Last month, her mother got sick and had to rest. So Sneha decided to learn cooking.
+
+First, she tried to make rice. It was easy. She washed the rice, added water, and put it on the stove. But she added too much water, and the rice became very soft. Her father laughed and said, "It's okay, you will learn."
+
+The next day, she watched a YouTube video about making dal. She followed the instructions carefully. This time, the dal was perfect. Her mother tasted it and said, "Very good, Sneha!"
+
+Now Sneha can cook five dishes. She can make rice, dal, upma, poha, and Maggi. She wants to learn to make biryani next. Her mother is proud of her. Sneha says, "Cooking is like a science experiment. You need to measure everything correctly."`,
+    wordCount: 160,
+    topic: 'Life Skills',
+    indianContext: true,
+    vocabulary: ['decided', 'instructions', 'perfectly', 'measure', 'proud'],
+    questions: [
+      {
+        id: 'a2-r5-q1',
+        type: 'multiple-choice',
+        question: 'Why did Sneha start learning to cook?',
+        questionTranslations: { hi: 'स्नेहा ने खाना बनाना क्यों शुरू किया?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['She was bored', 'Her mother got sick', 'She wanted to be a chef', 'Her school gave homework'],
+        correctAnswer: 'Her mother got sick',
+        explanation: 'The passage says "her mother got sick and had to rest."',
+      },
+      {
+        id: 'a2-r5-q2',
+        type: 'multiple-choice',
+        question: 'What was wrong with Sneha\'s first attempt at making rice?',
+        questionTranslations: { hi: 'स्नेहा के पहले चावल बनाने में क्या गलती हुई?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['She burned it', 'She added too much water', 'She forgot to wash it', 'She cooked it too long'],
+        correctAnswer: 'She added too much water',
+        explanation: 'The passage says "she added too much water, and the rice became very soft."',
+      },
+      {
+        id: 'a2-r5-q3',
+        type: 'multiple-choice',
+        question: 'How many dishes can Sneha cook now?',
+        questionTranslations: { hi: 'स्नेहा अब कितने व्यंजन बना सकती है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Three', 'Four', 'Five', 'Six'],
+        correctAnswer: 'Five',
+        explanation: 'The passage lists five dishes: rice, dal, upma, poha, and Maggi.',
+      },
+      {
+        id: 'a2-r5-q4',
+        type: 'multiple-choice',
+        question: 'What does Sneha compare cooking to?',
+        questionTranslations: { hi: 'स्नेहा खाना पकाने की तुलना किससे करती है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['A game', 'Art class', 'A science experiment', 'A prayer'],
+        correctAnswer: 'A science experiment',
+        explanation: 'The passage says "Cooking is like a science experiment."',
+      },
+    ],
+  },
+  {
+    id: 'a2-read-06',
+    level: 'A2',
+    title: 'The Cricket Match',
+    content: `Last Sunday, there was a cricket match in our colony. It was between Gali Number 4 and Gali Number 7. I play for Gali Number 4.
+
+The match started at 4 o'clock in the evening. The ground was a small park near the temple. We used a tennis ball and a wooden bat. Gali Number 7 won the toss and chose to bat first.
+
+They scored 85 runs in 10 overs. Their best batsman, Sahil, hit three sixes. We were worried because 85 was a big target.
+
+When we batted, I opened the innings with my friend Karan. I scored 34 runs, and Karan scored 28. Our team scored 87 runs and won by two runs! Everyone was very excited.
+
+After the match, Sahil's mother brought cold lassi for both teams. We sat together and talked about the best moments. Colony cricket is the most fun.`,
+    wordCount: 150,
+    topic: 'Sports',
+    indianContext: true,
+    vocabulary: ['match', 'colony', 'scored', 'target', 'innings'],
+    questions: [
+      {
+        id: 'a2-r6-q1',
+        type: 'multiple-choice',
+        question: 'Where was the cricket match played?',
+        questionTranslations: { hi: 'क्रिकेट मैच कहाँ खेला गया?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['At a school', 'In a stadium', 'In a park near the temple', 'On the road'],
+        correctAnswer: 'In a park near the temple',
+        explanation: 'The passage says "The ground was a small park near the temple."',
+      },
+      {
+        id: 'a2-r6-q2',
+        type: 'multiple-choice',
+        question: 'How many runs did Gali Number 7 score?',
+        questionTranslations: { hi: 'गली नंबर 7 ने कितने रन बनाए?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['75', '80', '85', '87'],
+        correctAnswer: '85',
+        explanation: 'The passage says "They scored 85 runs in 10 overs."',
+      },
+      {
+        id: 'a2-r6-q3',
+        type: 'multiple-choice',
+        question: 'By how many runs did Gali Number 4 win?',
+        questionTranslations: { hi: 'गली नंबर 4 ने कितने रनों से जीता?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['One run', 'Two runs', 'Three runs', 'Five runs'],
+        correctAnswer: 'Two runs',
+        explanation: 'The passage says "won by two runs" (87 minus 85).',
+      },
+      {
+        id: 'a2-r6-q4',
+        type: 'multiple-choice',
+        question: 'What did Sahil\'s mother bring after the match?',
+        questionTranslations: { hi: 'साहिल की माँ मैच के बाद क्या लाईं?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Chai', 'Cold lassi', 'Samosas', 'Ice cream'],
+        correctAnswer: 'Cold lassi',
+        explanation: 'The passage says "Sahil\'s mother brought cold lassi for both teams."',
+      },
+    ],
+  },
+  {
+    id: 'a2-read-07',
+    level: 'A2',
+    title: 'The New Neighbour',
+    content: `Last week, a new family moved into the house next to ours. They came from Chennai. The family has four members—Mr. and Mrs. Iyer, and their two children, Arun and Divya.
+
+On the first day, my mother made some gulab jamun and we took it to their house. Mrs. Iyer was very happy. She said, "Thank you! In Chennai we eat sweet pongal, but I love gulab jamun too."
+
+Arun is my age. He is 14 years old. He likes playing football. I like cricket, but I said I would try football with him. We played together in the evening. It was fun, but I was very tired!
+
+Divya is 10 years old. She is learning Bharatanatyam dance. My sister also learns dance, so they became friends quickly.
+
+Now we visit each other's houses often. Mrs. Iyer makes us filter coffee and dosas. My mother makes them rajma-chawal. We have become a big happy family of neighbours.`,
+    wordCount: 165,
+    topic: 'Community',
+    indianContext: true,
+    vocabulary: ['neighbour', 'moved', 'members', 'quickly', 'often'],
+    questions: [
+      {
+        id: 'a2-r7-q1',
+        type: 'multiple-choice',
+        question: 'Where did the new family come from?',
+        questionTranslations: { hi: 'नया परिवार कहाँ से आया?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Mumbai', 'Kolkata', 'Chennai', 'Bangalore'],
+        correctAnswer: 'Chennai',
+        explanation: 'The passage says "They came from Chennai."',
+      },
+      {
+        id: 'a2-r7-q2',
+        type: 'multiple-choice',
+        question: 'What did the narrator\'s mother take to the new family?',
+        questionTranslations: { hi: 'कथाकार की माँ नए परिवार के लिए क्या ले गईं?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Ladoo', 'Gulab jamun', 'Cake', 'Samosa'],
+        correctAnswer: 'Gulab jamun',
+        explanation: 'The passage says "my mother made some gulab jamun."',
+      },
+      {
+        id: 'a2-r7-q3',
+        type: 'multiple-choice',
+        question: 'What dance is Divya learning?',
+        questionTranslations: { hi: 'दिव्या कौन सा नृत्य सीख रही है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Kathak', 'Bharatanatyam', 'Odissi', 'Garba'],
+        correctAnswer: 'Bharatanatyam',
+        explanation: 'The passage says "She is learning Bharatanatyam dance."',
+      },
+    ],
+  },
+  {
+    id: 'a2-read-08',
+    level: 'A2',
+    title: 'A Visit to the Post Office',
+    content: `Yesterday, my grandfather asked me to go to the post office. He wanted to send a letter to his brother in Shimla. He gave me the letter and some money.
+
+The post office is on Main Road, near the SBI bank. I walked there in ten minutes. There were about five people waiting in line.
+
+When my turn came, I gave the letter to the man at the counter. He weighed it and said, "It needs a five-rupee stamp." I bought the stamp and gave it to him. He put a round ink mark on the stamp. This is called a postmark.
+
+I also bought two postcards for my grandfather. Each postcard cost fifty paise. Then I came back home.
+
+My grandfather was happy. He said, "When I was young, we wrote letters every week. Now everyone uses WhatsApp. But a letter is special." I think he is right. A real letter feels different.`,
+    wordCount: 155,
+    topic: 'Daily Life',
+    indianContext: true,
+    vocabulary: ['post office', 'stamp', 'counter', 'weighed', 'postcard'],
+    questions: [
+      {
+        id: 'a2-r8-q1',
+        type: 'multiple-choice',
+        question: 'Where did the grandfather want to send the letter?',
+        questionTranslations: { hi: 'दादाजी पत्र कहाँ भेजना चाहते थे?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Delhi', 'Dehradun', 'Shimla', 'Manali'],
+        correctAnswer: 'Shimla',
+        explanation: 'The passage says "He wanted to send a letter to his brother in Shimla."',
+      },
+      {
+        id: 'a2-r8-q2',
+        type: 'multiple-choice',
+        question: 'How much did the stamp cost?',
+        questionTranslations: { hi: 'टिकट की कीमत कितनी थी?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Two rupees', 'Five rupees', 'Ten rupees', 'Twenty rupees'],
+        correctAnswer: 'Five rupees',
+        explanation: 'The passage says "It needs a five-rupee stamp."',
+      },
+      {
+        id: 'a2-r8-q3',
+        type: 'multiple-choice',
+        question: 'What does the grandfather think about letters compared to WhatsApp?',
+        questionTranslations: { hi: 'दादाजी WhatsApp की तुलना में पत्रों के बारे में क्या सोचते हैं?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['WhatsApp is better', 'Letters are special', 'Both are the same', 'He does not like either'],
+        correctAnswer: 'Letters are special',
+        explanation: 'The grandfather says "But a letter is special."',
+      },
+    ],
+  },
+
+  // ==================== B1 - Set 3 (05–08) ====================
+  {
+    id: 'b1-read-05',
+    level: 'B1',
+    title: 'The Rise of Street Food Culture in India',
+    content: `India's street food culture has always been vibrant, but in recent years it has experienced a remarkable transformation. What was once considered cheap food for working-class people is now celebrated as a culinary art form.
+
+Cities like Delhi, Mumbai, Kolkata, and Ahmedabad are famous for their street food. Chandni Chowk in Delhi, for example, has been serving paranthas, jalebis, and chole bhature for over a century. In Mumbai, vada pav—a spicy potato fritter in a bread bun—has become the city's unofficial symbol.
+
+The transformation has been accelerated by social media. Food bloggers and YouTubers have made local vendors famous overnight. A humble momos seller in Lajpat Nagar can now have millions of views. This attention has brought both opportunities and challenges. While some vendors have been able to expand their businesses, others struggle with the sudden rush of customers.
+
+Food safety has also become an important topic. Many cities now require street food vendors to obtain licences and follow hygiene guidelines. The FSSAI has introduced the "Clean Street Food Hub" certification programme to ensure quality standards.
+
+Despite these changes, the heart of Indian street food remains the same—affordable, flavourful, and deeply connected to regional identity. Whether it's puchka in Kolkata or pani puri in Pune, these dishes carry centuries of tradition on a small plate.`,
+    wordCount: 210,
+    topic: 'Food & Culture',
+    indianContext: true,
+    vocabulary: ['vibrant', 'transformation', 'culinary', 'accelerated', 'certification', 'hygiene'],
+    questions: [
+      {
+        id: 'b1-r5-q1',
+        type: 'multiple-choice',
+        question: 'What is vada pav described as in the passage?',
+        questionTranslations: { hi: 'पैसेज में वड़ा पाव को क्या बताया गया है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['A traditional sweet', 'Mumbai\'s unofficial symbol', 'A North Indian dish', 'A modern invention'],
+        correctAnswer: 'Mumbai\'s unofficial symbol',
+        explanation: 'The passage calls vada pav "the city\'s unofficial symbol."',
+      },
+      {
+        id: 'b1-r5-q2',
+        type: 'multiple-choice',
+        question: 'What has accelerated the transformation of street food culture?',
+        questionTranslations: { hi: 'स्ट्रीट फ़ूड संस्कृति के बदलाव को किसने तेज़ किया?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Government policies', 'Social media', 'Foreign tourists', 'Restaurant chains'],
+        correctAnswer: 'Social media',
+        explanation: 'The passage says "The transformation has been accelerated by social media."',
+      },
+      {
+        id: 'b1-r5-q3',
+        type: 'multiple-choice',
+        question: 'What is the FSSAI\'s "Clean Street Food Hub" programme about?',
+        questionTranslations: { hi: 'FSSAI का "क्लीन स्ट्रीट फ़ूड हब" कार्यक्रम किसके बारे में है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Promoting organic food', 'Ensuring quality standards', 'Training chefs', 'Reducing prices'],
+        correctAnswer: 'Ensuring quality standards',
+        explanation: 'The passage mentions FSSAI introduced the programme "to ensure quality standards."',
+      },
+    ],
+  },
+  {
+    id: 'b1-read-06',
+    level: 'B1',
+    title: 'Working from Home: The New Normal',
+    content: `When the COVID-19 pandemic forced offices to close in 2020, millions of Indians suddenly found themselves working from home. What began as a temporary arrangement has permanently changed the way many people work.
+
+Bangalore's IT sector was among the first to adopt remote working. Companies like Infosys, Wipro, and TCS allowed employees to work from anywhere. Many workers moved back to their hometowns—smaller cities like Mangalore, Indore, and Coimbatore—where the cost of living is much lower. This trend has been called "reverse migration."
+
+The benefits of working from home are clear. Workers save time and money on commuting. They can spend more time with their families. A survey by Nasscom found that 70% of tech workers preferred a hybrid model—working from home three days a week and going to the office two days.
+
+However, there are disadvantages too. Many employees report feeling isolated and find it difficult to separate work from personal life. Working long hours without a proper break has led to what psychologists call "burnout." Some managers also worry about reduced collaboration and creativity.
+
+Companies are now experimenting with different models. Some have adopted a fully remote policy, while others require employees to come to the office on certain days. The future of work in India is likely to be flexible, with no single approach suiting everyone.`,
+    wordCount: 210,
+    topic: 'Work & Technology',
+    indianContext: true,
+    vocabulary: ['pandemic', 'temporary', 'arrangement', 'hybrid', 'isolated', 'collaboration'],
+    questions: [
+      {
+        id: 'b1-r6-q1',
+        type: 'multiple-choice',
+        question: 'What is "reverse migration" as described in the passage?',
+        questionTranslations: { hi: 'पैसेज में "रिवर्स माइग्रेशन" का क्या मतलब है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Companies moving to smaller cities', 'Workers returning to their hometowns', 'People moving abroad', 'Offices relocating to villages'],
+        correctAnswer: 'Workers returning to their hometowns',
+        explanation: 'The passage says workers "moved back to their hometowns" and calls this "reverse migration."',
+      },
+      {
+        id: 'b1-r6-q2',
+        type: 'multiple-choice',
+        question: 'What percentage of tech workers preferred a hybrid model?',
+        questionTranslations: { hi: 'कितने प्रतिशत टेक कर्मचारी हाइब्रिड मॉडल पसंद करते हैं?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['50%', '60%', '70%', '80%'],
+        correctAnswer: '70%',
+        explanation: 'The passage says "70% of tech workers preferred a hybrid model."',
+      },
+      {
+        id: 'b1-r6-q3',
+        type: 'multiple-choice',
+        question: 'Which is NOT mentioned as a disadvantage of working from home?',
+        questionTranslations: { hi: 'घर से काम करने का कौन सा नुकसान नहीं बताया गया?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Feeling isolated', 'Lower salary', 'Burnout', 'Reduced collaboration'],
+        correctAnswer: 'Lower salary',
+        explanation: 'The passage mentions isolation, burnout, and reduced collaboration but not lower salary.',
+      },
+    ],
+  },
+  {
+    id: 'b1-read-07',
+    level: 'B1',
+    title: 'The Indian Railways Experience',
+    content: `The Indian Railways is one of the largest railway networks in the world, carrying over 23 million passengers every day across more than 7,000 stations. For many Indians, train travel is not just a mode of transport—it is an experience.
+
+A long-distance train journey in India is a social event. Strangers share food, stories, and opinions. The chai wallah walks through the compartment calling "Chai, Chai!" every few minutes. Families spread out elaborate home-cooked meals, and it is common for fellow passengers to be offered food.
+
+The Indian Railways offers several classes of travel. The most affordable is General or Unreserved, where seats are not guaranteed. Sleeper Class provides reserved berths at reasonable prices and is the most popular for long journeys. For those seeking more comfort, AC 3-Tier, AC 2-Tier, and First Class AC are available at higher prices.
+
+Technology has significantly improved the booking experience. The IRCTC website and mobile app allow passengers to book tickets, check PNR status, and even order food to be delivered at the next station. The introduction of Vande Bharat Express trains—semi-high-speed trains with modern amenities—has been a recent milestone.
+
+Despite modernisation efforts, challenges remain. Delays are common, especially during the monsoon season. Many rural stations lack basic facilities. Yet, for most Indians, the train journey remains an irreplaceable part of the country's cultural fabric.`,
+    wordCount: 220,
+    topic: 'Transport & Culture',
+    indianContext: true,
+    vocabulary: ['network', 'elaborate', 'reserved', 'amenities', 'milestone', 'irreplaceable'],
+    questions: [
+      {
+        id: 'b1-r7-q1',
+        type: 'multiple-choice',
+        question: 'How many passengers does Indian Railways carry daily?',
+        questionTranslations: { hi: 'भारतीय रेलवे रोज़ कितने यात्रियों को ले जाता है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Over 10 million', 'Over 15 million', 'Over 23 million', 'Over 30 million'],
+        correctAnswer: 'Over 23 million',
+        explanation: 'The passage says "carrying over 23 million passengers every day."',
+      },
+      {
+        id: 'b1-r7-q2',
+        type: 'multiple-choice',
+        question: 'Which class of travel is described as most popular for long journeys?',
+        questionTranslations: { hi: 'लंबी यात्राओं के लिए कौन सा वर्ग सबसे लोकप्रिय बताया गया है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['General', 'Sleeper Class', 'AC 3-Tier', 'First Class AC'],
+        correctAnswer: 'Sleeper Class',
+        explanation: 'The passage says Sleeper Class "is the most popular for long journeys."',
+      },
+      {
+        id: 'b1-r7-q3',
+        type: 'multiple-choice',
+        question: 'What are Vande Bharat Express trains described as?',
+        questionTranslations: { hi: 'वंदे भारत एक्सप्रेस ट्रेनों को क्या बताया गया है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Luxury tourist trains', 'Semi-high-speed trains with modern amenities', 'Freight trains', 'Local suburban trains'],
+        correctAnswer: 'Semi-high-speed trains with modern amenities',
+        explanation: 'The passage describes them as "semi-high-speed trains with modern amenities."',
+      },
+      {
+        id: 'b1-r7-q4',
+        type: 'multiple-choice',
+        question: 'When are delays especially common?',
+        questionTranslations: { hi: 'देरी विशेष रूप से कब होती है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['During summer', 'During the monsoon season', 'During festivals', 'During winter'],
+        correctAnswer: 'During the monsoon season',
+        explanation: 'The passage says "Delays are common, especially during the monsoon season."',
+      },
+    ],
+  },
+  {
+    id: 'b1-read-08',
+    level: 'B1',
+    title: 'The Solar Energy Revolution in Indian Villages',
+    content: `In many parts of rural India, electricity supply has traditionally been unreliable. Power cuts lasting several hours were common, affecting everything from children's study time to farmers' ability to pump water. However, solar energy is now changing this situation.
+
+The Indian government's push for renewable energy has brought solar panels to thousands of villages. Under schemes like the PM-KUSUM programme, farmers can install solar pumps for irrigation, reducing their dependence on diesel and unpredictable grid electricity.
+
+Take the example of Dharnai village in Bihar. In 2014, it became India's first fully solar-powered village. Before solar panels were installed, villagers used kerosene lamps for lighting. Children studied under dim, smoky light. Now, every household has clean, bright electricity. A community solar micro-grid powers the village, and excess energy is stored in batteries.
+
+The impact goes beyond lighting. Women's self-help groups in Rajasthan have started small businesses—stitching, pickle-making, and mobile repair shops—that depend on reliable electricity. Students can now study at night and charge their phones to access online learning.
+
+Challenges remain. Solar panels require maintenance, and many villages lack trained technicians. The initial cost is still high for individual families, though government subsidies have helped. Battery storage technology needs further improvement for cloudy days and monsoon months.
+
+Despite these obstacles, solar energy represents a genuine path to energy independence for rural India.`,
+    wordCount: 220,
+    topic: 'Energy & Rural Development',
+    indianContext: true,
+    vocabulary: ['unreliable', 'renewable', 'irrigation', 'micro-grid', 'subsidies', 'independence'],
+    questions: [
+      {
+        id: 'b1-r8-q1',
+        type: 'multiple-choice',
+        question: 'What distinction does Dharnai village in Bihar hold?',
+        questionTranslations: { hi: 'बिहार के धरनई गाँव की क्या विशेषता है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['First village with internet', 'First fully solar-powered village', 'Largest village in India', 'First smart village'],
+        correctAnswer: 'First fully solar-powered village',
+        explanation: 'The passage says it "became India\'s first fully solar-powered village."',
+      },
+      {
+        id: 'b1-r8-q2',
+        type: 'multiple-choice',
+        question: 'What did villagers use for lighting before solar panels?',
+        questionTranslations: { hi: 'सोलर पैनल से पहले ग्रामीण रोशनी के लिए क्या इस्तेमाल करते थे?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Candles', 'Kerosene lamps', 'Battery torches', 'Generator lights'],
+        correctAnswer: 'Kerosene lamps',
+        explanation: 'The passage says "villagers used kerosene lamps for lighting."',
+      },
+      {
+        id: 'b1-r8-q3',
+        type: 'multiple-choice',
+        question: 'Which is NOT mentioned as a challenge for solar energy in villages?',
+        questionTranslations: { hi: 'गाँवों में सौर ऊर्जा की चुनौती के रूप में क्या नहीं बताया गया?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Lack of technicians', 'High initial cost', 'Government opposition', 'Battery storage limitations'],
+        correctAnswer: 'Government opposition',
+        explanation: 'The passage mentions lack of technicians, high cost, and battery limitations, but says the government actively supports solar energy.',
+      },
+    ],
+  },
+
+  // ==================== B2 - Set 3 (05–08) ====================
+  {
+    id: 'b2-read-05',
+    level: 'B2',
+    title: 'The Business of Bollywood',
+    content: `The Indian film industry, popularly known as Bollywood, produces more films annually than any other film industry in the world. In 2023 alone, over 1,800 films were produced across various Indian languages, with Hindi-language cinema accounting for the largest share. The industry's annual revenue exceeds ₹19,000 crore, making it a significant contributor to India's economy and cultural soft power.
+
+Bollywood's business model has undergone a dramatic shift in the past decade. Traditionally, box office collections were the primary source of revenue. A film's success was measured almost entirely by how much money it earned in theatres. However, the advent of Over-The-Top (OTT) platforms like Netflix, Amazon Prime Video, and Disney+ Hotstar has fundamentally altered this equation. Today, digital rights for a major film can fetch ₹50-100 crore—sometimes more than the film earns in theatres.
+
+This shift has had both positive and negative consequences. On the positive side, smaller, content-driven films that might have struggled to find theatrical audiences have flourished on streaming platforms. Filmmakers can now tell unconventional stories without worrying about opening-weekend box office pressure. Films like "The Lunchbox" and "Court" found massive audiences through digital distribution.
+
+On the other hand, the theatrical experience has suffered. Single-screen cinemas across small towns have been closing at an alarming rate, replaced by multiplexes that charge higher ticket prices. This has effectively priced out a significant segment of the audience—the very demographic that sustained Bollywood for decades.
+
+The industry also faces increasing competition from regional cinema. Telugu and Tamil films have broken Hindi cinema's dominance in the pan-Indian market, with blockbusters like "RRR" and "KGF Chapter 2" outperforming most Hindi releases. This has forced Bollywood to rethink its content strategy and invest more heavily in spectacle and visual effects.`,
+    wordCount: 270,
+    topic: 'Entertainment & Economy',
+    indianContext: true,
+    vocabulary: ['annually', 'revenue', 'advent', 'fundamentally', 'unconventional', 'demographic', 'dominance'],
+    questions: [
+      {
+        id: 'b2-r5-q1',
+        type: 'multiple-choice',
+        question: 'How has the primary revenue model of Bollywood changed?',
+        questionTranslations: { hi: 'बॉलीवुड का प्राथमिक राजस्व मॉडल कैसे बदला है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['From TV to cinema', 'From box office to OTT digital rights', 'From music to merchandise', 'From domestic to international markets'],
+        correctAnswer: 'From box office to OTT digital rights',
+        explanation: 'The passage says OTT platforms have "fundamentally altered" the equation, with digital rights sometimes earning more than theatrical revenue.',
+      },
+      {
+        id: 'b2-r5-q2',
+        type: 'multiple-choice',
+        question: 'What has happened to single-screen cinemas?',
+        questionTranslations: { hi: 'सिंगल-स्क्रीन सिनेमाघरों का क्या हुआ?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['They have been modernised', 'They have been closing and replaced by multiplexes', 'They have become more popular', 'The government has protected them'],
+        correctAnswer: 'They have been closing and replaced by multiplexes',
+        explanation: 'The passage says single-screen cinemas "have been closing at an alarming rate, replaced by multiplexes."',
+      },
+      {
+        id: 'b2-r5-q3',
+        type: 'multiple-choice',
+        question: 'How have regional films like "RRR" affected Bollywood?',
+        questionTranslations: { hi: '"RRR" जैसी क्षेत्रीय फ़िल्मों ने बॉलीवुड को कैसे प्रभावित किया?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['They inspired more Hindi remakes', 'They broke Hindi cinema\'s pan-Indian dominance', 'They reduced OTT subscriptions', 'They increased ticket prices'],
+        correctAnswer: 'They broke Hindi cinema\'s pan-Indian dominance',
+        explanation: 'The passage says Telugu and Tamil films "have broken Hindi cinema\'s dominance in the pan-Indian market."',
+      },
+      {
+        id: 'b2-r5-q4',
+        type: 'multiple-choice',
+        question: 'Which is mentioned as a positive effect of OTT platforms?',
+        questionTranslations: { hi: 'OTT प्लेटफ़ॉर्म का कौन सा सकारात्मक प्रभाव बताया गया?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Higher ticket prices', 'More film awards', 'Content-driven films finding larger audiences', 'Actors earning more money'],
+        correctAnswer: 'Content-driven films finding larger audiences',
+        explanation: 'The passage says "smaller, content-driven films… have flourished on streaming platforms."',
+      },
+    ],
+  },
+  {
+    id: 'b2-read-06',
+    level: 'B2',
+    title: 'Water Crisis and Conservation in Urban India',
+    content: `In 2019, Chennai became an international headline when its four main reservoirs ran almost completely dry, leaving nearly ten million residents scrambling for water. The crisis, which saw water being transported by trains from hundreds of kilometres away, was a stark reminder of the water challenges facing India's rapidly growing cities.
+
+India is home to 18% of the world's population but possesses only 4% of its freshwater resources. Urban water demand is projected to double by 2030, driven by population growth, industrialisation, and rising living standards. The gap between supply and demand is widening at an unsustainable rate.
+
+The causes of urban water scarcity are well documented. Rapid and unplanned urbanisation has led to the destruction of natural water bodies. Bangalore, once known as the "city of a thousand lakes," has lost over 85% of its lakes to encroachment and real estate development. Groundwater extraction has reached dangerous levels in several cities, with water tables dropping by several metres each decade.
+
+However, there are encouraging examples of conservation. Rainwater harvesting, made mandatory in Chennai after the 2019 crisis, has shown promising results. The city's groundwater levels have improved measurably. Jaipur has implemented a comprehensive water recycling programme for industrial use. Several housing societies in Pune have installed greywater treatment systems that recycle water from kitchens and bathrooms for gardening.
+
+Individual action matters too. Simple measures—fixing leaking taps, using bucket baths instead of showers, and installing low-flow fixtures—can reduce household water consumption by up to 40%. The challenge is not merely technical but demands a fundamental shift in how urban Indians value and use this finite resource.`,
+    wordCount: 260,
+    topic: 'Environment & Urban Planning',
+    indianContext: true,
+    vocabulary: ['reservoir', 'scrambling', 'unsustainable', 'encroachment', 'mandatory', 'comprehensive', 'finite'],
+    questions: [
+      {
+        id: 'b2-r6-q1',
+        type: 'multiple-choice',
+        question: 'What happened in Chennai in 2019?',
+        questionTranslations: { hi: '2019 में चेन्नई में क्या हुआ?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['A major flood', 'Its reservoirs ran nearly dry', 'A new dam was built', 'Water prices were reduced'],
+        correctAnswer: 'Its reservoirs ran nearly dry',
+        explanation: 'The passage says "its four main reservoirs ran almost completely dry."',
+      },
+      {
+        id: 'b2-r6-q2',
+        type: 'multiple-choice',
+        question: 'What percentage of the world\'s freshwater does India possess?',
+        questionTranslations: { hi: 'भारत के पास विश्व के ताज़े पानी का कितना प्रतिशत है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['2%', '4%', '10%', '18%'],
+        correctAnswer: '4%',
+        explanation: 'The passage states India "possesses only 4% of its freshwater resources."',
+      },
+      {
+        id: 'b2-r6-q3',
+        type: 'multiple-choice',
+        question: 'What happened to Bangalore\'s lakes?',
+        questionTranslations: { hi: 'बैंगलोर की झीलों का क्या हुआ?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['They have been cleaned', 'Over 85% were lost to encroachment', 'New lakes were created', 'They were converted to parks'],
+        correctAnswer: 'Over 85% were lost to encroachment',
+        explanation: 'The passage says Bangalore "has lost over 85% of its lakes to encroachment and real estate development."',
+      },
+      {
+        id: 'b2-r6-q4',
+        type: 'multiple-choice',
+        question: 'By how much can simple household measures reduce water consumption?',
+        questionTranslations: { hi: 'सरल घरेलू उपाय पानी की खपत कितनी कम कर सकते हैं?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Up to 10%', 'Up to 20%', 'Up to 30%', 'Up to 40%'],
+        correctAnswer: 'Up to 40%',
+        explanation: 'The passage says simple measures "can reduce household water consumption by up to 40%."',
+      },
+    ],
+  },
+  {
+    id: 'b2-read-07',
+    level: 'B2',
+    title: 'India\'s Space Programme: From Humble Beginnings to Mars',
+    content: `When India's first sounding rocket was launched from Thumba, Kerala, in 1963, the components were transported on bicycles and the rocket was assembled in what had been a church. Six decades later, the Indian Space Research Organisation (ISRO) is recognised as one of the most cost-effective and innovative space agencies in the world.
+
+ISRO's approach has always been pragmatic rather than prestige-driven. The organisation's primary mandate has been to use space technology for national development—weather forecasting for farmers, communication satellites for remote areas, and earth observation for disaster management. This focus on practical applications has given India's space programme a distinct identity.
+
+The Mars Orbiter Mission (Mangalyaan) in 2013 was a watershed moment. India became the first Asian nation to reach Mars orbit, and it did so on its first attempt—at a cost of approximately $74 million, less than the budget of many Hollywood science fiction films. The mission demonstrated that frugal engineering could achieve extraordinary results.
+
+The Chandrayaan-3 mission in August 2023 further cemented India's position when it became the first country to successfully land a spacecraft near the Moon's south pole. The Pragyan rover transmitted valuable data about lunar soil composition, including the presence of sulphur and other elements.
+
+Looking ahead, ISRO's Gaganyaan programme aims to send Indian astronauts—called "gagannauts"—into orbit. The organisation is also developing a reusable launch vehicle to reduce the cost of accessing space. With the government opening the space sector to private companies through IN-SPACe, a new generation of Indian space startups is emerging, potentially transforming the country into a global space hub.`,
+    wordCount: 260,
+    topic: 'Science & Technology',
+    indianContext: true,
+    vocabulary: ['pragmatic', 'mandate', 'watershed', 'frugal', 'cemented', 'composition', 'reusable'],
+    questions: [
+      {
+        id: 'b2-r7-q1',
+        type: 'multiple-choice',
+        question: 'How were components of India\'s first rocket transported?',
+        questionTranslations: { hi: 'भारत के पहले रॉकेट के हिस्से कैसे ले जाए गए?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['By truck', 'By helicopter', 'On bicycles', 'By train'],
+        correctAnswer: 'On bicycles',
+        explanation: 'The passage says "the components were transported on bicycles."',
+      },
+      {
+        id: 'b2-r7-q2',
+        type: 'multiple-choice',
+        question: 'What does the passage identify as ISRO\'s primary mandate?',
+        questionTranslations: { hi: 'पैसेज में ISRO का प्राथमिक उद्देश्य क्या बताया गया है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Competing with NASA', 'Space tourism', 'Using space technology for national development', 'Military defence'],
+        correctAnswer: 'Using space technology for national development',
+        explanation: 'The passage says ISRO\'s mandate is "to use space technology for national development."',
+      },
+      {
+        id: 'b2-r7-q3',
+        type: 'multiple-choice',
+        question: 'What was historically significant about the Chandrayaan-3 landing?',
+        questionTranslations: { hi: 'चंद्रयान-3 की लैंडिंग ऐतिहासिक रूप से क्यों महत्वपूर्ण थी?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['First mission to orbit the Moon', 'First landing near the Moon\'s south pole', 'Cheapest lunar mission ever', 'First crewed lunar mission'],
+        correctAnswer: 'First landing near the Moon\'s south pole',
+        explanation: 'The passage says India "became the first country to successfully land a spacecraft near the Moon\'s south pole."',
+      },
+      {
+        id: 'b2-r7-q4',
+        type: 'multiple-choice',
+        question: 'What are Indian astronauts called under the Gaganyaan programme?',
+        questionTranslations: { hi: 'गगनयान कार्यक्रम में भारतीय अंतरिक्ष यात्रियों को क्या कहा जाता है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Cosmonauts', 'Taikonauts', 'Gagannauts', 'Vyomanauts'],
+        correctAnswer: 'Gagannauts',
+        explanation: 'The passage says astronauts are "called gagannauts."',
+      },
+    ],
+  },
+  {
+    id: 'b2-read-08',
+    level: 'B2',
+    title: 'The Gig Economy and Young India',
+    content: `India's gig economy—comprising freelance, contract, and platform-based work—has grown exponentially in recent years. According to a NITI Aayog report, India had approximately 7.7 million gig workers in 2021, a number projected to reach 23.5 million by 2030. For many young Indians, gig work is not just a stopgap but a deliberate career choice.
+
+The most visible face of the gig economy is the delivery ecosystem. Apps like Zomato, Swiggy, Urban Company, and Dunzo employ millions of delivery partners and service providers. For a young person without a college degree, these platforms offer immediate income and flexible hours—an attractive alternative to irregular factory or construction work.
+
+However, this flexibility comes at a cost. Gig workers are typically classified as independent contractors rather than employees, which means they receive no paid leave, health insurance, or pension benefits. A delivery rider working twelve-hour shifts in Delhi's summer heat or Bangalore's monsoon rains has no safety net if they fall ill or their vehicle breaks down.
+
+Simultaneously, a more affluent segment of the gig economy is thriving. Freelance graphic designers, content writers, software developers, and digital marketers are earning competitive incomes through platforms like Upwork, Fiverr, and Toptal. Many are based in tier-2 cities—Jaipur, Kochi, Bhopal—serving international clients at globally competitive rates while enjoying a lower cost of living.
+
+The government has begun addressing some of these issues. The Code on Social Security, 2020, for the first time recognises gig and platform workers and envisages social security schemes for them. Whether implementation will match legislation remains to be seen, but the recognition itself marks an important step.`,
+    wordCount: 260,
+    topic: 'Economy & Employment',
+    indianContext: true,
+    vocabulary: ['exponentially', 'stopgap', 'deliberate', 'contractors', 'affluent', 'envisages', 'implementation'],
+    questions: [
+      {
+        id: 'b2-r8-q1',
+        type: 'multiple-choice',
+        question: 'How many gig workers is India projected to have by 2030?',
+        questionTranslations: { hi: '2030 तक भारत में कितने गिग कर्मचारी होने का अनुमान है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['7.7 million', '15 million', '23.5 million', '50 million'],
+        correctAnswer: '23.5 million',
+        explanation: 'The passage says the number is "projected to reach 23.5 million by 2030."',
+      },
+      {
+        id: 'b2-r8-q2',
+        type: 'multiple-choice',
+        question: 'What is the key disadvantage of gig work mentioned?',
+        questionTranslations: { hi: 'गिग काम का मुख्य नुकसान क्या बताया गया?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Low pay', 'No employee benefits like health insurance or paid leave', 'Boring work', 'Too much training required'],
+        correctAnswer: 'No employee benefits like health insurance or paid leave',
+        explanation: 'The passage says gig workers "receive no paid leave, health insurance, or pension benefits."',
+      },
+      {
+        id: 'b2-r8-q3',
+        type: 'multiple-choice',
+        question: 'What is significant about the Code on Social Security, 2020?',
+        questionTranslations: { hi: 'सामाजिक सुरक्षा संहिता 2020 में क्या महत्वपूर्ण है?', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['It banned gig work', 'It guaranteed minimum wages for gig workers', 'It recognised gig workers for the first time', 'It provided free healthcare'],
+        correctAnswer: 'It recognised gig workers for the first time',
+        explanation: 'The passage says the Code "for the first time recognises gig and platform workers."',
+      },
+    ],
+  },
+
+  // ==================== C1 - Set 3 (05–08) ====================
+  {
+    id: 'c1-read-05',
+    level: 'C1',
+    title: 'The Paradox of India\'s Education System',
+    content: `India produces more than 1.5 million engineers and over 300,000 MBA graduates annually, yet a McKinsey study found that only 25% of engineering graduates and approximately 10% of general graduates are considered employable by multinational corporations. This paradox—an abundance of degree holders coexisting with a severe skills deficit—lies at the heart of India's education crisis.
+
+The roots of this dysfunction are structural. India's higher education system, which serves over 40 million students across roughly 1,000 universities and 42,000 colleges, was designed in the post-independence era to produce a limited administrative elite. It was never architected for mass education in a knowledge economy. The emphasis has remained overwhelmingly on rote memorisation and examination performance rather than on critical thinking, problem-solving, or practical skills.
+
+The consequences manifest in multiple ways. Corporate India spends an estimated $2 billion annually on retraining fresh graduates who arrive technically competent on paper but lack the ability to apply knowledge in professional contexts. The IT industry, India's flagship success story, has long maintained training academies—effectively bridging the gap that universities fail to address.
+
+The National Education Policy (NEP) 2020 represents the most ambitious attempt at systemic reform in decades. It proposes a multidisciplinary approach, flexibility in course selection, and the integration of vocational training from secondary school onwards. The policy also emphasises education in the mother tongue through the early years—a departure from the English-medium orthodoxy that has dominated aspirational middle-class thinking.
+
+However, implementation remains the critical variable. India's education governance is divided between central and state authorities, creating a fragmented system where policy intentions frequently diverge from ground-level realities. Many state universities lack the funding, faculty, and institutional autonomy necessary to implement meaningful reform. The gap between the NEP's vision and its realisation may well define the trajectory of India's human capital development for decades to come.`,
+    wordCount: 290,
+    topic: 'Education & Economy',
+    indianContext: true,
+    vocabulary: ['paradox', 'coexisting', 'dysfunction', 'architected', 'rote', 'manifest', 'multidisciplinary', 'orthodoxy', 'diverge', 'trajectory'],
+    questions: [
+      {
+        id: 'c1-r5-q1',
+        type: 'multiple-choice',
+        question: 'According to the McKinsey study, what percentage of engineering graduates are employable?',
+        questionTranslations: { hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['10%', '25%', '50%', '75%'],
+        correctAnswer: '25%',
+        explanation: 'The passage says "only 25% of engineering graduates… are considered employable."',
+      },
+      {
+        id: 'c1-r5-q2',
+        type: 'multiple-choice',
+        question: 'What does the passage identify as the primary emphasis of India\'s higher education?',
+        questionTranslations: { hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Research and innovation', 'Rote memorisation and exam performance', 'Practical skills training', 'International collaboration'],
+        correctAnswer: 'Rote memorisation and exam performance',
+        explanation: 'The passage says the emphasis "has remained overwhelmingly on rote memorisation and examination performance."',
+      },
+      {
+        id: 'c1-r5-q3',
+        type: 'multiple-choice',
+        question: 'What departure does the NEP 2020 make regarding language?',
+        questionTranslations: { hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Making English compulsory', 'Emphasising mother-tongue education in early years', 'Removing Hindi requirement', 'Introducing Sanskrit'],
+        correctAnswer: 'Emphasising mother-tongue education in early years',
+        explanation: 'The passage says NEP "emphasises education in the mother tongue through the early years."',
+      },
+      {
+        id: 'c1-r5-q4',
+        type: 'multiple-choice',
+        question: 'What does the passage identify as the main barrier to NEP implementation?',
+        questionTranslations: { hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Student resistance', 'Fragmented governance between central and state authorities', 'Corporate opposition', 'Lack of technology'],
+        correctAnswer: 'Fragmented governance between central and state authorities',
+        explanation: 'The passage says "education governance is divided between central and state authorities, creating a fragmented system."',
+      },
+    ],
+  },
+  {
+    id: 'c1-read-06',
+    level: 'C1',
+    title: 'Linguistic Diversity and the Politics of Language in India',
+    content: `India's linguistic landscape is staggering in its complexity. The 2011 Census recorded 19,569 distinct languages and dialects, of which 121 had more than 10,000 speakers. The Eighth Schedule of the Constitution recognises 22 official languages, yet many communities feel their mother tongues remain marginalised in administrative, educational, and digital domains.
+
+The tension between Hindi and regional languages has been a persistent fault line in Indian politics. The anti-Hindi agitations in Tamil Nadu in the 1960s—during which students and protesters self-immolated—led to the indefinite continuation of English as an official language of the Union government alongside Hindi. This compromise acknowledged a fundamental reality: in a multilingual democracy, no single language can serve as a neutral lingua franca without alienating significant populations.
+
+The digital age has introduced new dimensions to this debate. While English dominates India's technology sector and global-facing economy, the explosion of vernacular content on platforms like YouTube, ShareChat, and Koo demonstrates that regional language users constitute the majority of India's internet population. Google's investment in Indian language AI and the development of large language models trained on Hindi, Tamil, Bengali, and other languages suggest that technology may eventually bridge the digital language divide.
+
+However, the economic dimension of language remains stark. English proficiency in India continues to correlate strongly with socioeconomic mobility. Studies by the Centre for Economic Data and Analysis show that English-speaking Indians earn, on average, 34% more than their non-English-speaking counterparts. This creates a paradox: while there is a democratic imperative to strengthen regional languages, the economic incentive structure overwhelmingly favours English.
+
+The NEP 2020's three-language formula attempts to navigate this terrain by encouraging proficiency in the mother tongue, Hindi or English, and a third language. Whether this policy can reconcile the competing claims of cultural identity, democratic inclusion, and economic aspiration remains one of independent India's most enduring challenges.`,
+    wordCount: 290,
+    topic: 'Language & Society',
+    indianContext: true,
+    vocabulary: ['staggering', 'marginalised', 'agitations', 'self-immolated', 'lingua franca', 'vernacular', 'correlate', 'socioeconomic', 'imperative', 'reconcile'],
+    questions: [
+      {
+        id: 'c1-r6-q1',
+        type: 'multiple-choice',
+        question: 'How many distinct languages and dialects did the 2011 Census record?',
+        questionTranslations: { hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['121', '1,652', '19,569', '22'],
+        correctAnswer: '19,569',
+        explanation: 'The passage says "The 2011 Census recorded 19,569 distinct languages and dialects."',
+      },
+      {
+        id: 'c1-r6-q2',
+        type: 'multiple-choice',
+        question: 'What led to English continuing as an official Union language?',
+        questionTranslations: { hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['A Supreme Court ruling', 'Anti-Hindi agitations in Tamil Nadu', 'A national referendum', 'British colonial legacy laws'],
+        correctAnswer: 'Anti-Hindi agitations in Tamil Nadu',
+        explanation: 'The passage connects the anti-Hindi agitations in Tamil Nadu to the "indefinite continuation of English."',
+      },
+      {
+        id: 'c1-r6-q3',
+        type: 'multiple-choice',
+        question: 'How much more do English-speaking Indians earn on average?',
+        questionTranslations: { hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['15% more', '25% more', '34% more', '50% more'],
+        correctAnswer: '34% more',
+        explanation: 'The passage says "English-speaking Indians earn, on average, 34% more."',
+      },
+      {
+        id: 'c1-r6-q4',
+        type: 'multiple-choice',
+        question: 'What is the NEP 2020 three-language formula?',
+        questionTranslations: { hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Hindi, English, and Sanskrit', 'Mother tongue, Hindi or English, and a third language', 'Hindi, English, and French', 'Regional language, Hindi, and computer science'],
+        correctAnswer: 'Mother tongue, Hindi or English, and a third language',
+        explanation: 'The passage describes it as "proficiency in the mother tongue, Hindi or English, and a third language."',
+      },
+    ],
+  },
+  {
+    id: 'c1-read-07',
+    level: 'C1',
+    title: 'The Informal Economy: India\'s Hidden Engine',
+    content: `Estimates suggest that India's informal sector—encompassing unregistered businesses, self-employed workers, casual labourers, and home-based producers—accounts for approximately 80% of total employment and contributes nearly 50% of the country's GDP. Yet this vast economic engine operates largely invisible to formal regulatory frameworks, tax systems, and social security mechanisms.
+
+The scale of informality is a direct consequence of India's development trajectory. Rapid economic growth since the 1991 liberalisation primarily benefited the organised corporate sector, which generates employment that is capital-intensive rather than labour-intensive. The much-anticipated structural transformation—where workers transition from low-productivity agriculture to high-productivity manufacturing—has been incomplete. Instead, workers have moved from agriculture into informal services: street vending, domestic work, construction labour, and small-scale trading.
+
+Demonetisation in 2016 and the implementation of the Goods and Services Tax (GST) in 2017 were partly motivated by the desire to formalise the economy. However, these policies had a disproportionately negative impact on informal workers who operated on cash transactions and lacked the digital infrastructure and accounting capacity to comply with GST requirements. The pandemic subsequently devastated the informal sector, with millions of migrant workers losing their livelihoods overnight during the lockdown—a humanitarian crisis that exposed the absence of any meaningful safety net.
+
+The challenge of formalisation is not merely administrative; it is fundamentally about redesigning economic incentives. For a street vendor in Varanasi or a construction worker in Gurgaon, the perceived costs of formal registration—taxation, regulatory compliance, and loss of flexibility—outweigh the benefits. Until the state can offer tangible returns for formalisation—accessible credit, insurance, skill development, and pension—the informal economy will continue to function as a parallel universe, sustaining lives but perpetuating vulnerability.
+
+The question facing Indian policymakers is not whether to formalise—the economic and humanitarian imperatives are clear—but how to do so without destroying the very livelihoods they seek to protect.`,
+    wordCount: 300,
+    topic: 'Economics & Policy',
+    indianContext: true,
+    vocabulary: ['encompassing', 'regulatory', 'trajectory', 'liberalisation', 'disproportionately', 'comply', 'humanitarian', 'tangible', 'perpetuating', 'imperatives'],
+    questions: [
+      {
+        id: 'c1-r7-q1',
+        type: 'multiple-choice',
+        question: 'What proportion of India\'s employment does the informal sector account for?',
+        questionTranslations: { hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['About 40%', 'About 60%', 'About 80%', 'About 95%'],
+        correctAnswer: 'About 80%',
+        explanation: 'The passage says the informal sector "accounts for approximately 80% of total employment."',
+      },
+      {
+        id: 'c1-r7-q2',
+        type: 'multiple-choice',
+        question: 'Why has India\'s structural transformation been incomplete, according to the passage?',
+        questionTranslations: { hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Workers moved to agriculture', 'Economic growth was capital-intensive, not labour-intensive', 'Manufacturing exports declined', 'The service sector collapsed'],
+        correctAnswer: 'Economic growth was capital-intensive, not labour-intensive',
+        explanation: 'The passage says growth "primarily benefited the organised corporate sector, which generates employment that is capital-intensive rather than labour-intensive."',
+      },
+      {
+        id: 'c1-r7-q3',
+        type: 'multiple-choice',
+        question: 'How did demonetisation affect informal workers?',
+        questionTranslations: { hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['It helped them save money', 'It had a disproportionately negative impact on them', 'It created new jobs', 'It had no effect'],
+        correctAnswer: 'It had a disproportionately negative impact on them',
+        explanation: 'The passage says these policies "had a disproportionately negative impact on informal workers."',
+      },
+      {
+        id: 'c1-r7-q4',
+        type: 'multiple-choice',
+        question: 'According to the passage, what must the state offer to encourage formalisation?',
+        questionTranslations: { hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Tax holidays', 'Accessible credit, insurance, skill development, and pension', 'Free office space', 'Government contracts'],
+        correctAnswer: 'Accessible credit, insurance, skill development, and pension',
+        explanation: 'The passage says the state must offer "accessible credit, insurance, skill development, and pension."',
+      },
+    ],
+  },
+  {
+    id: 'c1-read-08',
+    level: 'C1',
+    title: 'The Ethics of Artificial Intelligence in Indian Healthcare',
+    content: `India's healthcare system serves 1.4 billion people with roughly one doctor for every 1,000 citizens—well below the WHO-recommended ratio of one to 250. In this context of chronic resource scarcity, artificial intelligence has emerged as a potentially transformative tool, capable of extending diagnostic capability to areas where specialist physicians simply do not exist.
+
+AI diagnostic systems developed by Indian startups like Qure.ai, Niramai, and SigTuple are already being deployed in government hospitals and primary health centres. Qure.ai's chest X-ray analysis tool, for instance, can detect tuberculosis, pneumonia, and lung nodules with accuracy rates approaching those of experienced radiologists. In a country where tuberculosis kills over 300,000 people annually—many because of delayed or missed diagnoses—such technology is not merely convenient but life-saving.
+
+Niramai's thermal imaging system for breast cancer screening represents another breakthrough. Traditional mammography requires expensive equipment and trained technicians, making it inaccessible in rural areas. Niramai's portable, radiation-free device uses an AI algorithm to identify abnormalities from thermal images, enabling early detection in settings where conventional screening is unfeasible.
+
+Yet the deployment of AI in healthcare raises profound ethical questions that India has barely begun to address. The algorithms are trained primarily on datasets from Western populations, whose disease manifestations, genetic profiles, and physiological norms may differ significantly from Indian demographics. A skin cancer detection algorithm trained predominantly on Caucasian skin, for example, may perform poorly on darker Indian skin tones. This bias is not merely theoretical—it has been documented in multiple studies and represents a genuine risk of harm.
+
+Data privacy presents another challenge. Medical records fed into AI systems contain the most intimate details of a person's life. India's Digital Personal Data Protection Act provides a framework, but its enforcement mechanisms remain untested in the healthcare domain. The question of informed consent—whether patients genuinely understand that their medical data may be processed by algorithms—is particularly acute in rural settings where digital literacy remains low.
+
+The path forward likely requires a regulatory framework specifically designed for AI in healthcare—one that mandates algorithmic transparency, requires validation on Indian datasets, and establishes clear accountability when AI systems produce incorrect diagnoses. Without such guardrails, the promise of AI-enhanced healthcare risks becoming another instance of technological advancement that benefits some while leaving others behind.`,
+    wordCount: 340,
+    topic: 'Technology & Ethics',
+    indianContext: true,
+    vocabulary: ['chronic', 'diagnostic', 'deployed', 'radiologists', 'mammography', 'algorithm', 'manifestations', 'physiological', 'accountability', 'guardrails'],
+    questions: [
+      {
+        id: 'c1-r8-q1',
+        type: 'multiple-choice',
+        question: 'What is India\'s approximate doctor-to-population ratio?',
+        questionTranslations: { hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['1:250', '1:500', '1:1,000', '1:2,000'],
+        correctAnswer: '1:1,000',
+        explanation: 'The passage says "roughly one doctor for every 1,000 citizens."',
+      },
+      {
+        id: 'c1-r8-q2',
+        type: 'multiple-choice',
+        question: 'What is the key advantage of Niramai\'s breast cancer screening system?',
+        questionTranslations: { hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['It is cheaper than an X-ray', 'It is portable, radiation-free, and works in rural settings', 'It requires no AI', 'It was developed by the government'],
+        correctAnswer: 'It is portable, radiation-free, and works in rural settings',
+        explanation: 'The passage describes it as a "portable, radiation-free device" enabling "early detection in settings where conventional screening is unfeasible."',
+      },
+      {
+        id: 'c1-r8-q3',
+        type: 'multiple-choice',
+        question: 'Why might Western-trained AI algorithms underperform in India?',
+        questionTranslations: { hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Indian computers are slower', 'Indian disease manifestations, genetics, and skin tones differ', 'India lacks internet connectivity', 'Doctors refuse to use them'],
+        correctAnswer: 'Indian disease manifestations, genetics, and skin tones differ',
+        explanation: 'The passage notes that "disease manifestations, genetic profiles, and physiological norms may differ significantly from Indian demographics."',
+      },
+      {
+        id: 'c1-r8-q4',
+        type: 'multiple-choice',
+        question: 'What does the author argue is needed for responsible AI deployment in healthcare?',
+        questionTranslations: { hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+        options: ['Banning AI in rural areas', 'A specific regulatory framework requiring transparency and Indian dataset validation', 'Replacing all doctors with AI', 'Free AI access for everyone'],
+        correctAnswer: 'A specific regulatory framework requiring transparency and Indian dataset validation',
+        explanation: 'The passage calls for "a regulatory framework specifically designed for AI in healthcare—one that mandates algorithmic transparency, requires validation on Indian datasets."',
+      },
+    ],
+  },
 ];
 
 export function getReadingPassagesByLevel(level: string): ReadingPassage[] {
