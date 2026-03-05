@@ -38,14 +38,15 @@ export default function ReadingPage() {
 
   const handleAnswer = (correct: boolean) => {
     if (correct) setScore((s) => s + 1);
-    setTimeout(() => {
-      if (questionIndex < activePassage!.questions.length - 1) {
-        setQuestionIndex((i) => i + 1);
-        setQuizKey((k) => k + 1);
-      } else {
-        setPhase('result');
-      }
-    }, 1500);
+  };
+
+  const handleNext = () => {
+    if (questionIndex < activePassage!.questions.length - 1) {
+      setQuestionIndex((i) => i + 1);
+      setQuizKey((k) => k + 1);
+    } else {
+      setPhase('result');
+    }
   };
 
   const handleBack = () => {
@@ -173,6 +174,7 @@ export default function ReadingPage() {
             correctAnswer={question.correctAnswer}
             explanation={question.explanation}
             onAnswer={handleAnswer}
+            onNext={handleNext}
           />
         </div>
       </div>
