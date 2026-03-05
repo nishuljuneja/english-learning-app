@@ -38,7 +38,7 @@ export default function VocabularyPage() {
           <div>
             <h1 className="text-2xl font-bold text-gray-800">{t('nav.vocabulary', uiLanguage)}</h1>
             <p className="text-gray-500 text-sm">
-              {allVocabulary.length} words from Oxford 3000
+              {allVocabulary.length} words from Oxford 3000 + 5000
             </p>
           </div>
         </div>

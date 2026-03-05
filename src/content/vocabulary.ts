@@ -1,9 +1,10 @@
 import { type VocabularyWord, type CEFRLevel, type SupportedLanguage } from '../lib/firestore';
 import oxfordData from './oxford-3000.json';
+import oxford5000Extra from './oxford-5000-extra.json';
 
 // ------------------------------------------------------------------
-// Oxford 3000 word list (parsed from official PDF)
-// Each entry has: word, pos (part of speech), level (CEFR A1-B2)
+// Oxford 3000 (A1-B2) + Oxford 5000 extra (B2-C1) word lists
+// Combined: ~5300 unique words across all CEFR levels
 // ------------------------------------------------------------------
 
 interface OxfordEntry {
@@ -32,8 +33,17 @@ function oxfordToVocabularyWord(entry: OxfordEntry, index: number): VocabularyWo
   };
 }
 
-// Build the full Oxford 3000 vocabulary array
-const oxfordVocabulary: VocabularyWord[] = (oxfordData as OxfordEntry[]).map(oxfordToVocabularyWord);
+// Build vocabulary arrays from both Oxford lists
+const oxford3000: VocabularyWord[] = (oxfordData as OxfordEntry[]).map(oxfordToVocabularyWord);
+
+const oxford5000: VocabularyWord[] = (oxford5000Extra as OxfordEntry[]).map((entry, index) => ({
+  ...oxfordToVocabularyWord(entry, index),
+  id: `ox5k-${index}`,
+  oxfordList: 'B' as const,
+}));
+
+// Combined Oxford vocabulary (3000 + 2000 extra = ~5300 unique words)
+const oxfordVocabulary: VocabularyWord[] = [...oxford3000, ...oxford5000];
 
 // Hand-crafted sample vocabulary with full translations (Indian market focus)
 
@@ -184,7 +194,7 @@ export const sampleVocabulary: VocabularyWord[] = [
   },
 ];
 
-// ---------- Merged vocabulary: sample (detailed) + Oxford 3000 ----------
+// ---------- Merged vocabulary: sample (detailed) + Oxford 3000 + Oxford 5000 ----------
 
 // Build a lookup of sample words so we can overlay rich data on the Oxford list
 const sampleLookup = new Map(sampleVocabulary.map((w) => [w.word.toLowerCase(), w]));
@@ -222,9 +232,8 @@ export function searchVocabulary(query: string): VocabularyWord[] {
   );
 }
 
-export { allVocabulary, oxfordVocabulary };
+export { allVocabulary, oxfordVocabulary, oxford3000, oxford5000 };
 
-// This function will be used to import the Oxford 5000 word lists
 export function formatOxfordWord(
   word: string,
   meaning: string,
