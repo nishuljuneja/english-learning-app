@@ -7,6 +7,7 @@ import { allVocabulary, getVocabularyByLevel } from '@/content/vocabulary';
 import { Flashcard, LevelBadge, FillBlank, MultipleChoice, ScoreCard, ProgressBar } from '@/components/Exercises';
 import { BookOpen, Search, Filter } from 'lucide-react';
 import type { CEFRLevel, VocabularyWord } from '@/lib/firestore';
+import { updateUserProfile, addXP, updateStreak } from '@/lib/firestore';
 
 /**
  * Try to find the target word (or common inflections) inside a sentence.
@@ -84,7 +85,7 @@ type Mode = 'browse' | 'flashcards' | 'fill-blanks' | 'quiz';
 const DRILL_SIZE = 10; // questions per round
 
 export default function VocabularyPage() {
-  const { profile, uiLanguage } = useAppStore();
+  const { profile, uiLanguage, setProfile } = useAppStore();
   const currentLevel = profile?.currentLevel || 'A1';
   const [selectedLevel, setSelectedLevel] = useState<CEFRLevel>(currentLevel);
   const [mode, setMode] = useState<Mode>('browse');
@@ -147,19 +148,58 @@ export default function VocabularyPage() {
     setShuffleSeed((s) => s + 1);
   }, []);
 
-  const advanceDrill = useCallback(
+  // Track answer correctness, advance only when user clicks Next
+  const handleDrillAnswer = useCallback(
     (correct: boolean) => {
       if (correct) setDrillScore((s) => s + 1);
-      setTimeout(() => {
-        if (drillIndex + 1 >= drillWords.length) {
-          setDrillDone(true);
-        } else {
-          setDrillIndex((i) => i + 1);
-          setDrillKey((k) => k + 1);
-        }
-      }, 1200);
     },
-    [drillIndex, drillWords.length]
+    []
+  );
+
+  const advanceDrill = useCallback(
+    () => {
+      if (drillIndex + 1 >= drillWords.length) {
+        setDrillDone(true);
+        // Persist vocabulary progress
+        if (profile) {
+          const finalScore = drillScore; // score already updated by handleDrillAnswer
+          const pct = Math.round((finalScore / drillWords.length) * 100);
+          const newVocabScore = Math.max(profile.skillScores.vocabulary, pct);
+          const updates = {
+            wordsLearned: profile.wordsLearned + drillWords.length,
+            skillScores: { ...profile.skillScores, vocabulary: newVocabScore },
+          };
+          updateUserProfile(profile.uid, updates).catch(() => {});
+          addXP(profile.uid, finalScore * 5).catch(() => {});
+          updateStreak(profile.uid).catch(() => {});
+          setProfile({ ...profile, ...updates, xp: profile.xp + finalScore * 5 });
+        }
+      } else {
+        setDrillIndex((i) => i + 1);
+        setDrillKey((k) => k + 1);
+      }
+    },
+    [drillIndex, drillWords.length, drillScore, profile, setProfile]
+  );
+
+  // Track flashcard progress
+  const handleFlashcardRate = useCallback(
+    (quality: number) => {
+      if (profile) {
+        const newWordsLearned = profile.wordsLearned + 1;
+        const updates = { wordsLearned: newWordsLearned };
+        updateUserProfile(profile.uid, updates).catch(() => {});
+        updateStreak(profile.uid).catch(() => {});
+        addXP(profile.uid, quality >= 3 ? 5 : 2).catch(() => {});
+        setProfile({ ...profile, ...updates, xp: profile.xp + (quality >= 3 ? 5 : 2) });
+      }
+      if (flashcardIndex < flashcardWords.length - 1) {
+        setFlashcardIndex(flashcardIndex + 1);
+      } else {
+        setFlashcardIndex(0);
+      }
+    },
+    [profile, setProfile, flashcardIndex, flashcardWords.length]
   );
 
   const switchMode = (m: Mode) => {
@@ -251,14 +291,7 @@ export default function VocabularyPage() {
             pronunciation={currentWord.pronunciation}
             partOfSpeech={currentWord.partOfSpeech}
             example={currentWord.example}
-            onRate={(quality) => {
-              // TODO: Save spaced repetition progress
-              if (flashcardIndex < flashcardWords.length - 1) {
-                setFlashcardIndex(flashcardIndex + 1);
-              } else {
-                setFlashcardIndex(0);
-              }
-            }}
+            onRate={handleFlashcardRate}
           />
         </div>
       )}
@@ -295,7 +328,8 @@ export default function VocabularyPage() {
                       definition={w.meaning[uiLanguage] || w.meaning.en}
                       partOfSpeech={w.partOfSpeech}
                       explanation={`${w.word} — ${w.meaning[uiLanguage] || w.meaning.en}${w.example ? `\nExample: "${w.example}"` : ''}`}
-                      onAnswer={advanceDrill}
+                      onAnswer={handleDrillAnswer}
+                      onNext={advanceDrill}
                     />
                   );
                 })()}
@@ -334,7 +368,8 @@ export default function VocabularyPage() {
                       ? `Example: "${drillWords[drillIndex].example}"`
                       : undefined
                   }
-                  onAnswer={advanceDrill}
+                  onAnswer={handleDrillAnswer}
+                  onNext={advanceDrill}
                 />
               </div>
             </>

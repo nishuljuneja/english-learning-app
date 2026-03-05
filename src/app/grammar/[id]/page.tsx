@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { useAppStore } from '@/lib/store';
 import { t } from '@/lib/i18n';
@@ -8,17 +8,19 @@ import { getGrammarLessonById } from '@/content/grammar-lessons';
 import { MultipleChoice, FillBlank, ScoreCard, ProgressBar } from '@/components/Exercises';
 import { ArrowLeft, BookOpen } from 'lucide-react';
 import Link from 'next/link';
+import { updateUserProfile, addXP, saveLessonProgress, updateStreak } from '@/lib/firestore';
 
 export default function GrammarLessonPage() {
   const params = useParams();
   const router = useRouter();
-  const { uiLanguage } = useAppStore();
+  const { uiLanguage, profile, setProfile } = useAppStore();
   const lessonId = params.id as string;
   const lesson = getGrammarLessonById(lessonId);
 
   const [phase, setPhase] = useState<'learn' | 'practice' | 'result'>('learn');
   const [exerciseIndex, setExerciseIndex] = useState(0);
   const [score, setScore] = useState(0);
+  const [answered, setAnswered] = useState(false); // true once current question is answered
 
   if (!lesson) {
     return (
@@ -109,6 +111,40 @@ export default function GrammarLessonPage() {
     );
   }
 
+  // Advance to next exercise (called by the user via Next button)
+  const advanceExercise = useCallback(() => {
+    setAnswered(false);
+    if (exerciseIndex < exercises.length - 1) {
+      setExerciseIndex(exerciseIndex + 1);
+    } else {
+      setPhase('result');
+      // Persist progress
+      if (profile) {
+        const pct = Math.round((score / exercises.length) * 100);
+        const newGrammarScore = Math.max(profile.skillScores.grammar, pct);
+        const updates = {
+          lessonsCompleted: profile.lessonsCompleted + 1,
+          skillScores: { ...profile.skillScores, grammar: newGrammarScore },
+        };
+        updateUserProfile(profile.uid, updates).catch(() => {});
+        addXP(profile.uid, score * 10).catch(() => {});
+        updateStreak(profile.uid).catch(() => {});
+        saveLessonProgress(profile.uid, {
+          lessonId: lessonId,
+          lessonType: 'grammar',
+          userId: profile.uid,
+          score: pct,
+          timeSpentSeconds: 0,
+          attempts: 1,
+          bestScore: pct,
+          completed: pct >= 70,
+        }).catch(() => {});
+        // Update local store immediately
+        setProfile({ ...profile, ...updates, xp: profile.xp + score * 10 });
+      }
+    }
+  }, [exerciseIndex, exercises.length, score, profile, lessonId, setProfile]);
+
   // Practice Phase
   if (phase === 'practice' && currentExercise) {
     const explanation = currentExercise.explanationTranslations[uiLanguage] || currentExercise.explanation;
@@ -134,14 +170,9 @@ export default function GrammarLessonPage() {
             explanation={explanation}
             onAnswer={(correct) => {
               if (correct) setScore(score + 1);
-              setTimeout(() => {
-                if (exerciseIndex < exercises.length - 1) {
-                  setExerciseIndex(exerciseIndex + 1);
-                } else {
-                  setPhase('result');
-                }
-              }, 2000);
+              setAnswered(true);
             }}
+            onNext={advanceExercise}
           />
         )}
 
@@ -153,14 +184,9 @@ export default function GrammarLessonPage() {
             explanation={explanation}
             onAnswer={(correct) => {
               if (correct) setScore(score + 1);
-              setTimeout(() => {
-                if (exerciseIndex < exercises.length - 1) {
-                  setExerciseIndex(exerciseIndex + 1);
-                } else {
-                  setPhase('result');
-                }
-              }, 2000);
+              setAnswered(true);
             }}
+            onNext={advanceExercise}
           />
         )}
 
@@ -172,14 +198,9 @@ export default function GrammarLessonPage() {
             explanation={explanation}
             onAnswer={(correct) => {
               if (correct) setScore(score + 1);
-              setTimeout(() => {
-                if (exerciseIndex < exercises.length - 1) {
-                  setExerciseIndex(exerciseIndex + 1);
-                } else {
-                  setPhase('result');
-                }
-              }, 2000);
+              setAnswered(true);
             }}
+            onNext={advanceExercise}
           />
         )}
       </div>

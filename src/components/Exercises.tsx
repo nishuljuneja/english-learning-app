@@ -82,9 +82,11 @@ interface MultipleChoiceProps {
   correctAnswer: string;
   explanation?: string;
   onAnswer: (correct: boolean) => void;
+  /** If provided, show a "Next" button instead of auto-advancing */
+  onNext?: () => void;
 }
 
-export function MultipleChoice({ question, options, correctAnswer, explanation, onAnswer }: MultipleChoiceProps) {
+export function MultipleChoice({ question, options, correctAnswer, explanation, onAnswer, onNext }: MultipleChoiceProps) {
   const [selected, setSelected] = useState<string | null>(null);
   const [showResult, setShowResult] = useState(false);
   const { uiLanguage } = useAppStore();
@@ -143,6 +145,15 @@ export function MultipleChoice({ question, options, correctAnswer, explanation, 
           <p className="text-sm text-gray-600">{explanation}</p>
         </div>
       )}
+
+      {showResult && onNext && (
+        <button
+          onClick={onNext}
+          className="mt-4 w-full py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2"
+        >
+          Next <ArrowRight className="w-4 h-4" />
+        </button>
+      )}
     </div>
   );
 }
@@ -156,9 +167,11 @@ interface FillBlankProps {
   definition?: string; // shown as clue
   partOfSpeech?: string;
   onAnswer: (correct: boolean) => void;
+  /** If provided, show a "Next" button instead of auto-advancing */
+  onNext?: () => void;
 }
 
-export function FillBlank({ question, correctAnswer, acceptedAnswers, explanation, definition, partOfSpeech, onAnswer }: FillBlankProps) {
+export function FillBlank({ question, correctAnswer, acceptedAnswers, explanation, definition, partOfSpeech, onAnswer, onNext }: FillBlankProps) {
   const [answer, setAnswer] = useState('');
   const [showResult, setShowResult] = useState(false);
   const [hintRevealed, setHintRevealed] = useState(0); // 0 = none, 1 = first letter, 2 = two letters
@@ -267,6 +280,15 @@ export function FillBlank({ question, correctAnswer, acceptedAnswers, explanatio
           </p>
           {explanation && <p className="text-sm text-gray-600">{explanation}</p>}
         </div>
+      )}
+
+      {showResult && onNext && (
+        <button
+          onClick={onNext}
+          className="w-full py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2"
+        >
+          Next <ArrowRight className="w-4 h-4" />
+        </button>
       )}
     </div>
   );
