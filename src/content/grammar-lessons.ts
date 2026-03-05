@@ -922,6 +922,530 @@ who → लोग, which → चीज़ें, where → जगह, whose → 
       { id: 'b2-g2-ex3', type: 'multiple-choice', question: 'The restaurant _____ we had dinner was fantastic.', options: ['who', 'which', 'where', 'whose'], correctAnswer: 'where', explanation: '"where" for places.', explanationTranslations: { hi: 'जगहों के लिए "where".', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
     ],
   },
+
+  // ==================== A1: PRONOUNS ====================
+  {
+    id: 'a1-gram-03',
+    level: 'A1',
+    title: 'Pronouns: I, You, He, She, It, We, They',
+    titleTranslations: { hi: 'सर्वनाम: I, You, He, She, It, We, They', ta: 'பிரதிபெயர்கள்', te: 'సర్వనామాలు', bn: 'সর্বনাম', mr: 'सर्वनामे', kn: 'ಸರ್ವನಾಮ', ml: 'സർവ്വനാമം', gu: 'સર્વનામ', pa: 'ਪੜਨਾਂਵ', od: 'ସର୍ବନାମ', en: 'Pronouns: I, You, He, She, It, We, They' },
+    description: 'Learn personal pronouns — subject, object, and possessive forms.',
+    descriptionTranslations: { hi: 'व्यक्तिवाचक सर्वनाम सीखें — कर्ता, कर्म और अधिकारवाचक रूप।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: 'Learn personal pronouns — subject, object, and possessive forms.' },
+    order: 3,
+    content: {
+      explanation: `Pronouns replace nouns so we don't repeat the same word.
+
+**Subject pronouns** (who does the action):
+I, you, he, she, it, we, they
+- **I** am a student. **She** is my sister. **They** live in Delhi.
+
+**Object pronouns** (who receives the action):
+me, you, him, her, it, us, them
+- Give **me** the book. I called **her**. Tell **them** to come.
+
+**Possessive adjectives** (ownership before a noun):
+my, your, his, her, its, our, their
+- **My** name is Ravi. **Their** house is big.
+
+**Possessive pronouns** (ownership without a noun):
+mine, yours, his, hers, ours, theirs
+- This bag is **mine**. That pen is **yours**.`,
+      explanationTranslations: { hi: `सर्वनाम संज्ञा की जगह लेते हैं।
+
+**कर्ता:** I, you, he, she, it, we, they
+**कर्म:** me, you, him, her, it, us, them
+**अधिकारवाचक (संज्ञा से पहले):** my, your, his, her, its, our, their
+**अधिकारवाचक (अकेला):** mine, yours, his, hers, ours, theirs`, ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+      examples: [
+        { english: 'She is my best friend. I met her in school.', translations: { hi: 'वह मेरी सबसे अच्छी दोस्त है। मैं उससे स्कूल में मिला।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'She ... her' },
+        { english: 'This is our house. It is ours.', translations: { hi: 'यह हमारा घर है। यह हमारा है।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'our ... ours' },
+      ],
+      tips: [
+        { text: '💡 Indian English common error: "Myself Ravi" is not correct! Say "My name is Ravi" or "I am Ravi."', translations: { hi: '💡 "Myself Ravi" गलत है! "My name is Ravi" या "I am Ravi" कहें।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      ],
+    },
+    exercises: [
+      { id: 'a1-g3-ex1', type: 'multiple-choice', question: 'Priya is a doctor. _____ works at AIIMS.', options: ['He', 'She', 'It', 'They'], correctAnswer: 'She', explanation: 'Priya is female → She.', explanationTranslations: { hi: 'Priya महिला है → She.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'a1-g3-ex2', type: 'fill-blank', question: 'Please give _____ the keys. (I → object form)', correctAnswer: 'me', explanation: 'Object form of "I" is "me".', explanationTranslations: { hi: '"I" का कर्म रूप "me" है।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'a1-g3-ex3', type: 'multiple-choice', question: 'This is not your bag. It is _____.', options: ['my', 'me', 'mine', 'I'], correctAnswer: 'mine', explanation: 'Without a noun after it → possessive pronoun "mine".', explanationTranslations: { hi: 'बाद में संज्ञा नहीं → "mine".', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'a1-g3-ex4', type: 'correct-error', question: 'Find the error: "Myself is Rahul."', correctAnswer: 'My name is Rahul.', explanation: '"Myself" cannot be subject. Use "My name is..." or "I am..."', explanationTranslations: { hi: '"Myself" कर्ता नहीं बन सकता। "My name is..." या "I am..." कहें।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+    ],
+  },
+
+  // ==================== A1: SINGULAR & PLURAL NOUNS ====================
+  {
+    id: 'a1-gram-04',
+    level: 'A1',
+    title: 'Singular and Plural Nouns',
+    titleTranslations: { hi: 'एकवचन और बहुवचन संज्ञा', ta: 'ஒருமை பன்மை', te: 'ఏకవచనం బహువచనం', bn: 'একবচন বহুবচন', mr: 'एकवचन बहुवचन', kn: 'ಏಕವಚನ ಬಹುವಚನ', ml: 'ഏകവചനം ബഹുവചനം', gu: 'એકવચન બહુવચન', pa: 'ਇਕਵਚਨ ਬਹੁਵਚਨ', od: 'ଏକବଚନ ବହୁବଚନ', en: 'Singular and Plural Nouns' },
+    description: 'Learn how to make nouns plural — regular and irregular forms.',
+    descriptionTranslations: { hi: 'संज्ञाओं को बहुवचन बनाना सीखें — नियमित और अनियमित।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+    order: 4,
+    content: {
+      explanation: `**Singular** = one thing. **Plural** = more than one.
+
+**Regular rules:**
+- Most nouns: add **-s** → book → books, pen → pens
+- Ending in s, sh, ch, x, z: add **-es** → bus → buses, dish → dishes
+- Ending in consonant + y: change y to **-ies** → city → cities, baby → babies
+- Ending in f/fe: change to **-ves** → knife → knives, leaf → leaves
+
+**Irregular plurals** (no rules — memorise!):
+- man → men, woman → women, child → children
+- tooth → teeth, foot → feet, mouse → mice
+- person → people, fish → fish, sheep → sheep
+
+**Uncountable nouns** (no plural!):
+- water, rice, information, advice, furniture, luggage
+- ❌ "informations" ❌ "furnitures" ❌ "luggages"`,
+      explanationTranslations: { hi: `**Singular** = एक। **Plural** = एक से ज़्यादा।
+
+**नियमित:** -s जोड़ें, -es (s/sh/ch/x/z पर), -ies (consonant + y), -ves (f/fe)
+**अनियमित:** man→men, child→children, tooth→teeth
+**अगणनीय (बहुवचन नहीं):** water, rice, information, advice`, ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+      examples: [
+        { english: 'There are three children in the family.', translations: { hi: 'परिवार में तीन बच्चे हैं।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'children' },
+        { english: 'She bought two knives and five dishes.', translations: { hi: 'उसने दो चाकू और पांच बर्तन खरीदे।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'knives ... dishes' },
+      ],
+      tips: [
+        { text: '💡 Very common Indian English error: "I need some informations" — "information" is uncountable! Say "some information" or "pieces of information."', translations: { hi: '💡 "informations" गलत है! "information" अगणनीय है। "some information" कहें।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      ],
+    },
+    exercises: [
+      { id: 'a1-g4-ex1', type: 'fill-blank', question: 'There are many _____ in the park. (child)', correctAnswer: 'children', explanation: '"child" is irregular → "children".', explanationTranslations: { hi: '"child" अनियमित है → "children".', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'a1-g4-ex2', type: 'multiple-choice', question: 'Which is the correct plural of "city"?', options: ['citys', 'cities', 'cityes', 'city'], correctAnswer: 'cities', explanation: 'Consonant + y → change y to ies: cities.', explanationTranslations: { hi: 'Consonant + y → y को ies में बदलें: cities.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'a1-g4-ex3', type: 'correct-error', question: 'Find the error: "She gave me two advices."', correctAnswer: 'She gave me two pieces of advice.', explanation: '"advice" is uncountable. Use "pieces of advice".', explanationTranslations: { hi: '"advice" अगणनीय है। "pieces of advice" कहें।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'a1-g4-ex4', type: 'multiple-choice', question: 'The _____ are grazing in the field.', options: ['sheeps', 'sheep', 'sheepes', 'sheepen'], correctAnswer: 'sheep', explanation: '"sheep" stays the same in plural.', explanationTranslations: { hi: '"sheep" बहुवचन में भी "sheep" ही रहता है।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+    ],
+  },
+
+  // ==================== A1: PRESENT SIMPLE & CONTINUOUS ====================
+  {
+    id: 'a1-gram-05',
+    level: 'A1',
+    title: 'Present Simple and Present Continuous',
+    titleTranslations: { hi: 'सामान्य वर्तमान और वर्तमान काल', ta: 'நிகழ்கால எளிய & தொடர்', te: 'ప్రెజెంట్ సింపుల్ & కంటిన్యూయస్', bn: 'সাধারণ বর্তমান ও চলমান বর্তমান', mr: 'साधा वर्तमान व चालू वर्तमान', kn: 'ವರ್ತಮಾನ ಸರಳ & ನಿರಂತರ', ml: 'നിലവിലെ ലളിത & തുടർ', gu: 'વર્તમાન સાદો & ચાલુ', pa: 'ਵਰਤਮਾਨ ਸਾਧਾ & ਚਾਲੂ', od: 'ସରଳ ବର୍ତ୍ତମାନ & ଚାଲୁ', en: 'Present Simple and Present Continuous' },
+    description: 'Know when to use "I work" vs "I am working" — habits vs right now.',
+    descriptionTranslations: { hi: '"I work" vs "I am working" — आदत vs अभी, कब कौन सा इस्तेमाल करें।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+    order: 5,
+    content: {
+      explanation: `**Present Simple** → habits, facts, routines
+- I **work** in Bangalore.
+- She **drinks** chai every morning.
+- Water **boils** at 100°C.
+- Add -s/-es for he/she/it: He work**s**, She go**es**
+
+**Present Continuous** → happening RIGHT NOW or temporary
+- I **am working** from home today.
+- She **is cooking** dinner right now.
+- They **are watching** the cricket match.
+- Structure: am/is/are + verb + **-ing**
+
+**Key difference:**
+- "I **cook** dinner every day." (habit — always)
+- "I **am cooking** dinner now." (right now — this moment)
+
+**Signal words:**
+- Simple: always, usually, often, sometimes, every day/week
+- Continuous: now, right now, at the moment, currently, today`,
+      explanationTranslations: { hi: `**Present Simple** → आदतें, तथ्य, नियमित काम
+- I work in Bangalore. She drinks chai every morning.
+
+**Present Continuous** → अभी हो रहा है
+- I am working now. She is cooking dinner.
+
+**अंतर:** "I cook" (हमेशा) vs "I am cooking" (अभी)`, ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+      examples: [
+        { english: 'He takes the metro to work every day.', translations: { hi: 'वह हर दिन मेट्रो से ऑफिस जाता है।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'takes' },
+        { english: 'Shh! The baby is sleeping right now.', translations: { hi: 'शश! बच्चा अभी सो रहा है।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'is sleeping' },
+      ],
+      tips: [
+        { text: '💡 Common mistake in India: "I am living in Mumbai" when you mean permanently. If it\'s your home, say "I live in Mumbai." Use "am living" only for temporary stays.', translations: { hi: '💡 "I am living in Mumbai" — अगर स्थायी है तो "I live in Mumbai" कहें। "am living" अस्थायी के लिए।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      ],
+    },
+    exercises: [
+      { id: 'a1-g5-ex1', type: 'multiple-choice', question: 'She _____ to office by bus every day.', options: ['is going', 'goes', 'go', 'going'], correctAnswer: 'goes', explanation: '"every day" = habit → Present Simple. He/she/it + goes.', explanationTranslations: { hi: '"every day" = आदत → Present Simple.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'a1-g5-ex2', type: 'multiple-choice', question: 'Look! It _____ outside.', options: ['rains', 'is raining', 'rain', 'rained'], correctAnswer: 'is raining', explanation: '"Look!" = happening now → Present Continuous.', explanationTranslations: { hi: '"Look!" = अभी हो रहा है → Present Continuous.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'a1-g5-ex3', type: 'fill-blank', question: 'My father _____ tea, not coffee. (drink — habit)', correctAnswer: 'drinks', explanation: 'Habit + he/she/it → drinks (Present Simple with -s).', explanationTranslations: { hi: 'आदत + he/she/it → drinks.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'a1-g5-ex4', type: 'correct-error', question: 'Find the error: "I am knowing the answer."', correctAnswer: 'I know the answer.', explanation: '"know" is a state verb — it doesn\'t take continuous form.', explanationTranslations: { hi: '"know" स्थिति क्रिया है — continuous नहीं लेता।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+    ],
+  },
+
+  // ==================== A2: ADJECTIVES ====================
+  {
+    id: 'a2-gram-04',
+    level: 'A2',
+    title: 'Adjectives: Describing People and Things',
+    titleTranslations: { hi: 'विशेषण: लोगों और चीज़ों का वर्णन', ta: 'பெயரடைகள்', te: 'విశేషణాలు', bn: 'বিশেষণ', mr: 'विशेषणे', kn: 'ವಿಶೇಷಣ', ml: 'വിശേഷണം', gu: 'વિશેષણ', pa: 'ਵਿਸ਼ੇਸ਼ਣ', od: 'ବିଶେଷଣ', en: 'Adjectives: Describing People and Things' },
+    description: 'Use adjectives to describe size, colour, opinion, and more — in the right order.',
+    descriptionTranslations: { hi: 'आकार, रंग, राय आदि बताने के लिए विशेषणों का सही क्रम में उपयोग करें।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+    order: 4,
+    content: {
+      explanation: `Adjectives describe nouns. They come **before** the noun or **after** "be".
+
+**Before a noun:** a **tall** man, a **red** sari, **hot** chai
+**After "be":** The movie is **boring**. The food was **delicious**.
+
+**Adjective order** (when using multiple):
+Opinion → Size → Age → Shape → Colour → Origin → Material → Purpose
+- A **beautiful large old round brown Indian wooden dining** table
+- Simplified: "a beautiful big old brown table" — opinion first, then physical.
+
+**Common pairs:**
+- -ed = how YOU feel: I am bor**ed**. I am excit**ed**.
+- -ing = what CAUSES the feeling: The movie is bor**ing**. The news is excit**ing**.`,
+      explanationTranslations: { hi: `विशेषण संज्ञा का वर्णन करते हैं। संज्ञा **से पहले** या "be" **के बाद** आते हैं।
+
+**क्रम:** राय → आकार → उम्र → रंग → उत्पत्ति → सामग्री
+**-ed vs -ing:** bored = मुझे बोरियत हुई, boring = बोरिंग चीज़`, ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+      examples: [
+        { english: 'She wore a beautiful red silk sari.', translations: { hi: 'उसने एक सुंदर लाल रेशमी साड़ी पहनी।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'beautiful red silk' },
+        { english: 'The lecture was boring but the teacher was interested in the topic.', translations: { hi: 'व्याख्यान बोरिंग था लेकिन शिक्षक विषय में रुचि रखते थे।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'boring ... interested' },
+      ],
+      tips: [
+        { text: '💡 Don\'t confuse -ed and -ing: "I am boring" means YOU bore other people! "I am bored" means you feel boredom.', translations: { hi: '💡 "I am boring" = आप दूसरों को बोर करते हैं! "I am bored" = आपको बोरियत हो रही है।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      ],
+    },
+    exercises: [
+      { id: 'a2-g4-ex1', type: 'multiple-choice', question: 'The match was very _____. (It made us feel excited)', options: ['excited', 'exciting', 'excite', 'excites'], correctAnswer: 'exciting', explanation: 'The match causes excitement → -ing form.', explanationTranslations: { hi: 'मैच उत्साह का कारण है → -ing.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'a2-g4-ex2', type: 'fill-blank', question: 'She bought a _____ Indian cotton kurta. (beautiful)', correctAnswer: 'beautiful', explanation: 'Opinion adjective before origin and material.', explanationTranslations: { hi: 'राय विशेषण उत्पत्ति और सामग्री से पहले।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'a2-g4-ex3', type: 'correct-error', question: 'Find the error: "I am very interesting in cricket."', correctAnswer: 'I am very interested in cricket.', explanation: 'YOU feel it → -ed: "interested in". Not "interesting in".', explanationTranslations: { hi: 'आप महसूस करते हैं → -ed: "interested in".', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+    ],
+  },
+
+  // ==================== A2: ADVERBS ====================
+  {
+    id: 'a2-gram-05',
+    level: 'A2',
+    title: 'Adverbs: How, When, Where, How Often',
+    titleTranslations: { hi: 'क्रिया विशेषण: कैसे, कब, कहां, कितनी बार', ta: 'வினையுரிச்சொற்கள்', te: 'క్రియా విశేషణాలు', bn: 'ক্রিয়া বিশেষণ', mr: 'क्रियाविशेषण', kn: 'ಕ್ರಿಯಾವಿಶೇಷಣ', ml: 'ക്രിയാവിശേഷണം', gu: 'ક્રિયાવિશેષણ', pa: 'ਕਿਰਿਆ ਵਿਸ਼ੇਸ਼ਣ', od: 'କ୍ରିୟା ବିଶେଷଣ', en: 'Adverbs: How, When, Where, How Often' },
+    description: 'Modify verbs and adjectives — learn manner, frequency, time and place adverbs.',
+    descriptionTranslations: { hi: 'क्रियाओं और विशेषणों को संशोधित करें — तरीका, आवृत्ति, समय और स्थान।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+    order: 5,
+    content: {
+      explanation: `Adverbs describe HOW, WHEN, WHERE, or HOW OFTEN something happens.
+
+**Manner (how?):** Add **-ly** to adjective
+- slow → slowly, quick → quickly, careful → carefully
+- She speaks English **fluently**.
+- He drives **carefully** in the rain.
+
+**Frequency (how often?):** Position = before main verb, after "be"
+- always, usually, often, sometimes, rarely, never
+- I **always** drink chai in the morning.
+- She is **never** late for work.
+
+**Time (when?):** today, yesterday, tomorrow, soon, already, yet, still
+**Place (where?):** here, there, everywhere, outside, upstairs
+
+**Irregular adverbs (no -ly!):**
+- good → **well** (NOT goodly!)
+- fast → **fast** (NOT fastly!)
+- hard → **hard** (hardly = barely, different meaning!)`,
+      explanationTranslations: { hi: `क्रिया विशेषण बताते हैं कैसे, कब, कहां, कितनी बार।
+
+**तरीका:** adjective + ly → slowly, carefully
+**आवृत्ति:** always, usually, often, sometimes, never
+**अनियमित:** good → well, fast → fast`, ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+      examples: [
+        { english: 'She speaks Hindi fluently but writes English slowly.', translations: { hi: 'वह हिंदी धाराप्रवाह बोलती है लेकिन अंग्रेजी धीरे लिखती है।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'fluently ... slowly' },
+        { english: 'I usually take the 8 AM train.', translations: { hi: 'मैं आमतौर पर सुबह 8 बजे की ट्रेन लेता हूं।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'usually' },
+      ],
+      tips: [
+        { text: '💡 "He played good" is wrong! "Good" is an adjective. Say "He played well." Good describes nouns, well describes verbs.', translations: { hi: '💡 "He played good" गलत है! "He played well" कहें। Good = विशेषण, well = क्रिया विशेषण।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      ],
+    },
+    exercises: [
+      { id: 'a2-g5-ex1', type: 'fill-blank', question: 'She sings very _____. (beautiful)', correctAnswer: 'beautifully', explanation: 'Describing how she sings → adverb: beautifully.', explanationTranslations: { hi: 'कैसे गाती है → क्रिया विशेषण: beautifully.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'a2-g5-ex2', type: 'multiple-choice', question: 'He did _____ on the exam.', options: ['good', 'well', 'goodly', 'betterly'], correctAnswer: 'well', explanation: '"good" → "well" (irregular adverb).', explanationTranslations: { hi: '"good" → "well" (अनियमित)।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'a2-g5-ex3', type: 'multiple-choice', question: 'She is _____ late for class.', options: ['never', 'not', 'no', 'none'], correctAnswer: 'never', explanation: 'Frequency adverb after "be": She is never late.', explanationTranslations: { hi: '"be" के बाद frequency adverb: She is never late.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'a2-g5-ex4', type: 'correct-error', question: 'Find the error: "He runs very fastly."', correctAnswer: 'He runs very fast.', explanation: '"fast" is already an adverb. Don\'t add -ly!', explanationTranslations: { hi: '"fast" पहले से adverb है। -ly मत जोड़ें!', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+    ],
+  },
+
+  // ==================== A2: FUTURE TENSES ====================
+  {
+    id: 'a2-gram-06',
+    level: 'A2',
+    title: 'Future: Will, Going To, Present Continuous',
+    titleTranslations: { hi: 'भविष्य काल: Will, Going To, Present Continuous', ta: 'எதிர்காலம்', te: 'భవిష్యత్ కాలం', bn: 'ভবিষ্যৎ কাল', mr: 'भविष्यकाळ', kn: 'ಭವಿಷ್ಯತ್ ಕಾಲ', ml: 'ഭാവികാലം', gu: 'ભવિષ્ય કાળ', pa: 'ਭਵਿੱਖ ਕਾਲ', od: 'ଭବିଷ୍ୟତ କାଳ', en: 'Future: Will, Going To, Present Continuous' },
+    description: 'Three ways to talk about the future — and when to use each one.',
+    descriptionTranslations: { hi: 'भविष्य बताने के तीन तरीके — और कब कौन सा इस्तेमाल करें।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+    order: 6,
+    content: {
+      explanation: `**1. Will** → spontaneous decisions, predictions, promises
+- I think it **will rain** tomorrow.
+- "The phone is ringing!" — "I **will** get it."
+- I **will** always love you.
+
+**2. Going to** → plans already decided, evidence-based predictions
+- I **am going to** visit Goa next month. (already planned)
+- Look at those clouds! It **is going to** rain. (evidence)
+
+**3. Present Continuous** → fixed arrangements with time/place
+- I **am meeting** Priya at 5 PM tomorrow. (arranged, confirmed)
+- We **are flying** to Chennai on Friday.
+
+**Quick guide:**
+| Situation | Use |
+| Sudden decision | will |
+| Planned intention | going to |
+| Fixed arrangement | Present Continuous |`,
+      explanationTranslations: { hi: `**will** → अचानक फैसला, भविष्यवाणी, वादा
+**going to** → पहले से तय योजना, सबूत-आधारित भविष्यवाणी
+**Present Continuous** → पक्का arrangement (समय/जगह तय)`, ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+      examples: [
+        { english: 'I am going to learn coding this summer.', translations: { hi: 'मैं इस गर्मी में कोडिंग सीखने वाला हूं।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'am going to learn' },
+        { english: 'We are flying to Jaipur on Saturday.', translations: { hi: 'हम शनिवार को जयपुर उड़ रहे हैं।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'are flying' },
+      ],
+      tips: [
+        { text: '💡 In Indian English, "I will go tomorrow" is often used for everything. But if you\'ve already booked a ticket, "I am going tomorrow" or "I am going to go" is more accurate!', translations: { hi: '💡 अगर टिकट बुक हो चुकी है तो "I am going tomorrow" ज़्यादा सही है!', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      ],
+    },
+    exercises: [
+      { id: 'a2-g6-ex1', type: 'multiple-choice', question: '"Oh no, I forgot my wallet!" — "Don\'t worry, I _____ pay."', options: ['am going to', 'will', 'am paying', 'pay'], correctAnswer: 'will', explanation: 'Spontaneous decision → will.', explanationTranslations: { hi: 'अचानक फैसला → will.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'a2-g6-ex2', type: 'multiple-choice', question: 'We _____ visit the Taj Mahal next week. We already booked the hotel.', options: ['will', 'are going to', 'visit', 'visited'], correctAnswer: 'are going to', explanation: 'Already planned → going to.', explanationTranslations: { hi: 'पहले से तय → going to.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'a2-g6-ex3', type: 'fill-blank', question: 'I _____ dinner with my boss tomorrow at 7 PM. (have — fixed arrangement)', correctAnswer: 'am having', explanation: 'Fixed arrangement with time → Present Continuous.', explanationTranslations: { hi: 'पक्का arrangement → Present Continuous.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+    ],
+  },
+
+  // ==================== B1: MODAL VERBS ====================
+  {
+    id: 'b1-gram-03',
+    level: 'B1',
+    title: 'Modal Verbs: Can, Could, Must, Should, May, Might',
+    titleTranslations: { hi: 'Modal क्रियाएं: Can, Could, Must, Should, May, Might', ta: 'மாதிரி வினைச்சொற்கள்', te: 'మోడల్ వెర్బ్స్', bn: 'Modal ক্রিয়া', mr: 'Modal क्रियापदे', kn: 'ಮೋಡಲ್ ಕ್ರಿಯಾಪದ', ml: 'Modal ക്രിയകൾ', gu: 'Modal ક્રિયાપદ', pa: 'Modal ਕਿਰਿਆ', od: 'Modal କ୍ରିୟାପଦ', en: 'Modal Verbs' },
+    description: 'Express ability, permission, obligation, possibility and advice.',
+    descriptionTranslations: { hi: 'क्षमता, अनुमति, बाध्यता, संभावना और सलाह व्यक्त करें।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+    order: 3,
+    content: {
+      explanation: `Modal verbs come before the main verb (in base form). No -s, no -ing, no -ed!
+
+**Can** → ability, informal permission
+- I **can** speak three languages.
+- **Can** I sit here?
+
+**Could** → past ability, polite requests, possibility
+- I **could** swim when I was five.
+- **Could** you help me, please?
+
+**Must** → strong obligation (your own feeling), logical conclusion
+- I **must** study for the exam. (I feel it's necessary)
+- He **must** be at home. (I'm sure)
+
+**Have to** → external obligation (rules, laws)
+- You **have to** wear a helmet in India. (it's the law)
+
+**Should** → advice, recommendation
+- You **should** drink more water.
+
+**May / Might** → possibility (might = less sure)
+- It **may** rain today. (possible)
+- He **might** come to the party. (less certain)`,
+      explanationTranslations: { hi: `**Can** = क्षमता, अनौपचारिक अनुमति
+**Could** = भूतकाल की क्षमता, विनम्र अनुरोध
+**Must** = मजबूत बाध्यता, तार्किक निष्कर्ष
+**Have to** = बाहरी नियम
+**Should** = सलाह
+**May/Might** = संभावना`, ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+      examples: [
+        { english: 'You must carry your Aadhaar card for verification.', translations: { hi: 'सत्यापन के लिए आपको आधार कार्ड ले जाना होगा।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'must' },
+        { english: 'You should visit Kerala during the monsoon — it is beautiful!', translations: { hi: 'मानसून में केरल ज़रूर जाएं — बहुत सुंदर है!', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'should' },
+      ],
+      tips: [
+        { text: '💡 "Must" and "have to" are different! Must = your own feeling. Have to = external rule. "I must lose weight" (I want to) vs "I have to wear uniform" (school rule).', translations: { hi: '💡 Must = अपनी भावना। Have to = बाहरी नियम।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      ],
+    },
+    exercises: [
+      { id: 'b1-g3-ex1', type: 'multiple-choice', question: 'You _____ wear a helmet while riding a bike. (law)', options: ['should', 'might', 'have to', 'can'], correctAnswer: 'have to', explanation: 'External obligation (law) → have to.', explanationTranslations: { hi: 'बाहरी नियम (कानून) → have to.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'b1-g3-ex2', type: 'fill-blank', question: 'You _____ see a doctor. You look very sick. (advice)', correctAnswer: 'should', explanation: 'Giving advice → should.', explanationTranslations: { hi: 'सलाह देना → should.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'b1-g3-ex3', type: 'multiple-choice', question: 'Take an umbrella. It _____ rain later.', options: ['must', 'might', 'can', 'has to'], correctAnswer: 'might', explanation: 'Less certain possibility → might.', explanationTranslations: { hi: 'कम निश्चित संभावना → might.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'b1-g3-ex4', type: 'correct-error', question: 'Find the error: "She can to swim very well."', correctAnswer: 'She can swim very well.', explanation: 'After modals, use base verb — no "to"!', explanationTranslations: { hi: 'Modals के बाद base verb — "to" नहीं!', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+    ],
+  },
+
+  // ==================== B1: SUBJECT-VERB AGREEMENT ====================
+  {
+    id: 'b1-gram-04',
+    level: 'B1',
+    title: 'Subject-Verb Agreement',
+    titleTranslations: { hi: 'कर्ता-क्रिया सामंजस्य', ta: 'எழுவாய் பயனிலை இணக்கம்', te: 'కర్త-క్రియ ఏకీభావం', bn: 'কর্তা-ক্রিয়া সামঞ্জস্য', mr: 'कर्ता-क्रियापद सुसंगती', kn: 'ಕರ್ತೃ-ಕ್ರಿಯಾ ಹೊಂದಾಣಿಕೆ', ml: 'കർതൃ-ക്രിയ ഐക്യം', gu: 'કર્તા-ક્રિયા સંગતિ', pa: 'ਕਰਤਾ-ਕਿਰਿਆ ਸੰਗਤੀ', od: 'କର୍ତା-କ୍ରିୟା ସାମଞ୍ଜସ୍ୟ', en: 'Subject-Verb Agreement' },
+    description: 'Make sure your verb matches your subject — singular with singular, plural with plural.',
+    descriptionTranslations: { hi: 'सुनिश्चित करें कि क्रिया कर्ता से मेल खाए — एकवचन के साथ एकवचन, बहुवचन के साथ बहुवचन।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+    order: 4,
+    content: {
+      explanation: `The verb must agree with the subject in number (singular/plural).
+
+**Basic rule:** Singular subject → singular verb (with -s). Plural subject → plural verb (no -s).
+- The boy **runs**. The boys **run**.
+- She **has** a car. They **have** a car.
+
+**Tricky cases:**
+- **Everyone, someone, nobody, each** → SINGULAR
+  - Everyone **is** here. Each student **has** a book.
+- **The news, mathematics, physics** → SINGULAR (look plural but aren't!)
+  - The news **is** shocking.
+- **People, police, children** → PLURAL
+  - The police **are** investigating.
+- **Either...or / Neither...nor** → verb agrees with NEAREST subject
+  - Neither the students nor the teacher **was** ready.
+- **A lot of / some of / most of** → depends on the noun after "of"
+  - A lot of water **is** wasted. A lot of people **are** waiting.`,
+      explanationTranslations: { hi: `क्रिया को कर्ता से मिलना चाहिए।
+
+**मूल नियम:** Singular → -s (runs, has). Plural → no -s (run, have).
+**मुश्किल:** Everyone/each → singular. People/police → plural.
+**Either...or:** निकटतम कर्ता से मिलाएं।`, ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+      examples: [
+        { english: 'The news about the elections is surprising.', translations: { hi: 'चुनाव की खबर चौंकाने वाली है।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'news ... is' },
+        { english: 'Each of the players has to bring their own kit.', translations: { hi: 'हर खिलाड़ी को अपनी किट लानी होगी।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'Each ... has' },
+      ],
+      tips: [
+        { text: '💡 "The team are..." or "The team is..."? In Indian/British English, collective nouns can be plural when referring to individuals: "The team are arguing among themselves."', translations: { hi: '💡 भारतीय/ब्रिटिश अंग्रेजी में collective nouns व्यक्तियों के लिए plural हो सकते हैं।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      ],
+    },
+    exercises: [
+      { id: 'b1-g4-ex1', type: 'multiple-choice', question: 'Everyone in the class _____ excited about the trip.', options: ['is', 'are', 'were', 'be'], correctAnswer: 'is', explanation: '"Everyone" is always singular → is.', explanationTranslations: { hi: '"Everyone" हमेशा singular → is.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'b1-g4-ex2', type: 'fill-blank', question: 'Mathematics _____ my favourite subject.', correctAnswer: 'is', explanation: '"Mathematics" is singular despite ending in -s.', explanationTranslations: { hi: '"Mathematics" -s पर खत्म होने के बावजूद singular है।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'b1-g4-ex3', type: 'correct-error', question: 'Find the error: "The police has arrested the thief."', correctAnswer: 'The police have arrested the thief.', explanation: '"Police" is always plural → have.', explanationTranslations: { hi: '"Police" हमेशा plural → have.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+    ],
+  },
+
+  // ==================== B1: CONJUNCTIONS ====================
+  {
+    id: 'b1-gram-05',
+    level: 'B1',
+    title: 'Conjunctions: Connecting Ideas',
+    titleTranslations: { hi: 'समुच्चयबोधक: विचारों को जोड़ना', ta: 'இணைப்புச்சொற்கள்', te: 'సంయోజకాలు', bn: 'সংযোজক', mr: 'उभयान्वयी अव्यय', kn: 'ಸಂಯೋಜಕ', ml: 'സംയോജകം', gu: 'સંયોજક', pa: 'ਸੰਜੋਗੀ', od: 'ସଂଯୋଜକ', en: 'Conjunctions: Connecting Ideas' },
+    description: 'Link sentences and ideas using and, but, so, because, although, however, etc.',
+    descriptionTranslations: { hi: 'and, but, so, because, although, however आदि से वाक्य और विचार जोड़ें।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+    order: 5,
+    content: {
+      explanation: `**Coordinating** (join equal parts): and, but, or, so, yet, for, nor (FANBOYS)
+- I like tea **and** coffee.
+- She studied hard **but** failed the exam.
+- It was raining, **so** we stayed home.
+
+**Subordinating** (one part depends on the other):
+- **because / since / as** → reason: I stayed home **because** it rained.
+- **although / even though** → contrast: **Although** he was tired, he kept working.
+- **if / unless** → condition: **If** you study, you will pass.
+- **when / while / before / after** → time: Call me **when** you arrive.
+
+**Linking adverbs** (join ideas between sentences — use ; or .):
+- however, therefore, moreover, nevertheless, furthermore
+- It was expensive**; however,** the quality was excellent.`,
+      explanationTranslations: { hi: `**Coordinating (FANBOYS):** and, but, or, so, yet
+**Subordinating:** because, although, if, when, while, before, after
+**Linking adverbs:** however, therefore, moreover, nevertheless`, ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+      examples: [
+        { english: 'Although Delhi is polluted, millions of people love living there.', translations: { hi: 'हालांकि दिल्ली प्रदूषित है, लाखों लोग वहां रहना पसंद करते हैं।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'Although' },
+        { english: 'The train was late; therefore, we missed the meeting.', translations: { hi: 'ट्रेन देर से आई; इसलिए, हम मीटिंग चूक गए।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'therefore' },
+      ],
+      tips: [
+        { text: '💡 Don\'t start too many sentences with "Because..." in formal writing. Instead, put the main clause first: "We stayed home because it rained."', translations: { hi: '💡 औपचारिक लेखन में "Because..." से बहुत सारे वाक्य शुरू न करें।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      ],
+    },
+    exercises: [
+      { id: 'b1-g5-ex1', type: 'multiple-choice', question: 'She likes cricket _____ her brother prefers football.', options: ['and', 'but', 'so', 'because'], correctAnswer: 'but', explanation: 'Contrast between two preferences → but.', explanationTranslations: { hi: 'दो विरोधी बातें → but.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'b1-g5-ex2', type: 'fill-blank', question: '_____ it was very hot, we went for a walk. (contrast)', correctAnswer: 'Although', explanation: 'Contrast (surprising result) → Although.', explanationTranslations: { hi: 'विरोधाभास (अप्रत्याशित) → Although.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'b1-g5-ex3', type: 'multiple-choice', question: 'I will call you _____ I reach Pune.', options: ['although', 'because', 'when', 'but'], correctAnswer: 'when', explanation: 'Time conjunction → when.', explanationTranslations: { hi: 'समय सूचक → when.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+    ],
+  },
+
+  // ==================== B2: REPORTED SPEECH ====================
+  {
+    id: 'b2-gram-03',
+    level: 'B2',
+    title: 'Reported (Indirect) Speech',
+    titleTranslations: { hi: 'अप्रत्यक्ष कथन', ta: 'அறிவிப்பு வாக்கியம்', te: 'పరోక్ష వాక్యం', bn: 'পরোক্ষ উক্তি', mr: 'अप्रत्यक्ष भाषण', kn: 'ಪರೋಕ್ಷ ನುಡಿ', ml: 'പരോക്ഷ ഭാഷണം', gu: 'પરોક્ષ કથન', pa: 'ਪਰੋਕਸ਼ ਬੋਲੀ', od: 'ପରୋକ୍ଷ ଭାଷଣ', en: 'Reported (Indirect) Speech' },
+    description: 'Report what someone said by changing tenses, pronouns and time references.',
+    descriptionTranslations: { hi: 'किसी ने क्या कहा यह बताने के लिए काल, सर्वनाम और समय बदलें।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+    order: 3,
+    content: {
+      explanation: `**Direct:** "I am tired," she said.
+**Reported:** She said (that) she **was** tired.
+
+**Tense backshift:**
+- am/is → was, are → were
+- do/does → did, have/has → had
+- will → would, can → could
+- Past Simple → Past Perfect: "I went" → He said he **had gone**
+
+**Pronoun changes:** I → he/she, my → his/her, we → they
+
+**Time/place changes:**
+- today → that day, tomorrow → the next day
+- yesterday → the day before, here → there, this → that
+
+**Reporting questions:**
+- Yes/No: She asked **if/whether** I was coming.
+- Wh-: He asked **where** I lived. (no question mark!)
+
+**Reporting commands:**
+- "Sit down!" → He told me **to sit down**.
+- "Don't run!" → She told them **not to run**.`,
+      explanationTranslations: { hi: `**Direct → Reported:** काल एक पीछे जाता है।
+am→was, will→would, can→could
+I→he/she, today→that day, tomorrow→the next day
+प्रश्न: asked if/whether... आदेश: told + to + verb`, ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+      examples: [
+        { english: '"I will call you tomorrow," Rahul said. → Rahul said he would call me the next day.', translations: { hi: '"मैं कल फ़ोन करूंगा," राहुल ने कहा। → राहुल ने कहा कि वह अगले दिन फ़ोन करेगा।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'would ... the next day' },
+        { english: '"Where do you live?" she asked. → She asked where I lived.', translations: { hi: '"तुम कहाँ रहते हो?" उसने पूछा। → उसने पूछा कि मैं कहाँ रहता हूँ।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'asked where I lived' },
+      ],
+      tips: [
+        { text: '💡 In reported speech, don\'t use question word order! "She asked where did I live" ❌ → "She asked where I lived" ✅', translations: { hi: '💡 Reported speech में प्रश्न शब्द क्रम मत रखें! "She asked where I lived" ✅', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      ],
+    },
+    exercises: [
+      { id: 'b2-g3-ex1', type: 'multiple-choice', question: '"I am going to the market," she said. → She said she _____ going to the market.', options: ['is', 'was', 'has been', 'will be'], correctAnswer: 'was', explanation: 'am → was (tense backshift).', explanationTranslations: { hi: 'am → was (काल एक पीछे).', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'b2-g3-ex2', type: 'fill-blank', question: '"Where is the station?" he asked. → He asked where the station _____.', correctAnswer: 'was', explanation: 'is → was in reported speech, no question order.', explanationTranslations: { hi: 'is → was, प्रश्न क्रम नहीं।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'b2-g3-ex3', type: 'correct-error', question: 'Find the error: "She asked where did I live."', correctAnswer: 'She asked where I lived.', explanation: 'Reported questions don\'t use question word order.', explanationTranslations: { hi: 'Reported questions में प्रश्नवाचक क्रम नहीं।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+    ],
+  },
+
+  // ==================== C1: MIXED CONDITIONALS ====================
+  {
+    id: 'c1-gram-02',
+    level: 'C1',
+    title: 'Mixed Conditionals and Wish Clauses',
+    titleTranslations: { hi: 'मिश्रित शर्त वाक्य और Wish', ta: 'கலப்பு நிபந்தனைகள்', te: 'మిశ్రమ షరతులు', bn: 'মিশ্র শর্তমূলক', mr: 'मिश्र अटी वाक्ये', kn: 'ಮಿಶ್ರ ಷರತು', ml: 'മിശ്ര നിബന്ധന', gu: 'મિશ્ર શરત', pa: 'ਮਿਸ਼ਰ ਸ਼ਰਤ', od: 'ମିଶ୍ର ସର୍ତ୍ତ', en: 'Mixed Conditionals and Wish Clauses' },
+    description: 'Express regrets and hypothetical situations mixing past and present.',
+    descriptionTranslations: { hi: 'भूतकाल और वर्तमान को मिलाकर पछतावा और काल्पनिक स्थितियां व्यक्त करें।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+    order: 2,
+    content: {
+      explanation: `**Mixed Conditional Type 1:** Past condition → Present result
+If + Past Perfect → would + base verb
+- If I **had studied** medicine, I **would be** a doctor now.
+- If she **hadn't moved** to Bangalore, she **wouldn't have** this job.
+
+**Mixed Conditional Type 2:** Present condition → Past result
+If + Past Simple → would have + past participle
+- If I **were** taller, I **would have been** selected for the basketball team.
+- If he **spoke** better English, he **would have got** the promotion.
+
+**Wish clauses:**
+- I wish + Past Simple → present regret: I wish I **knew** the answer.
+- I wish + Past Perfect → past regret: I wish I **had listened** to my parents.
+- I wish + would → annoyance/future desire: I wish it **would stop** raining.
+- If only → stronger version of wish: If only I **had** more time!`,
+      explanationTranslations: { hi: `**Mixed Type 1:** अगर भूतकाल में... → वर्तमान परिणाम
+**Mixed Type 2:** अगर वर्तमान में... → भूतकाल का परिणाम
+**Wish:** Past Simple = वर्तमान पछतावा, Past Perfect = भूतकाल पछतावा`, ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' },
+      examples: [
+        { english: 'If I had taken the IIT entrance exam, I would be an engineer now.', translations: { hi: 'अगर मैंने IIT की परीक्षा दी होती, तो अब इंजीनियर होता।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'had taken ... would be' },
+        { english: 'I wish I had learned to code in college.', translations: { hi: 'काश मैंने कॉलेज में कोडिंग सीखी होती।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' }, highlight: 'wish ... had learned' },
+      ],
+      tips: [
+        { text: '💡 Use "were" (not "was") in wish/if clauses: "I wish I were taller" is formal/correct. "I wish I was" is accepted in informal speech.', translations: { hi: '💡 Wish/if clauses में "were" (न कि "was"): "I wish I were" औपचारिक/सही है।', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      ],
+    },
+    exercises: [
+      { id: 'c1-g2-ex1', type: 'fill-blank', question: 'If I _____ harder at school, I would have a better job now. (study)', correctAnswer: 'had studied', explanation: 'Past condition → present result = had + past participle.', explanationTranslations: { hi: 'भूतकाल शर्त → वर्तमान परिणाम = had + past participle.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'c1-g2-ex2', type: 'multiple-choice', question: 'I wish I _____ more time to travel. (present regret)', options: ['have', 'had', 'would have', 'having'], correctAnswer: 'had', explanation: 'Wish + Past Simple for present regrets.', explanationTranslations: { hi: 'Wish + Past Simple = वर्तमान पछतावा.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+      { id: 'c1-g2-ex3', type: 'multiple-choice', question: 'If she spoke fluent English, she _____ got the international posting last year.', options: ['will have', 'would have', 'had', 'has'], correctAnswer: 'would have', explanation: 'Present condition → past result = would have + past participle.', explanationTranslations: { hi: 'वर्तमान शर्त → भूतकाल परिणाम = would have + past participle.', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '', en: '' } },
+    ],
+  },
 ];
 
 export function getGrammarLessonsByLevel(level: string): GrammarLesson[] {
