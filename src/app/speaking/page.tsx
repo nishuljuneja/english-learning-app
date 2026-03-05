@@ -26,12 +26,41 @@ export default function SpeakingPage() {
 
   const recognitionRef = useRef<ReturnType<typeof createRecognition> | null>(null);
   const synthRef = useRef<SpeechSynthesis | null>(null);
+  const indianVoiceRef = useRef<SpeechSynthesisVoice | null>(null);
 
   const levels: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
   useEffect(() => {
     synthRef.current = window.speechSynthesis;
-    return () => { synthRef.current?.cancel(); };
+
+    // Find the best Indian English voice available
+    const pickIndianVoice = () => {
+      const voices = synthRef.current?.getVoices() ?? [];
+      // Priority: en-IN voices first, then en-GB (closer to Indian accent than en-US)
+      const enIN = voices.filter((v) => v.lang === 'en-IN' || v.lang.startsWith('en-IN'));
+      if (enIN.length > 0) {
+        // Prefer voices with "India" or "Hindi" in the name
+        indianVoiceRef.current =
+          enIN.find((v) => /india|hindi|rishi|aditi|kajal/i.test(v.name)) || enIN[0];
+        return;
+      }
+      // Fallback: en-GB is closer to Indian pronunciation than en-US
+      const enGB = voices.find((v) => v.lang === 'en-GB');
+      if (enGB) {
+        indianVoiceRef.current = enGB;
+        return;
+      }
+      indianVoiceRef.current = null;
+    };
+
+    pickIndianVoice();
+    // Voices may load asynchronously in some browsers
+    synthRef.current?.addEventListener?.('voiceschanged', pickIndianVoice);
+
+    return () => {
+      synthRef.current?.cancel();
+      synthRef.current?.removeEventListener?.('voiceschanged', pickIndianVoice);
+    };
   }, []);
 
   const filteredExercises = selectedLevel === 'all'
@@ -56,6 +85,9 @@ export default function SpeakingPage() {
     const u = new SpeechSynthesisUtterance(text);
     u.rate = rate;
     u.lang = 'en-IN';
+    if (indianVoiceRef.current) {
+      u.voice = indianVoiceRef.current;
+    }
     u.onstart = () => setIsPlaying(true);
     u.onend = () => setIsPlaying(false);
     u.onerror = () => setIsPlaying(false);

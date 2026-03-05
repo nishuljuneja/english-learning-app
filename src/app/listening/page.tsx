@@ -32,10 +32,33 @@ export default function ListeningPage() {
   // TTS state
   const [isPlaying, setIsPlaying] = useState(false);
   const synthRef = useRef<SpeechSynthesis | null>(null);
+  const indianVoiceRef = useRef<SpeechSynthesisVoice | null>(null);
 
   useEffect(() => {
     synthRef.current = window.speechSynthesis;
-    return () => { synthRef.current?.cancel(); };
+
+    const pickIndianVoice = () => {
+      const voices = synthRef.current?.getVoices() ?? [];
+      const enIN = voices.filter((v) => v.lang.startsWith('en-IN'));
+      if (enIN.length) {
+        const preferred = enIN.find((v) =>
+          /india|hindi|rishi|aditi|kajal/i.test(v.name)
+        );
+        indianVoiceRef.current = preferred ?? enIN[0];
+        return;
+      }
+      const enGB = voices.find((v) => v.lang.startsWith('en-GB'));
+      if (enGB) { indianVoiceRef.current = enGB; return; }
+      indianVoiceRef.current = null;
+    };
+
+    pickIndianVoice();
+    synthRef.current.addEventListener('voiceschanged', pickIndianVoice);
+
+    return () => {
+      synthRef.current?.removeEventListener('voiceschanged', pickIndianVoice);
+      synthRef.current?.cancel();
+    };
   }, []);
 
   const levels: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1'];
@@ -50,6 +73,9 @@ export default function ListeningPage() {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.rate = rate ?? 0.9;
     utterance.lang = 'en-IN';
+    if (indianVoiceRef.current) {
+      utterance.voice = indianVoiceRef.current;
+    }
     utterance.onstart = () => setIsPlaying(true);
     utterance.onend = () => setIsPlaying(false);
     utterance.onerror = () => setIsPlaying(false);
