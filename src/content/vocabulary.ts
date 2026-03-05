@@ -1,8 +1,41 @@
-import { type VocabularyWord } from '../lib/firestore';
+import { type VocabularyWord, type CEFRLevel, type SupportedLanguage } from '../lib/firestore';
+import oxfordData from './oxford-3000.json';
 
-// Sample vocabulary organized by CEFR level
-// This is a starter set — the full 5000 words from Oxford lists will be imported separately
-// Words are tagged for Indian context relevance and include translations
+// ------------------------------------------------------------------
+// Oxford 3000 word list (parsed from official PDF)
+// Each entry has: word, pos (part of speech), level (CEFR A1-B2)
+// ------------------------------------------------------------------
+
+interface OxfordEntry {
+  word: string;
+  pos: string;
+  level: string;
+}
+
+const emptyTranslations: Record<SupportedLanguage, string> = {
+  en: '', hi: '', ta: '', te: '', bn: '', mr: '', kn: '', ml: '', gu: '', pa: '', od: '',
+};
+
+function oxfordToVocabularyWord(entry: OxfordEntry, index: number): VocabularyWord {
+  const levelMap: Record<string, CEFRLevel> = { A1: 'A1', A2: 'A2', B1: 'B1', B2: 'B2', C1: 'C1', C2: 'C2' };
+  return {
+    id: `ox3k-${index}`,
+    word: entry.word,
+    partOfSpeech: entry.pos,
+    level: levelMap[entry.level] || 'A1',
+    meaning: { ...emptyTranslations, en: entry.word },
+    example: '',
+    exampleTranslation: { ...emptyTranslations },
+    pronunciation: '',
+    tags: [],
+    oxfordList: (['A1', 'A2', 'B1'].includes(entry.level) ? 'A' : 'B') as 'A' | 'B',
+  };
+}
+
+// Build the full Oxford 3000 vocabulary array
+const oxfordVocabulary: VocabularyWord[] = (oxfordData as OxfordEntry[]).map(oxfordToVocabularyWord);
+
+// Hand-crafted sample vocabulary with full translations (Indian market focus)
 
 export const sampleVocabulary: VocabularyWord[] = [
   // ==================== A1 - Basic Everyday Words ====================
@@ -151,22 +184,45 @@ export const sampleVocabulary: VocabularyWord[] = [
   },
 ];
 
+// ---------- Merged vocabulary: sample (detailed) + Oxford 3000 ----------
+
+// Build a lookup of sample words so we can overlay rich data on the Oxford list
+const sampleLookup = new Map(sampleVocabulary.map((w) => [w.word.toLowerCase(), w]));
+
+// Merge: start with Oxford list, overlay sample translations where available
+const allVocabulary: VocabularyWord[] = oxfordVocabulary.map((oxWord) => {
+  const detailed = sampleLookup.get(oxWord.word);
+  if (detailed) {
+    return { ...oxWord, ...detailed, id: oxWord.id };
+  }
+  return oxWord;
+});
+
+// Add any sample words NOT in Oxford list (C1/C2 sample words)
+for (const sw of sampleVocabulary) {
+  if (!oxfordVocabulary.some((o) => o.word === sw.word.toLowerCase())) {
+    allVocabulary.push(sw);
+  }
+}
+
 // Utility functions for vocabulary management
 export function getVocabularyByLevel(level: string): VocabularyWord[] {
-  return sampleVocabulary.filter((w) => w.level === level);
+  return allVocabulary.filter((w) => w.level === level);
 }
 
 export function getVocabularyByTag(tag: string): VocabularyWord[] {
-  return sampleVocabulary.filter((w) => w.tags.includes(tag));
+  return allVocabulary.filter((w) => w.tags.includes(tag));
 }
 
 export function searchVocabulary(query: string): VocabularyWord[] {
   const lower = query.toLowerCase();
-  return sampleVocabulary.filter(
+  return allVocabulary.filter(
     (w) => w.word.toLowerCase().includes(lower) ||
       w.meaning.en.toLowerCase().includes(lower)
   );
 }
+
+export { allVocabulary, oxfordVocabulary };
 
 // This function will be used to import the Oxford 5000 word lists
 export function formatOxfordWord(

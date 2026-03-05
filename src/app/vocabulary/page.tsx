@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useAppStore } from '@/lib/store';
 import { t } from '@/lib/i18n';
-import { sampleVocabulary, getVocabularyByLevel } from '@/content/vocabulary';
+import { allVocabulary, getVocabularyByLevel } from '@/content/vocabulary';
 import { Flashcard, LevelBadge } from '@/components/Exercises';
 import { BookOpen, Search, Filter } from 'lucide-react';
 import type { CEFRLevel, VocabularyWord } from '@/lib/firestore';
@@ -38,7 +38,7 @@ export default function VocabularyPage() {
           <div>
             <h1 className="text-2xl font-bold text-gray-800">{t('nav.vocabulary', uiLanguage)}</h1>
             <p className="text-gray-500 text-sm">
-              {sampleVocabulary.length} words loaded &middot; Oxford 5000 ready for import
+              {allVocabulary.length} words from Oxford 3000
             </p>
           </div>
         </div>

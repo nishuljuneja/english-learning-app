@@ -51,7 +51,35 @@ export const useAppStore = create<AppState>((set, get) => ({
     const unsubscribe = onAuthChange(async (user) => {
       set({ user, loading: true });
       if (user) {
-        const profile = await getUserProfile(user.uid);
+        let profile = await getUserProfile(user.uid);
+        // If user exists in Auth but has no Firestore profile, create one
+        if (!profile) {
+          const { createUserProfile } = await import('./firestore');
+          const { Timestamp } = await import('firebase/firestore');
+          await createUserProfile({
+            uid: user.uid,
+            displayName: user.displayName || 'Learner',
+            email: user.email || '',
+            nativeLanguage: 'en',
+            currentLevel: 'A1',
+            xp: 0,
+            streak: 0,
+            lastActiveDate: new Date().toISOString().split('T')[0],
+            createdAt: Timestamp.now(),
+            skillScores: {
+              vocabulary: 0,
+              grammar: 0,
+              reading: 0,
+              listening: 0,
+              writing: 0,
+              speaking: 0,
+            },
+            lessonsCompleted: 0,
+            wordsLearned: 0,
+            placementTestCompleted: false,
+          });
+          profile = await getUserProfile(user.uid);
+        }
         set({ profile, loading: false });
         if (profile?.nativeLanguage) {
           set({ uiLanguage: profile.nativeLanguage });
