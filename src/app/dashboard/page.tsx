@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useAppStore } from '@/lib/store';
 import { t } from '@/lib/i18n';
 import { LevelBadge, ProgressBar } from '@/components/Exercises';
-import { BookOpen, Brain, Headphones, MessageSquare, PenTool, Flame, Trophy, ArrowRight, ClipboardCheck } from 'lucide-react';
+import { BookOpen, Brain, Headphones, MessageSquare, PenTool, Flame, Trophy, ArrowRight, ClipboardCheck, Sparkles, Award, BarChart3 } from 'lucide-react';
 import StudyPlan from '@/components/StudyPlan';
 
 export default function DashboardPage() {
@@ -90,6 +90,25 @@ export default function DashboardPage() {
           <div className="text-sm text-gray-500">{t('common.lessonsCompleted', uiLanguage)}</div>
         </div>
       </div>
+
+      {/* Daily Practice CTA */}
+      <Link
+        href="/daily-practice"
+        className="block mb-8 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl p-6 text-white hover:shadow-lg transition-shadow group"
+      >
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+              <Sparkles className="w-6 h-6 text-white" />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold">Daily Practice</h3>
+              <p className="text-white/70 text-sm">Quick 5-minute mixed session — vocab, grammar & reading</p>
+            </div>
+          </div>
+          <ArrowRight className="w-6 h-6 text-white/70 group-hover:text-white transition-colors" />
+        </div>
+      </Link>
 
       {/* Study Plan */}
       <div className="mb-8">
@@ -186,6 +205,38 @@ export default function DashboardPage() {
             Take a Test <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
+      </div>
+
+      {/* Achievements & Analytics Row */}
+      <div className="mt-6 grid sm:grid-cols-2 gap-4">
+        <Link
+          href="/achievements"
+          className="bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-200 rounded-2xl p-5 hover:shadow-md transition-shadow group"
+        >
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center">
+              <Award className="w-5 h-5 text-amber-600" />
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-800 group-hover:text-amber-600 transition-colors">Achievements</h3>
+              <p className="text-sm text-gray-500">Earn badges for your milestones</p>
+            </div>
+          </div>
+        </Link>
+        <Link
+          href="/analytics"
+          className="bg-gradient-to-r from-indigo-50 to-blue-50 border border-indigo-200 rounded-2xl p-5 hover:shadow-md transition-shadow group"
+        >
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center">
+              <BarChart3 className="w-5 h-5 text-indigo-600" />
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-800 group-hover:text-indigo-600 transition-colors">Weak Areas</h3>
+              <p className="text-sm text-gray-500">See personalized insights & tips</p>
+            </div>
+          </div>
+        </Link>
       </div>
     </div>
   );

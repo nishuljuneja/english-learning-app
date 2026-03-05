@@ -5,7 +5,8 @@ import { useAppStore } from '@/lib/store';
 import { t } from '@/lib/i18n';
 import { allVocabulary, getVocabularyByLevel, getVocabularyByIds } from '@/content/vocabulary';
 import { Flashcard, LevelBadge, FillBlank, MultipleChoice, ScoreCard, ProgressBar } from '@/components/Exercises';
-import { BookOpen, Search, Filter, RotateCcw, Brain } from 'lucide-react';
+import { BookOpen, Search, Filter, RotateCcw, Brain, Volume2 } from 'lucide-react';
+import { useIndianVoice } from '@/lib/useIndianVoice';
 import type { CEFRLevel, VocabularyWord } from '@/lib/firestore';
 import { updateUserProfile, addXP, updateStreak, updateVocabularyProgress, incrementWordsLearned } from '@/lib/firestore';
 
@@ -107,6 +108,7 @@ function markWordStudied(uid: string, wordId: string) {
 
 export default function VocabularyPage() {
   const { profile, uiLanguage, setProfile } = useAppStore();
+  const { speak, isPlaying } = useIndianVoice();
   const currentLevel = profile?.currentLevel || 'A1';
   const [selectedLevel, setSelectedLevel] = useState<CEFRLevel>(currentLevel);
   const [mode, setMode] = useState<Mode>('browse');
@@ -619,6 +621,13 @@ export default function VocabularyPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-1">
                       <h3 className="text-lg font-bold text-gray-800">{word.word}</h3>
+                      <button
+                        onClick={() => speak(word.word)}
+                        className="p-1 rounded-full text-gray-400 hover:text-indigo-600 hover:bg-indigo-50 transition-colors"
+                        title="Listen"
+                      >
+                        <Volume2 className="w-4 h-4" />
+                      </button>
                       <span className="text-xs text-gray-400 italic">{word.partOfSpeech}</span>
                       {word.pronunciation && (
                         <span className="text-xs text-gray-400">{word.pronunciation}</span>

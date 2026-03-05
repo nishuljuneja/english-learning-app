@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { AuthProvider } from "@/components/AuthProvider";
+import ServiceWorkerRegistration from "@/components/ServiceWorker";
+import NotificationPrompt from "@/components/NotificationPrompt";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -65,10 +67,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#4f46e5" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="SpeakEasy" />
+        <link rel="apple-touch-icon" href="/icons/icon-192.svg" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-gray-50 text-gray-900 antialiased flex flex-col`}
       >
         <AuthProvider>
+          <ServiceWorkerRegistration />
+          <NotificationPrompt />
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />

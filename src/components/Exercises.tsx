@@ -3,7 +3,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useAppStore } from '@/lib/store';
 import { t } from '@/lib/i18n';
-import { CheckCircle, XCircle, ArrowRight, RotateCcw, Shuffle } from 'lucide-react';
+import { CheckCircle, XCircle, ArrowRight, RotateCcw, Shuffle, Volume2 } from 'lucide-react';
+import { useIndianVoice } from '@/lib/useIndianVoice';
 
 // ==================== Flashcard Component ====================
 interface FlashcardProps {
@@ -17,6 +18,7 @@ interface FlashcardProps {
 
 export function Flashcard({ front, back, pronunciation, partOfSpeech, example, onRate }: FlashcardProps) {
   const [flipped, setFlipped] = useState(false);
+  const { speak, isPlaying } = useIndianVoice();
 
   return (
     <div className="w-full max-w-lg mx-auto">
@@ -36,7 +38,14 @@ export function Flashcard({ front, back, pronunciation, partOfSpeech, example, o
             {partOfSpeech && (
               <p className="text-xs text-indigo-400 mt-1 italic">{partOfSpeech}</p>
             )}
-            <p className="text-xs text-gray-400 mt-4">Tap to reveal</p>
+            <button
+              onClick={(e) => { e.stopPropagation(); speak(front); }}
+              className={`mt-3 p-2 rounded-full transition-colors ${isPlaying ? 'bg-indigo-100 text-indigo-600' : 'bg-gray-100 text-gray-500 hover:bg-indigo-50 hover:text-indigo-600'}`}
+              title="Listen to pronunciation"
+            >
+              <Volume2 className="w-5 h-5" />
+            </button>
+            <p className="text-xs text-gray-400 mt-2">Tap to reveal</p>
           </div>
 
           {/* Back */}
@@ -48,6 +57,13 @@ export function Flashcard({ front, back, pronunciation, partOfSpeech, example, o
             {example && (
               <p className="text-sm text-gray-600 mt-3 italic text-center">&ldquo;{example}&rdquo;</p>
             )}
+            <button
+              onClick={(e) => { e.stopPropagation(); speak(example || front); }}
+              className={`mt-3 p-2 rounded-full transition-colors ${isPlaying ? 'bg-indigo-200 text-indigo-700' : 'bg-indigo-100 text-indigo-500 hover:bg-indigo-200 hover:text-indigo-700'}`}
+              title="Listen to example"
+            >
+              <Volume2 className="w-5 h-5" />
+            </button>
           </div>
         </div>
       </div>

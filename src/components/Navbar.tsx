@@ -9,8 +9,11 @@ import { logOut } from '@/lib/auth';
 import {
   BookOpen, Brain, Headphones, MessageSquare, PenTool, Trophy,
   Home, User, Menu, X, Globe, LogOut, Flame, TrendingUp, ChevronDown, ClipboardCheck,
+  Sparkles, Award, BarChart3,
 } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
+
+import { NotificationSettingsButton } from '@/components/NotificationPrompt';
 
 export default function Navbar() {
   const { user, profile, uiLanguage, setUILanguage } = useAppStore();
@@ -33,6 +36,7 @@ export default function Navbar() {
 
   const navItems = [
     { href: '/dashboard', label: t('nav.dashboard', uiLanguage), icon: Home },
+    { href: '/daily-practice', label: 'Daily Practice', icon: Sparkles },
     { href: '/vocabulary', label: t('nav.vocabulary', uiLanguage), icon: BookOpen },
     { href: '/grammar', label: t('nav.grammar', uiLanguage), icon: Brain },
     { href: '/reading', label: t('nav.reading', uiLanguage), icon: BookOpen },
@@ -40,6 +44,9 @@ export default function Navbar() {
     { href: '/speaking', label: t('nav.speaking', uiLanguage), icon: MessageSquare },
     { href: '/writing', label: t('nav.writing', uiLanguage), icon: PenTool },
     { href: '/tests', label: 'Tests', icon: ClipboardCheck },
+    { href: '/achievements', label: 'Achievements', icon: Award },
+    { href: '/leaderboard', label: t('nav.leaderboard', uiLanguage), icon: Trophy },
+    { href: '/analytics', label: 'Weak Areas', icon: BarChart3 },
     { href: '/progress', label: 'Progress', icon: TrendingUp },
   ];
 
@@ -140,6 +147,9 @@ export default function Navbar() {
                   {profile.currentLevel}
                 </span>
 
+                {/* Notification Settings */}
+                <NotificationSettingsButton />
+
                 {/* Profile & Logout */}
                 <Link href="/profile" className="text-gray-600 hover:text-indigo-600">
                   <User className="w-5 h-5" />
@@ -197,16 +207,6 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
-            {user && (
-              <Link
-                href="/leaderboard"
-                className="block text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <Trophy className="w-4 h-4 inline mr-2" />
-                {t('nav.leaderboard', uiLanguage)}
-              </Link>
-            )}
           </div>
         </div>
       )}
