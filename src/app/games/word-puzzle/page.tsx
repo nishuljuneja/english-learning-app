@@ -4,6 +4,7 @@ import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useAppStore } from '@/lib/store';
 import { allVocabulary } from '@/content/vocabulary';
+import gameDictionary from '@/content/game-dictionary.json';
 import {
   LetterText, Clock, Lightbulb, Trophy, ArrowRight, RotateCcw,
   Shuffle, CheckCircle2, XCircle, Crown, Medal, Sparkles, ArrowLeft,
@@ -41,93 +42,16 @@ const firestoreImport = () => import('@/lib/firestore');
 const gameFirestoreImport = () => import('@/lib/game-firestore');
 
 // ─────────────────────────────────────────────────────────────────────
-// Dictionary: Oxford vocab + common short words supplement
+// Dictionary: 75K+ English words (3–7 letters) from comprehensive word list
 // ─────────────────────────────────────────────────────────────────────
+const DICTIONARY = new Set<string>(gameDictionary as string[]);
 
-const EXTRA_WORDS = [
-  'ace','act','add','ado','aft','age','ago','aid','aim','air','ale','all','and','ant','any','ape',
-  'apt','arc','are','ark','arm','art','ash','ask','ate','awe','axe','bad','bag','ban','bar','bat',
-  'bay','bed','beg','bet','bid','big','bin','bit','bog','bow','box','boy','bud','bug','bun','bur',
-  'bus','but','buy','cab','cam','can','cap','car','cat','cob','cod','cog','cop','cot','cow','cry',
-  'cub','cud','cue','cup','cur','cut','dab','dad','dam','day','den','dew','did','dig','dim','dip',
-  'doe','dog','don','dot','dry','dub','dud','due','dug','dun','duo','dye','ear','eat','eel','egg',
-  'ego','elf','elk','elm','emu','end','era','eve','ewe','eye','fad','fan','far','fat','fax','fed',
-  'fen','few','fig','fin','fir','fit','fix','flu','fly','foe','fog','fop','for','fox','fry','fun',
-  'fur','gag','gal','gap','gas','gel','gem','get','gin','gnu','god','got','gum','gun','gut','guy',
-  'gym','had','hag','ham','has','hat','hay','hem','hen','her','hew','hex','hid','him','hip','his',
-  'hit','hob','hod','hoe','hog','hop','hot','how','hub','hue','hug','hum','hut','ice','icy','ill',
-  'imp','ink','inn','ion','ire','irk','its','ivy','jab','jag','jam','jar','jaw','jay','jet','jig',
-  'job','jog','jot','joy','jug','jut','keg','ken','key','kid','kin','kit','lab','lac','lad','lag',
-  'lap','law','lax','lay','lea','led','leg','let','lid','lie','lip','lit','log','lot','low','lug',
-  'mad','man','map','mar','mat','maw','may','men','met','mid','mix','mob','mod','mop','mow','mud',
-  'mug','mum','nab','nag','nap','net','new','nil','nip','nod','nor','not','now','nun','nut','oak',
-  'oar','oat','odd','ode','off','oft','oil','old','one','opt','orb','ore','our','out','owe','owl',
-  'own','pad','pal','pan','par','pat','paw','pay','pea','peg','pen','per','pet','pew','pie','pig',
-  'pin','pit','ply','pod','pop','pot','pow','pro','pry','pub','pug','pun','pup','put','rag','ram',
-  'ran','rap','rat','raw','ray','red','ref','rev','rib','rid','rig','rim','rip','rob','rod','roe',
-  'rot','row','rub','rug','rum','run','rut','rye','sac','sad','sag','sap','sat','saw','say','sea',
-  'set','sew','she','shy','sin','sip','sir','sis','sit','six','ski','sky','sly','sob','sod','son',
-  'sop','sot','sow','spa','spy','sty','sub','sue','sum','sun','sup','tab','tad','tag','tan','tap',
-  'tar','tat','tax','tea','ten','the','tie','tin','tip','toe','ton','too','top','tot','tow','toy',
-  'try','tub','tug','tun','two','urn','use','van','vat','vet','via','vie','vim','vow','wad','wag',
-  'war','was','wax','way','web','wed','wet','who','why','wig','win','wit','woe','wok','won','woo',
-  'wow','yak','yam','yap','yaw','yea','yes','yet','yew','you','zap','zen','zig','zip','zoo',
-  // Common 4-letter words often missing from Oxford learning lists
-  'abet','ache','acme','acne','acre','afar','aged','aide','airy','akin','alas','ally','also','alto',
-  'amid','amok','ankh','apex','arch','arid','avid','axle','bade','bail','bait','bake','bald','bale',
-  'balm','bane','bard','bark','barn','bask','bawl','bead','beak','beam','bean','beck','been','bile',
-  'bind','blab','bled','blew','blip','blob','bloc','blot','blur','boar','bold','bolt','bony','bout',
-  'brat','bred','brew','brim','brow','bulb','bulk','bunk','buoy','burp','buzz','cafe','calf','cape',
-  'carp','clad','clam','clan','clap','claw','clay','clod','clog','clot','clue','coil','colt','comb',
-  'cone','cope','cork','cosy','coup','cowl','cozy','crab','crib','crow','cube','cuff','cult','curb',
-  'curl','cyst','daft','damp','darn','dart','dawn','daze','deaf','dean','deem','deft','defy','deli',
-  'dent','deny','dial','dice','dime','dine','dire','dome','doom','dope','dote','dove','doze','drab',
-  'dram','drat','drip','duel','duff','duke','dull','dumb','dump','dune','dung','dunk','dupe','dusk',
-  'dyer','edgy','emit','enum','epic','etch','even','evil','exam','exit','fang','fare','feat','fern',
-  'feud','fiat','file','flaw','flea','fled','flit','flog','flop','flux','foam','foil','fold','fond',
-  'font','ford','fore','fork','fort','foul','fowl','fray','fret','frog','fume','fuse','fury','fuss',
-  'gait','gale','gash','gaze','gear','germ','gild','gist','glen','glib','glow','glue','glum','goad',
-  'goat','golf','gore','grab','gram','grim','grin','grit','gust','hail','hale','halo','halt','hank',
-  'hare','harp','hash','haze','heed','helm','hemp','herb','herd','hike','hilt','hind','hiss','hive',
-  'hoax','hoed','hoop','hoot','hose','howl','hull','hump','hung','hurl','hymn','icon','idle','idol',
-  'iota','isle','jade','jest','jilt','jinx','jolt','kelp','kilt','knob','knot','lace','lame','lard',
-  'lark','lash','lass','laud','lawn','laze','leak','lean','leer','lend','levy','lieu','limb','lime',
-  'limp','lint','lion','lisp','lobe','loch','loft','logo','lone','loom','loop','loot','lore','lout',
-  'lull','lump','lure','lurk','lush','lust','lynx','mace','maid','maim','malt','mane','mare','mash',
-  'mast','maze','meld','melt','memo','mere','mesh','mild','mime','mire','mock','mold','mole','molt',
-  'monk','moor','moss','moth','moat','moan','mope','muck','mule','mull','murk','muse','mute','myth',
-  'nave','newt','node','nook','norm','nova','nude','numb','oath','obey','ogle','omen','omit','opal',
-  'orca','oust','oval','oven','oxen','pace','pact','pane','pang','pare','pave','pawn','peak','peal',
-  'peat','peek','peel','peer','pelt','perk','pest','pier','pike','pine','pint','plod','plow','ploy',
-  'plum','plum','poke','poll','polo','pomp','pond','pony','pope','pore','pose','pout','pram','prim',
-  'prod','prom','prop','prow','prym','puce','puff','pulp','pump','punk','purr','quad','quay','quit',
-  'raft','ramp','rang','rash','reap','reed','reef','reel','rein','rend','rent','rile','rime','rind',
-  'riot','ripe','roam','roar','robe','rode','romp','rook','rope','rota','rove','rude','ruin','rump',
-  'rune','rung','ruse','rust','sack','sage','sail','sake','sane','sang','sank','sash','scar','scam',
-  'seal','seam','sect','shed','shin','skim','skit','slab','slag','slam','slap','slat','slaw','sled',
-  'slew','slid','slim','slit','slob','slop','slum','slug','smog','snag','snap','snip','snob','snot',
-  'snub','snug','soak','soar','sock','soda','sofa','soot','sore','sour','span','spar','spec','sped',
-  'spin','spit','spur','stab','stag','stem','stew','stir','stub','stud','stun','sulk','sump','sung',
-  'sunk','surf','swan','sway','tack','tact','tame','tank','tart','taut','teak','teem','tern','text',
-  'tier','tilt','tint','toad','toil','toll','tomb','tone','tore','toss','tote','tour','trap','tray',
-  'trek','trim','trio','trod','trot','tuft','tune','turf','tusk','tuft','twig','twin','twit','tyke',
-  'undo','unit','unto','urge','used','user','vain','vale','vane','veer','veil','vein','vent','verb',
-  'vest','veto','vice','vine','visa','void','volt','wade','wail','wand','wane','warp','wart','wary',
-  'wasp','wavy','waxy','wean','weed','weld','welt','wept','wick','wilt','wily','wimp','wink','wipe',
-  'wisp','wits','woke','wolf','womb','wont','woof','wove','wrap','wren','writ','yank','yarn','yawn',
-  'yell','yelp','yoga','yoke','yolk','zeal','zero','zinc','zone','zoom',
-];
-
-// Build combined dictionary
-const DICTIONARY = new Set<string>();
+// Also add any Oxford vocabulary words that might have been missed
 for (const w of allVocabulary) {
   const clean = w.word.toLowerCase().trim();
-  if (clean.length >= 3 && /^[a-z]+$/.test(clean)) {
+  if (clean.length >= 3 && clean.length <= 7 && /^[a-z]+$/.test(clean)) {
     DICTIONARY.add(clean);
   }
-}
-for (const w of EXTRA_WORDS) {
-  DICTIONARY.add(w.toLowerCase());
 }
 
 // All 7-letter words from Oxford vocab (alphabetic only)
