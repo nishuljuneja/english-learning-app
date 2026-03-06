@@ -57,7 +57,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32 relative">
           <div className="text-center max-w-3xl mx-auto">
             <div className="inline-flex items-center bg-white/10 rounded-full px-4 py-1.5 text-sm font-medium mb-6 backdrop-blur-sm">
-              <span className="mr-2">🇮🇳</span> Built for India&apos;s English learners
+              Built for India&apos;s English learners
             </div>
             <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
               {t('hero.title', uiLanguage)}
@@ -165,28 +165,12 @@ export default function Home() {
       <section className="py-16 bg-indigo-600">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to improve your English?</h2>
-          <p className="text-indigo-200 mb-8">Take a free placement test to find your level. No sign-up required.</p>
+          <p className="text-indigo-200 mb-8">Take a free diagnostic test to find your level. No sign-up required.</p>
           <Link href="/placement-test" className="inline-block px-8 py-4 bg-white text-indigo-700 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg">
-            Start Placement Test →
+            Start Diagnostic Test →
           </Link>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-center md:text-left mb-6 md:mb-0">
-            <span className="text-xl font-bold text-white">🇮🇳 EngLearn</span>
-            <p className="text-sm mt-1">Learn English, Your Way. Built for India.</p>
-          </div>
-          <div className="flex space-x-6 text-sm">
-            <Link href="/about" className="hover:text-white transition">About</Link>
-            <Link href="/privacy" className="hover:text-white transition">Privacy</Link>
-            <Link href="/terms" className="hover:text-white transition">Terms</Link>
-            <Link href="/contact" className="hover:text-white transition">Contact</Link>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
