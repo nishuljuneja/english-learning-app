@@ -344,5 +344,4 @@ export async function getLeaderboard(limitCount: number = 20): Promise<UserProfi
   return snapshot.docs.map((d) => d.data() as UserProfile);
 }
 
-// Game score types/functions moved to ./game-firestore.ts
-export type { GameScore } from './game-firestore';
+// Game score types/functions are in ./game-firestore.ts

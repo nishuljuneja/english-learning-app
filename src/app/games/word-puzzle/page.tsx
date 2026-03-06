@@ -4,14 +4,16 @@ import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useAppStore } from '@/lib/store';
 import { allVocabulary } from '@/content/vocabulary';
-import { addXP, updateStreak } from '@/lib/firestore';
 import type { VocabularyWord } from '@/lib/firestore';
-import { saveGameScore, getGameLeaderboard } from '@/lib/game-firestore';
 import type { GameScore } from '@/lib/game-firestore';
 import {
   LetterText, Clock, Lightbulb, Trophy, ArrowRight, RotateCcw,
   Shuffle, CheckCircle2, XCircle, Crown, Medal, Sparkles, ArrowLeft,
 } from 'lucide-react';
+
+// Lazy-load Firestore functions to avoid Turbopack module binding issues
+const firestoreImport = () => import('@/lib/firestore');
+const gameFirestoreImport = () => import('@/lib/game-firestore');
 
 // ─────────────────────────────────────────────────────────────────────
 // Dictionary: Oxford vocab + common short words supplement
@@ -355,11 +357,11 @@ export default function WordPuzzlePage() {
           uid: profile.uid,
           ...scoreData,
         };
-        saveGameScore(fsScore).catch(() => {});
+        gameFirestoreImport().then((m) => m.saveGameScore(fsScore)).catch(() => {});
         // Award XP
         const xpGain = Math.max(10, 50 - Math.floor(adjustedTime / 10));
-        addXP(profile.uid, xpGain).catch(() => {});
-        updateStreak(profile.uid)
+        firestoreImport().then((m) => m.addXP(profile.uid, xpGain)).catch(() => {});
+        firestoreImport().then((m) => m.updateStreak(profile.uid))
           .then((streakData) => {
             setProfile({
               ...profile,
@@ -374,7 +376,7 @@ export default function WordPuzzlePage() {
       }
 
       // Also try loading Firestore leaderboard
-      getGameLeaderboard(targetWordObj.word.toLowerCase())
+      gameFirestoreImport().then((m) => m.getGameLeaderboard(targetWordObj.word.toLowerCase()))
         .then((fsLb) => {
           if (fsLb.length > 0) {
             setLeaderboard(
@@ -422,7 +424,7 @@ export default function WordPuzzlePage() {
     const lb = getLocalLeaderboard(daily.word.toLowerCase());
     setLeaderboard(lb);
     // Try Firestore too
-    getGameLeaderboard(daily.word.toLowerCase())
+    gameFirestoreImport().then((m) => m.getGameLeaderboard(daily.word.toLowerCase()))
       .then((fsLb) => {
         if (fsLb.length > 0) {
           setLeaderboard(
