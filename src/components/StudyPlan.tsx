@@ -22,7 +22,7 @@ const levelInfo: Record<CEFRLevel, { name: string; description: string }> = {
   C2: { name: 'Mastery', description: 'Near-native fluency, subtle nuances, academic proficiency' },
 };
 
-const allLevels: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1'];
+const allLevels: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 
 // ─── Skill milestones per level ──────────────────────────────────────────
 interface SkillMilestone {
@@ -182,7 +182,9 @@ export default function StudyPlan() {
           <h2 className="text-lg font-bold">Your Study Plan</h2>
         </div>
         <p className="text-white/80 text-sm">
-          Complete skills at {currentLevel} to unlock {nextLevel || 'mastery'}
+          {currentLevel === 'C2'
+            ? 'You\'ve reached the highest level — keep perfecting your skills!'
+            : `Complete skills at ${currentLevel} to unlock ${nextLevel}`}
         </p>
       </div>
 
