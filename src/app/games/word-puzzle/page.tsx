@@ -353,7 +353,7 @@ export default function WordPuzzlePage() {
           uid: profile.uid,
           ...scoreData,
         };
-        saveGameScore(fsScore).catch(() => {});
+        if (typeof saveGameScore === 'function') saveGameScore(fsScore).catch(() => {});
         // Award XP
         const xpGain = Math.max(10, 50 - Math.floor(adjustedTime / 10));
         addXP(profile.uid, xpGain).catch(() => {});
@@ -372,7 +372,7 @@ export default function WordPuzzlePage() {
       }
 
       // Also try loading Firestore leaderboard
-      getGameLeaderboard(targetWordObj.word.toLowerCase())
+      if (typeof getGameLeaderboard === 'function') getGameLeaderboard(targetWordObj.word.toLowerCase())
         .then((fsLb) => {
           if (fsLb.length > 0) {
             setLeaderboard(
@@ -420,23 +420,25 @@ export default function WordPuzzlePage() {
     const lb = getLocalLeaderboard(daily.word.toLowerCase());
     setLeaderboard(lb);
     // Try Firestore too
-    getGameLeaderboard(daily.word.toLowerCase())
-      .then((fsLb) => {
-        if (fsLb.length > 0) {
-          setLeaderboard(
-            fsLb.map((s) => ({
-              displayName: s.displayName,
-              targetWord: s.targetWord,
-              timeSeconds: s.timeSeconds,
-              adjustedTime: s.adjustedTime,
-              hintsUsed: s.hintsUsed,
-              wordsFound: s.wordsFound,
-              date: s.date,
-            }))
-          );
-        }
-      })
-      .catch(() => {});
+    if (typeof getGameLeaderboard === 'function') {
+      getGameLeaderboard(daily.word.toLowerCase())
+        .then((fsLb) => {
+          if (fsLb.length > 0) {
+            setLeaderboard(
+              fsLb.map((s) => ({
+                displayName: s.displayName,
+                targetWord: s.targetWord,
+                timeSeconds: s.timeSeconds,
+                adjustedTime: s.adjustedTime,
+                hintsUsed: s.hintsUsed,
+                wordsFound: s.wordsFound,
+                date: s.date,
+              }))
+            );
+          }
+        })
+        .catch(() => {});
+    }
   }, []);
 
   const getRankIcon = (index: number) => {
