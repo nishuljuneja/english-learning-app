@@ -456,7 +456,7 @@ export default function WordPuzzlePage() {
           <div className="w-16 h-16 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
             <LetterText className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">Daily Un-Jumble</h1>
+          <h1 className="text-3xl font-bold text-gray-800 mb-2">Unjumble</h1>
           <p className="text-gray-500">
             You get 7 letters. Find as many words as you can, then discover the 7-letter word!
           </p>

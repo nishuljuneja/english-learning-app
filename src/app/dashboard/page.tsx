@@ -69,7 +69,7 @@ export default function DashboardPage() {
 
       {/* Games Row */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
-        {/* Daily Un-Jumble */}
+        {/* Unjumble */}
         <Link
           href="/games/word-puzzle"
           className="group bg-gradient-to-br from-violet-50 to-indigo-50 border border-violet-200 rounded-2xl p-5 hover:shadow-md transition-all"
@@ -78,7 +78,7 @@ export default function DashboardPage() {
             <div className="w-10 h-10 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-sm">
               <LetterText className="w-5 h-5 text-white" />
             </div>
-            <h3 className="font-bold text-gray-800">Daily Un-Jumble</h3>
+            <h3 className="font-bold text-gray-800">Unjumble</h3>
           </div>
           <p className="text-xs text-gray-500 mb-3">Unscramble 7 letters &amp; find words</p>
           <span className="inline-flex items-center gap-1 text-sm font-medium text-indigo-600 group-hover:text-indigo-800 transition">
@@ -103,7 +103,7 @@ export default function DashboardPage() {
           </span>
         </Link>
 
-        {/* Sentence Scramble */}
+        {/* Scramble */}
         <Link
           href="/games/sentence-scramble"
           className="group bg-gradient-to-br from-cyan-50 to-blue-50 border border-cyan-200 rounded-2xl p-5 hover:shadow-md transition-all"
@@ -112,7 +112,7 @@ export default function DashboardPage() {
             <div className="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center shadow-sm">
               <Shuffle className="w-5 h-5 text-white" />
             </div>
-            <h3 className="font-bold text-gray-800">Sentence Scramble</h3>
+            <h3 className="font-bold text-gray-800">Scramble</h3>
           </div>
           <p className="text-xs text-gray-500 mb-3">Reorder words to build sentences</p>
           <span className="inline-flex items-center gap-1 text-sm font-medium text-cyan-600 group-hover:text-cyan-800 transition">

@@ -106,7 +106,7 @@ export function buildStreakReminderEmail(data: StreakEmailData): {
                     <span style="color:#d1d5db;">•</span>
                     <a href="${appUrl}/vocabulary" style="color:#6366f1;text-decoration:none;font-size:13px;font-weight:500;margin:0 8px;">Vocabulary</a>
                     <span style="color:#d1d5db;">•</span>
-                    <a href="${appUrl}/games/word-puzzle" style="color:#6366f1;text-decoration:none;font-size:13px;font-weight:500;margin:0 8px;">Daily Un-Jumble</a>
+                    <a href="${appUrl}/games/word-puzzle" style="color:#6366f1;text-decoration:none;font-size:13px;font-weight:500;margin:0 8px;">Unjumble</a>
                   </td>
                 </tr>
               </table>

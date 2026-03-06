@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Generate a comprehensive 3–7 letter English word list for the Daily Un-Jumble game.
+ * Generate a comprehensive 3–7 letter English word list for the Unjumble game.
  * Source: "an-array-of-english-words" (~275K words from Project Gutenberg / Moby)
  * Output: src/content/game-dictionary.json (sorted, lowercase, alpha-only, 3–7 chars)
  */

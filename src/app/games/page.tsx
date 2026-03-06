@@ -148,7 +148,7 @@ export default function GamesPage() {
   };
 
   const tabs: { key: GameTab; label: string; color: string; activeColor: string }[] = [
-    { key: 'unjumble', label: 'Un-Jumble', color: 'text-gray-600 hover:text-indigo-600', activeColor: 'text-indigo-700 border-indigo-600 bg-indigo-50' },
+    { key: 'unjumble', label: 'Unjumble', color: 'text-gray-600 hover:text-indigo-600', activeColor: 'text-indigo-700 border-indigo-600 bg-indigo-50' },
     { key: 'hangman', label: 'Hangman', color: 'text-gray-600 hover:text-rose-600', activeColor: 'text-rose-700 border-rose-600 bg-rose-50' },
     { key: 'scramble', label: 'Scramble', color: 'text-gray-600 hover:text-cyan-600', activeColor: 'text-cyan-700 border-cyan-600 bg-cyan-50' },
     { key: 'wordmatch', label: 'Word Match', color: 'text-gray-600 hover:text-emerald-600', activeColor: 'text-emerald-700 border-emerald-600 bg-emerald-50' },
@@ -169,7 +169,7 @@ export default function GamesPage() {
 
       {/* Game Cards */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {/* Daily Un-Jumble */}
+        {/* Unjumble */}
         <Link
           href="/games/word-puzzle"
           className="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all"
@@ -181,7 +181,7 @@ export default function GamesPage() {
                 Daily Challenge
               </span>
             </div>
-            <h2 className="text-xl font-bold mb-1">Daily Un-Jumble</h2>
+            <h2 className="text-xl font-bold mb-1">Unjumble</h2>
             <p className="text-white/80 text-sm">
               Unscramble 7 letters and find as many words as you can!
             </p>
@@ -243,7 +243,7 @@ export default function GamesPage() {
           </div>
         </Link>
 
-        {/* Sentence Scramble */}
+        {/* Scramble */}
         <Link
           href="/games/sentence-scramble"
           className="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all"
@@ -255,7 +255,7 @@ export default function GamesPage() {
                 Daily Challenge
               </span>
             </div>
-            <h2 className="text-xl font-bold mb-1">Sentence Scramble</h2>
+            <h2 className="text-xl font-bold mb-1">Scramble</h2>
             <p className="text-white/80 text-sm">
               Unscramble words to build the correct sentence!
             </p>
