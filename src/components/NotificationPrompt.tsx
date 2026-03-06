@@ -62,7 +62,7 @@ export default function NotificationPrompt() {
 
       const timer = setTimeout(() => {
         if (Notification.permission === 'granted') {
-          new Notification('SpeakEasy 🇮🇳', {
+          new Notification('SpeakEasy', {
             body: "Time for your daily English practice! Keep your streak alive 🔥",
             icon: '/icons/icon-192.svg',
             tag: 'daily-reminder',
@@ -91,7 +91,7 @@ export default function NotificationPrompt() {
       localStorage.setItem(NOTIF_TIME_KEY, time);
 
       // Show confirmation notification
-      new Notification('SpeakEasy 🇮🇳', {
+      new Notification('SpeakEasy', {
         body: `Daily reminders enabled at ${time}! Keep learning English every day.`,
         icon: '/icons/icon-192.svg',
       });

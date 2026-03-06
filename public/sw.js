@@ -90,7 +90,7 @@ self.addEventListener('push', (event) => {
   const data = event.data ? event.data.json() : {};
   const title = data.title || 'SpeakEasy';
   const options = {
-    body: data.body || "Time for your daily English practice! 🇮🇳",
+    body: data.body || "Time for your daily English practice!",
     icon: '/icons/icon-192.png',
     badge: '/icons/icon-192.png',
     tag: 'speakeasy-reminder',

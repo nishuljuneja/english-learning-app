@@ -23,7 +23,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="text-center sm:text-left">
             <span className="text-lg font-bold text-indigo-600">SpeakEasy</span>
-            <p className="text-xs text-gray-400 mt-1">Learn English step by step — built for India 🇮🇳</p>
+            <p className="text-xs text-gray-400 mt-1">Learn English step by step — built for India</p>
           </div>
 
           {/* Links */}

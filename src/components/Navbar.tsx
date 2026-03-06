@@ -58,7 +58,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <span className="text-2xl font-bold text-indigo-600">🇮🇳 SpeakEasy</span>
+              <span className="text-2xl font-bold text-indigo-600">SpeakEasy</span>
             </Link>
           </div>
 
