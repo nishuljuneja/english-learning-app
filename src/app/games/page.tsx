@@ -220,7 +220,7 @@ export default function GamesPage() {
             </div>
             <h2 className="text-xl font-bold mb-1">Hangman</h2>
             <p className="text-white/80 text-sm">
-              Guess the word letter by letter before the hangman is complete!
+              Guess the word before the hangman is complete!
             </p>
           </div>
           <div className="p-5">
