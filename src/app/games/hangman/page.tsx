@@ -53,7 +53,7 @@ const WORD_POOL = allVocabulary.filter(
     defs[w.word.toLowerCase()]?.d
 );
 
-const MAX_WRONG = 6; // head, body, left arm, right arm, left leg, right leg
+const MAX_WRONG = 8; // head, body, left arm, right arm, left hand, right hand, left leg, right leg
 
 // ─── Helpers ─────────────────────────────────────────────────────────
 
@@ -104,12 +104,21 @@ function HangmanDrawing({ wrongCount }: { wrongCount: number }) {
       {wrongCount >= 4 && (
         <line x1="130" y1="105" x2="160" y2="130" stroke="#EF4444" strokeWidth="3" strokeLinecap="round" className="animate-[fadeIn_0.3s_ease]" />
       )}
-      {/* Left leg */}
+
+      {/* Left hand */}
       {wrongCount >= 5 && (
+        <circle cx="95" cy="134" r="4" stroke="#EF4444" strokeWidth="2" fill="#EF4444" className="animate-[fadeIn_0.3s_ease]" />
+      )}
+      {/* Right hand */}
+      {wrongCount >= 6 && (
+        <circle cx="165" cy="134" r="4" stroke="#EF4444" strokeWidth="2" fill="#EF4444" className="animate-[fadeIn_0.3s_ease]" />
+      )}
+      {/* Left leg */}
+      {wrongCount >= 7 && (
         <line x1="130" y1="145" x2="105" y2="180" stroke="#EF4444" strokeWidth="3" strokeLinecap="round" className="animate-[fadeIn_0.3s_ease]" />
       )}
       {/* Right leg */}
-      {wrongCount >= 6 && (
+      {wrongCount >= 8 && (
         <line x1="130" y1="145" x2="155" y2="180" stroke="#EF4444" strokeWidth="3" strokeLinecap="round" className="animate-[fadeIn_0.3s_ease]" />
       )}
     </svg>
@@ -443,7 +452,7 @@ export default function HangmanPage() {
           </div>
           <h1 className="text-3xl font-bold text-gray-800 mb-2">Hangman</h1>
           <p className="text-gray-500">
-            Guess the word one letter at a time. 6 wrong guesses and it&apos;s game over!
+            Guess the word one letter at a time. 8 wrong guesses and it&apos;s game over!
           </p>
           {winStreak > 0 && (
             <div className="mt-3 inline-flex items-center gap-2 bg-amber-50 text-amber-700 px-4 py-1.5 rounded-full text-sm font-medium">
@@ -466,7 +475,7 @@ export default function HangmanPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-rose-500 font-bold">3.</span>
-              Wrong guesses add body parts to the hangman. 6 wrong = game over.
+              Wrong guesses add body parts to the hangman. 8 wrong = game over.
             </li>
             <li className="flex items-start gap-2">
               <span className="text-rose-500 font-bold">4.</span>
