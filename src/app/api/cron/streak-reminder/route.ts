@@ -59,10 +59,9 @@ export async function POST(request: NextRequest) {
   try {
     const adminDb = getAdminDb();
 
-    // Query: emailReminders === true AND streak >= 1
+    // Query all users with streak >= 1, then filter out those who explicitly opted out
     const snapshot = await adminDb
       .collection('users')
-      .where('emailReminders', '==', true)
       .where('streak', '>=', 1)
       .get();
 
@@ -76,6 +75,12 @@ export async function POST(request: NextRequest) {
 
     for (const doc of snapshot.docs) {
       const user = doc.data();
+
+      // Skip if explicitly opted out (default is on)
+      if (user.emailReminders === false) {
+        skipped++;
+        continue;
+      }
 
       // Skip if they already practised today
       if (user.lastActiveDate === today) {
