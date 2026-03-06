@@ -5,19 +5,15 @@ import { usePathname } from 'next/navigation';
 import { useAppStore } from '@/lib/store';
 import { t } from '@/lib/i18n';
 import { LANGUAGES } from '@/lib/i18n';
-import { logOut } from '@/lib/auth';
 import {
-  Trophy, Home, User, Menu, X, Globe, LogOut, Flame, ChevronDown, ClipboardCheck,
+  Trophy, Home, User, Globe, ChevronDown, ClipboardCheck,
   Award, Gamepad2, GraduationCap,
 } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 
-import { NotificationSettingsButton } from '@/components/NotificationPrompt';
-
 export default function Navbar() {
   const { user, profile, uiLanguage, setUILanguage } = useAppStore();
   const pathname = usePathname();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [langMenuOpen, setLangMenuOpen] = useState(false);
   const [navDropdownOpen, setNavDropdownOpen] = useState(false);
   const navDropdownRef = useRef<HTMLDivElement>(null);
@@ -53,19 +49,19 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Desktop Nav Dropdown */}
+          {/* Nav Dropdown — visible on all screens */}
           {user && (() => {
             const currentItem = navItems.find((item) => pathname === item.href || (item.href !== '/dashboard' && pathname.startsWith(item.href))) || navItems[0];
             const CurrentIcon = currentItem.icon;
             return (
-              <div className="hidden md:flex items-center" ref={navDropdownRef}>
+              <div className="flex items-center" ref={navDropdownRef}>
                 <div className="relative">
                   <button
                     onClick={() => setNavDropdownOpen(!navDropdownOpen)}
-                    className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium bg-indigo-50 text-indigo-700 hover:bg-indigo-100 transition-colors"
+                    className="flex items-center gap-1.5 px-2 sm:px-3 py-2 rounded-lg text-sm font-medium bg-indigo-50 text-indigo-700 hover:bg-indigo-100 transition-colors"
                   >
                     <CurrentIcon className="w-4 h-4" />
-                    {currentItem.label}
+                    <span className="hidden sm:inline">{currentItem.label}</span>
                     <ChevronDown className={`w-4 h-4 transition-transform ${navDropdownOpen ? 'rotate-180' : ''}`} />
                   </button>
                   {navDropdownOpen && (
@@ -89,7 +85,7 @@ export default function Navbar() {
           })()}
 
           {/* Right side */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-2 sm:space-x-3">
             {/* Language Selector */}
             <div className="relative">
               <button
@@ -122,86 +118,30 @@ export default function Navbar() {
             </div>
 
             {user && profile && (
-              <>
-                {/* Streak */}
-                <div className="flex items-center text-orange-500 text-sm font-medium">
-                  <Flame className="w-4 h-4 mr-1" />
-                  {profile.streak}
-                </div>
-
-                {/* XP */}
-                <div className="text-sm font-medium text-indigo-600">
-                  {profile.xp} XP
-                </div>
-
-                {/* Level Badge */}
-                <span className="bg-indigo-100 text-indigo-800 text-xs font-bold px-2 py-1 rounded-full">
-                  {profile.currentLevel}
-                </span>
-
-                {/* Notification Settings */}
-                <NotificationSettingsButton />
-
-                {/* Profile & Logout */}
-                <Link href="/profile" className="text-gray-600 hover:text-indigo-600">
-                  <User className="w-5 h-5" />
-                </Link>
-                <button
-                  onClick={() => logOut()}
-                  className="text-gray-400 hover:text-red-500 transition-colors"
-                  title={t('common.logout', uiLanguage)}
-                >
-                  <LogOut className="w-4 h-4" />
-                </button>
-              </>
+              <Link href="/profile" className="text-gray-600 hover:text-indigo-600">
+                <User className="w-5 h-5" />
+              </Link>
             )}
 
             {!user && (
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-1 sm:space-x-2">
                 <Link
                   href="/login"
-                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
+                  className="text-gray-600 hover:text-indigo-600 px-2 sm:px-3 py-2 text-xs sm:text-sm font-medium whitespace-nowrap"
                 >
                   {t('common.login', uiLanguage)}
                 </Link>
                 <Link
                   href="/signup"
-                  className="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"
+                  className="bg-indigo-600 text-white px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium hover:bg-indigo-700 transition-colors whitespace-nowrap"
                 >
                   {t('common.signup', uiLanguage)}
                 </Link>
               </div>
             )}
-
-            {/* Mobile menu button */}
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden text-gray-600"
-            >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
           </div>
         </div>
       </div>
-
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200">
-          <div className="px-4 py-3 space-y-2">
-            {user && navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="block text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <item.icon className="w-4 h-4 inline mr-2" />
-                {item.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
     </nav>
   );
 }
