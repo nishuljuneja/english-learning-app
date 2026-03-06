@@ -190,6 +190,9 @@ export default function WordPuzzlePage() {
   const [hintsUsed, setHintsUsed] = useState(0);
   const [revealedHints, setRevealedHints] = useState<string[]>([]);
 
+  // Practice mode: tracks whether the 7-letter target was found (game keeps going)
+  const [foundTarget, setFoundTarget] = useState(false);
+
   // Leaderboard
   const [leaderboard, setLeaderboard] = useState<LocalScore[]>([]);
   const [showLeaderboard, setShowLeaderboard] = useState(false);
@@ -232,6 +235,7 @@ export default function WordPuzzlePage() {
       setFeedback(null);
       setHintsUsed(0);
       setRevealedHints([]);
+      setFoundTarget(false);
       setState('playing');
       setShowLeaderboard(false);
 
@@ -274,18 +278,23 @@ export default function WordPuzzlePage() {
     // Valid word!
     const newFound = [...foundWords, word];
     setFoundWords(newFound);
-    setFeedback({ type: 'success', msg: word.length === 7 ? '🎉 You found it!' : `+${word.length} pts` });
 
-    // Check if they found the 7-letter word
-    if (word === targetWordObj.word.toLowerCase()) {
-      // GAME WON!
+    const isTargetWord = word === targetWordObj.word.toLowerCase();
+
+    if (isTargetWord && mode === 'practice') {
+      // Practice mode: celebrate but keep playing to find more words
+      setFoundTarget(true);
+      setFeedback({ type: 'success', msg: '🎉 Target word found! Keep finding more words!' });
+    } else if (isTargetWord && mode === 'daily') {
+      // Daily mode: game won — stop timer, save to leaderboard
+      setFeedback({ type: 'success', msg: '🎉 You found it!' });
       if (timerRef.current) clearInterval(timerRef.current);
       setState('won');
 
       const timeSeconds = elapsed;
       const adjustedTime = timeSeconds + hintsUsed * HINT_PENALTY;
 
-      // Save score
+      // Save score to local leaderboard
       const scoreData: LocalScore = {
         displayName: profile?.displayName || 'Player',
         targetWord: targetWordObj.word.toLowerCase(),
@@ -342,10 +351,12 @@ export default function WordPuzzlePage() {
           }
         })
         .catch(() => {});
+    } else {
+      setFeedback({ type: 'success', msg: `+${word.length} pts` });
     }
 
     inputRef.current?.focus();
-  }, [input, letters, foundWords, targetWordObj, state, elapsed, hintsUsed, profile, setProfile]);
+  }, [input, letters, foundWords, targetWordObj, state, elapsed, hintsUsed, profile, setProfile, mode]);
 
   // Use a hint
   const useHint = useCallback(() => {
@@ -391,6 +402,32 @@ export default function WordPuzzlePage() {
       })
       .catch(() => {});
   }, []);
+
+  // Finish practice session (no leaderboard save)
+  const finishPractice = useCallback(() => {
+    if (timerRef.current) clearInterval(timerRef.current);
+    setState('won');
+
+    // Award XP for practice (based on words found, no leaderboard)
+    if (profile && targetWordObj) {
+      const xpGain = Math.min(30, foundWords.length * 2);
+      if (xpGain > 0) {
+        firestoreImport().then((m) => m.addXP(profile.uid, xpGain)).catch(() => {});
+        firestoreImport().then((m) => m.updateStreak(profile.uid))
+          .then((streakData) => {
+            setProfile({
+              ...profile,
+              xp: profile.xp + xpGain,
+              streak: streakData.streak,
+              lastActiveDate: streakData.lastActiveDate,
+            });
+          })
+          .catch(() => {
+            setProfile({ ...profile, xp: profile.xp + xpGain });
+          });
+      }
+    }
+  }, [profile, setProfile, targetWordObj, foundWords]);
 
   const getRankIcon = (index: number) => {
     if (index === 0) return <Crown className="w-5 h-5 text-yellow-500" />;
@@ -443,7 +480,11 @@ export default function WordPuzzlePage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-indigo-500 font-bold">4.</span>
-              Your time (+ penalties) goes on the leaderboard. Faster = better!
+              <strong>Daily:</strong> Your time (+ penalties) goes on the leaderboard. Faster = better!
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-indigo-500 font-bold">5.</span>
+              <strong>Practice:</strong> Find as many words as you can — the game keeps going after you find the 7-letter word.
             </li>
           </ul>
         </div>
@@ -464,7 +505,7 @@ export default function WordPuzzlePage() {
           >
             <RotateCcw className="w-8 h-8 mb-3" />
             <h3 className="text-lg font-bold mb-1">Practice</h3>
-            <p className="text-white/70 text-sm">Random puzzle each time. Practice at your own pace.</p>
+            <p className="text-white/70 text-sm">Random puzzle. Find as many words as you can — no leaderboard.</p>
           </button>
         </div>
 
@@ -498,8 +539,10 @@ export default function WordPuzzlePage() {
     return (
       <div className="max-w-2xl mx-auto px-4 py-8">
         <div className="text-center mb-8">
-          <div className="text-6xl mb-4">🎉</div>
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">Puzzle Complete!</h1>
+          <div className="text-6xl mb-4">{mode === 'practice' ? '🏆' : '🎉'}</div>
+          <h1 className="text-3xl font-bold text-gray-800 mb-2">
+            {mode === 'practice' ? 'Practice Complete!' : 'Puzzle Complete!'}
+          </h1>
           <p className="text-gray-500">
             The word was <span className="font-bold text-indigo-600 text-lg">{targetWordObj.word.toUpperCase()}</span>
           </p>
@@ -511,21 +554,30 @@ export default function WordPuzzlePage() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
-          <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 text-center">
-            <Clock className="w-6 h-6 text-blue-500 mx-auto mb-1" />
-            <div className="text-2xl font-bold text-gray-800">{formatTime(elapsed)}</div>
-            <div className="text-xs text-gray-400">Time</div>
-          </div>
-          <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 text-center">
-            <Clock className="w-6 h-6 text-indigo-500 mx-auto mb-1" />
-            <div className="text-2xl font-bold text-gray-800">{formatTime(adjustedTime)}</div>
-            <div className="text-xs text-gray-400">Adjusted</div>
-          </div>
+        <div className={`grid ${mode === 'daily' ? 'grid-cols-2 sm:grid-cols-4' : 'grid-cols-3'} gap-4 mb-8`}>
+          {mode === 'daily' && (
+            <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 text-center">
+              <Clock className="w-6 h-6 text-blue-500 mx-auto mb-1" />
+              <div className="text-2xl font-bold text-gray-800">{formatTime(elapsed)}</div>
+              <div className="text-xs text-gray-400">Time</div>
+            </div>
+          )}
+          {mode === 'daily' && (
+            <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 text-center">
+              <Clock className="w-6 h-6 text-indigo-500 mx-auto mb-1" />
+              <div className="text-2xl font-bold text-gray-800">{formatTime(adjustedTime)}</div>
+              <div className="text-xs text-gray-400">Adjusted</div>
+            </div>
+          )}
           <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 text-center">
             <CheckCircle2 className="w-6 h-6 text-green-500 mx-auto mb-1" />
             <div className="text-2xl font-bold text-gray-800">{foundWords.length}</div>
             <div className="text-xs text-gray-400">Words Found</div>
+          </div>
+          <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 text-center">
+            <span className="block text-2xl mx-auto mb-1">🎯</span>
+            <div className="text-2xl font-bold text-gray-800">{allValid.length}</div>
+            <div className="text-xs text-gray-400">Total Possible</div>
           </div>
           <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 text-center">
             <Lightbulb className="w-6 h-6 text-amber-500 mx-auto mb-1" />
@@ -570,7 +622,8 @@ export default function WordPuzzlePage() {
           )}
         </div>
 
-        {/* Leaderboard */}
+        {/* Leaderboard — daily mode only */}
+        {mode === 'daily' && (
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 mb-6">
           <div className="flex items-center gap-2 mb-4">
             <Trophy className="w-5 h-5 text-yellow-500" />
@@ -609,6 +662,7 @@ export default function WordPuzzlePage() {
             <p className="text-sm text-gray-400">You&apos;re the first to complete this puzzle!</p>
           )}
         </div>
+        )}
 
         {/* Actions */}
         <div className="flex flex-col sm:flex-row gap-3">
@@ -739,9 +793,13 @@ export default function WordPuzzlePage() {
             {foundWords.map((w) => (
               <span
                 key={w}
-                className="px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700"
+                className={`px-3 py-1 rounded-full text-sm font-medium ${
+                  w.length === 7
+                    ? 'bg-indigo-100 text-indigo-700 ring-2 ring-indigo-300'
+                    : 'bg-green-100 text-green-700'
+                }`}
               >
-                {w} <span className="text-green-500 text-xs">+{w.length}</span>
+                {w} <span className={`text-xs ${w.length === 7 ? 'text-indigo-500' : 'text-green-500'}`}>+{w.length}</span>
               </span>
             ))}
           </div>
@@ -783,17 +841,46 @@ export default function WordPuzzlePage() {
         )}
       </div>
 
-      {/* Give up */}
+      {/* Practice mode: target found banner + finish button */}
+      {mode === 'practice' && foundTarget && (
+        <div className="bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-2xl p-4 mb-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+              <span className="text-sm font-medium text-emerald-700">
+                Target word found! Keep going or finish when ready.
+              </span>
+            </div>
+            <button
+              onClick={finishPractice}
+              className="px-4 py-2 bg-emerald-600 text-white text-sm font-medium rounded-xl hover:bg-emerald-700 transition"
+            >
+              Finish Practice
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Give up / Finish */}
       <div className="text-center">
-        <button
-          onClick={() => {
-            if (timerRef.current) clearInterval(timerRef.current);
-            setState('idle');
-          }}
-          className="text-sm text-gray-400 hover:text-red-500 transition"
-        >
-          Give up & return
-        </button>
+        {mode === 'practice' ? (
+          <button
+            onClick={finishPractice}
+            className="text-sm text-emerald-600 hover:text-emerald-700 font-medium transition"
+          >
+            Finish Practice &amp; See Results
+          </button>
+        ) : (
+          <button
+            onClick={() => {
+              if (timerRef.current) clearInterval(timerRef.current);
+              setState('idle');
+            }}
+            className="text-sm text-gray-400 hover:text-red-500 transition"
+          >
+            Give up &amp; return
+          </button>
+        )}
       </div>
     </div>
   );
