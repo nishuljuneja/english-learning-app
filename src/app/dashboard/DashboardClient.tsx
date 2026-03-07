@@ -68,6 +68,85 @@ export default function DashboardPage() {
         )}
       </div>
 
+      {/* Daily Practice CTA */}
+      <Link
+        href="/daily-practice"
+        className="block mb-8 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl p-6 text-white hover:shadow-lg transition-shadow group"
+      >
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+              <Sparkles className="w-6 h-6 text-white" />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold">Daily Practice</h3>
+              <p className="text-white/70 text-sm">Quick 5-minute mixed session — vocab, grammar & reading</p>
+            </div>
+          </div>
+          <ArrowRight className="w-6 h-6 text-white/70 group-hover:text-white transition-colors" />
+        </div>
+      </Link>
+
+      {/* Stats Row */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+        <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 text-center">
+          <Flame className="w-8 h-8 text-orange-500 mx-auto mb-2" />
+          <div className="text-3xl font-bold text-gray-800">{profile.streak}</div>
+          <div className="text-sm text-gray-500">{t('common.streak', uiLanguage)}</div>
+        </div>
+        <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 text-center">
+          <Trophy className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
+          <div className="text-3xl font-bold text-gray-800">{profile.xp}</div>
+          <div className="text-sm text-gray-500">XP</div>
+        </div>
+        <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 text-center">
+          <BookOpen className="w-8 h-8 text-blue-500 mx-auto mb-2" />
+          <div className="text-3xl font-bold text-gray-800">{profile.wordsLearned}</div>
+          <div className="text-sm text-gray-500">{t('common.wordsLearned', uiLanguage)}</div>
+        </div>
+        <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 text-center">
+          <Brain className="w-8 h-8 text-purple-500 mx-auto mb-2" />
+          <div className="text-3xl font-bold text-gray-800">{profile.lessonsCompleted}</div>
+          <div className="text-sm text-gray-500">{t('common.lessonsCompleted', uiLanguage)}</div>
+        </div>
+      </div>
+
+      {/* Skills Grid (Continue Learning) */}
+      <h2 className="text-xl font-bold text-gray-800 mb-4">{t('dashboard.continueLesson', uiLanguage)}</h2>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+        {skills.map((skill) => {
+          const score = profile.skillScores[skill.key as keyof typeof profile.skillScores] || 0;
+          const proLocked = !isPro(profile) && ['reading', 'listening', 'writing', 'speaking'].includes(skill.key);
+          return (
+            <Link
+              key={skill.key}
+              href={skill.href}
+              className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow group relative"
+            >
+              {proLocked && (
+                <span className="absolute top-3 right-3 inline-flex items-center gap-0.5 text-[10px] font-bold bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-1.5 py-0.5 rounded-full">
+                  <Crown className="w-2.5 h-2.5" />
+                  PRO
+                </span>
+              )}
+              <div className="flex items-center gap-3 mb-3">
+                <div className={`w-10 h-10 ${skill.color} rounded-xl flex items-center justify-center`}>
+                  <skill.icon className="w-5 h-5 text-white" />
+                </div>
+                <h3 className="font-semibold text-gray-800 group-hover:text-indigo-600 transition-colors">
+                  {skill.label}
+                </h3>
+              </div>
+              <ProgressBar current={score} total={100} />
+              <div className="flex justify-between items-center mt-3">
+                <span className="text-sm text-gray-500">{score}%</span>
+                <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-indigo-600 transition-colors" />
+              </div>
+            </Link>
+          );
+        })}
+      </div>
+
       {/* Upgrade Banner for free users */}
       {!isPro(profile) && (
         <Link
@@ -165,85 +244,6 @@ export default function DashboardPage() {
             Play <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
           </span>
         </Link>
-      </div>
-
-      {/* Stats Row */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
-        <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 text-center">
-          <Flame className="w-8 h-8 text-orange-500 mx-auto mb-2" />
-          <div className="text-3xl font-bold text-gray-800">{profile.streak}</div>
-          <div className="text-sm text-gray-500">{t('common.streak', uiLanguage)}</div>
-        </div>
-        <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 text-center">
-          <Trophy className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
-          <div className="text-3xl font-bold text-gray-800">{profile.xp}</div>
-          <div className="text-sm text-gray-500">XP</div>
-        </div>
-        <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 text-center">
-          <BookOpen className="w-8 h-8 text-blue-500 mx-auto mb-2" />
-          <div className="text-3xl font-bold text-gray-800">{profile.wordsLearned}</div>
-          <div className="text-sm text-gray-500">{t('common.wordsLearned', uiLanguage)}</div>
-        </div>
-        <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 text-center">
-          <Brain className="w-8 h-8 text-purple-500 mx-auto mb-2" />
-          <div className="text-3xl font-bold text-gray-800">{profile.lessonsCompleted}</div>
-          <div className="text-sm text-gray-500">{t('common.lessonsCompleted', uiLanguage)}</div>
-        </div>
-      </div>
-
-      {/* Daily Practice CTA */}
-      <Link
-        href="/daily-practice"
-        className="block mb-8 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl p-6 text-white hover:shadow-lg transition-shadow group"
-      >
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-              <Sparkles className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <h3 className="text-lg font-bold">Daily Practice</h3>
-              <p className="text-white/70 text-sm">Quick 5-minute mixed session — vocab, grammar & reading</p>
-            </div>
-          </div>
-          <ArrowRight className="w-6 h-6 text-white/70 group-hover:text-white transition-colors" />
-        </div>
-      </Link>
-
-      {/* Skills Grid (Continue Learning) */}
-      <h2 className="text-xl font-bold text-gray-800 mb-4">{t('dashboard.continueLesson', uiLanguage)}</h2>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-        {skills.map((skill) => {
-          const score = profile.skillScores[skill.key as keyof typeof profile.skillScores] || 0;
-          const proLocked = !isPro(profile) && ['reading', 'listening', 'writing', 'speaking'].includes(skill.key);
-          return (
-            <Link
-              key={skill.key}
-              href={skill.href}
-              className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow group relative"
-            >
-              {proLocked && (
-                <span className="absolute top-3 right-3 inline-flex items-center gap-0.5 text-[10px] font-bold bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-1.5 py-0.5 rounded-full">
-                  <Crown className="w-2.5 h-2.5" />
-                  PRO
-                </span>
-              )}
-              <div className="flex items-center gap-3 mb-3">
-                <div className={`w-10 h-10 ${skill.color} rounded-xl flex items-center justify-center`}>
-                  <skill.icon className="w-5 h-5 text-white" />
-                </div>
-                <h3 className="font-semibold text-gray-800 group-hover:text-indigo-600 transition-colors">
-                  {skill.label}
-                </h3>
-              </div>
-              <ProgressBar current={score} total={100} />
-              <div className="flex justify-between items-center mt-3">
-                <span className="text-sm text-gray-500">{score}%</span>
-                <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-indigo-600 transition-colors" />
-              </div>
-            </Link>
-          );
-        })}
       </div>
 
       {/* Study Plan */}
