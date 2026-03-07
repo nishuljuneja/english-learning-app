@@ -44,6 +44,7 @@ export async function signUpWithEmail(
     lessonsCompleted: 0,
     wordsLearned: 0,
     placementTestCompleted: false,
+    subscriptionTier: 'free',
   });
 
   return result.user;
@@ -80,6 +81,7 @@ export async function signInWithGoogle(nativeLanguage: SupportedLanguage = 'hi')
       lessonsCompleted: 0,
       wordsLearned: 0,
       placementTestCompleted: false,
+      subscriptionTier: 'free',
     });
   }
 

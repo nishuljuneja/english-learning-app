@@ -7,8 +7,10 @@ import { allVocabulary } from '@/content/vocabulary';
 import definitions from '@/content/word-definitions.json';
 import {
   Clock, Trophy, RotateCcw, Crown, Medal, Sparkles,
-  ArrowLeft, Layers, Eye,
+  ArrowLeft, Layers, Eye, Lock,
 } from 'lucide-react';
+import { isPro } from '@/lib/subscription';
+import { ProBadge } from '@/components/ProGate';
 
 // ─── Types ───────────────────────────────────────────────────────────
 
@@ -478,12 +480,21 @@ export default function WordMatchPage() {
             <p className="text-white/70 text-sm">Same words for everyone. Compete for fewest moves!</p>
           </button>
           <button
-            onClick={() => startGame('practice', difficulty)}
-            className="bg-gradient-to-br from-violet-500 to-purple-600 text-white rounded-2xl p-6 text-left hover:from-violet-600 hover:to-purple-700 transition-all shadow-lg"
+            onClick={() => { if (isPro(profile)) startGame('practice', difficulty); else window.location.href = '/pricing'; }}
+            className={`bg-gradient-to-br text-white rounded-2xl p-6 text-left transition-all shadow-lg ${
+              isPro(profile)
+                ? 'from-violet-500 to-purple-600 hover:from-violet-600 hover:to-purple-700'
+                : 'from-gray-400 to-gray-500 hover:from-gray-500 hover:to-gray-600'
+            }`}
           >
-            <RotateCcw className="w-8 h-8 mb-3" />
+            <div className="flex items-center justify-between mb-3">
+              <RotateCcw className="w-8 h-8" />
+              {!isPro(profile) && <ProBadge />}
+            </div>
             <h3 className="text-lg font-bold mb-1">Practice</h3>
-            <p className="text-white/70 text-sm">Random words each time. Sharpen your memory!</p>
+            <p className="text-white/70 text-sm">
+              {isPro(profile) ? 'Random words each time. Sharpen your memory!' : 'Upgrade to Pro for unlimited practice.'}
+            </p>
           </button>
         </div>
 

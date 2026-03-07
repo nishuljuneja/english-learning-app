@@ -8,11 +8,13 @@ import { LevelBadge, ScoreCard } from '@/components/Exercises';
 import { listeningExercises, type ListeningExercise } from '@/content/listening-exercises';
 import { useIndianVoice } from '@/lib/useIndianVoice';
 import type { CEFRLevel } from '@/lib/firestore';
+import { isPro } from '@/lib/subscription';
+import ProGate from '@/components/ProGate';
 
 type Phase = 'list' | 'exercise' | 'result';
 
 export default function ListeningPage() {
-  const { uiLanguage } = useAppStore();
+  const { uiLanguage, profile } = useAppStore();
   const [selectedLevel, setSelectedLevel] = useState<CEFRLevel | 'all'>('all');
   const [phase, setPhase] = useState<Phase>('list');
   const [exercise, setExercise] = useState<ListeningExercise | null>(null);
@@ -85,6 +87,24 @@ export default function ListeningPage() {
     }
     return { correct: 0, total: 0 };
   };
+
+  // ── PRO GATE ──
+  if (!isPro(profile)) {
+    return (
+      <div className="max-w-4xl mx-auto px-4 py-8">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center">
+            <Headphones className="w-6 h-6 text-yellow-600" />
+          </div>
+          <div>
+            <h1 className="text-2xl font-bold text-gray-800">{t('nav.listening', uiLanguage)}</h1>
+            <p className="text-gray-500 text-sm">Train your ear with text-to-speech exercises</p>
+          </div>
+        </div>
+        <ProGate feature="Listening Exercises" />
+      </div>
+    );
+  }
 
   // ── LIST VIEW ──
   if (phase === 'list') {

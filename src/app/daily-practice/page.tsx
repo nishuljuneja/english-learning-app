@@ -10,11 +10,13 @@ import { getGrammarLessonsByLevel } from '@/content/grammar-lessons';
 import { getReadingPassagesByLevel } from '@/content/reading-passages';
 import {
   Sparkles, BookOpen, Brain, BookOpenCheck, ArrowRight,
-  CheckCircle2, Zap, Target, Volume2,
+  CheckCircle2, Zap, Target, Volume2, Lock,
 } from 'lucide-react';
 import { addXP, updateStreak, incrementWordsLearned, updateUserProfile } from '@/lib/firestore';
 import { useIndianVoice } from '@/lib/useIndianVoice';
 import type { CEFRLevel, VocabularyWord } from '@/lib/firestore';
+import { isPro, getDailyPracticeCount, incrementDailyPracticeCount, FREE_DAILY_PRACTICE_LIMIT } from '@/lib/subscription';
+import ProGate from '@/components/ProGate';
 
 /** Fisher-Yates shuffle */
 function shuffle<T>(arr: T[]): T[] {
@@ -144,6 +146,7 @@ export default function DailyPracticePage() {
   const advance = useCallback(() => {
     if (index + 1 >= items.length) {
       setDone(true);
+      incrementDailyPracticeCount();
       // Persist progress
       if (profile) {
         const xpEarned = score * 10;
@@ -261,12 +264,26 @@ export default function DailyPracticePage() {
         </div>
 
         <button
-          onClick={() => setStarted(true)}
+          onClick={() => {
+            const count = getDailyPracticeCount();
+            if (!isPro(profile) && count >= FREE_DAILY_PRACTICE_LIMIT) return;
+            setStarted(true);
+          }}
           className="w-full py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-2xl font-semibold text-lg hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg flex items-center justify-center gap-2"
         >
           <Zap className="w-5 h-5" />
           Start Today&apos;s Practice
         </button>
+
+        {/* Daily practice limit for free users */}
+        {!isPro(profile) && getDailyPracticeCount() >= FREE_DAILY_PRACTICE_LIMIT && (
+          <div className="mt-4">
+            <ProGate feature="Unlimited Daily Practice" compact />
+            <p className="text-center text-gray-400 text-xs mt-2">
+              Free users get {FREE_DAILY_PRACTICE_LIMIT} practice session per day.
+            </p>
+          </div>
+        )}
       </div>
     );
   }

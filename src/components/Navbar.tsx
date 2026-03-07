@@ -7,7 +7,7 @@ import { t } from '@/lib/i18n';
 import { LANGUAGES } from '@/lib/i18n';
 import {
   Trophy, Home, User, Globe, ChevronDown, ClipboardCheck,
-  Award, Gamepad2, GraduationCap,
+  Award, Gamepad2, GraduationCap, Crown,
 } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 
@@ -36,6 +36,7 @@ export default function Navbar() {
     { href: '/games', label: 'Games', icon: Gamepad2 },
     { href: '/achievements', label: 'Achievements', icon: Award },
     { href: '/leaderboard', label: t('nav.leaderboard', uiLanguage), icon: Trophy },
+    { href: '/pricing', label: 'Pricing', icon: Crown },
   ];
 
   return (

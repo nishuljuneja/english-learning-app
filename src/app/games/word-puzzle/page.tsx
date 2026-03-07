@@ -7,8 +7,10 @@ import { allVocabulary } from '@/content/vocabulary';
 import gameDictionary from '@/content/game-dictionary.json';
 import {
   LetterText, Clock, Lightbulb, Trophy, ArrowRight, RotateCcw,
-  Shuffle, CheckCircle2, XCircle, Crown, Medal, Sparkles, ArrowLeft,
+  Shuffle, CheckCircle2, XCircle, Crown, Medal, Sparkles, ArrowLeft, Lock,
 } from 'lucide-react';
+import { isPro } from '@/lib/subscription';
+import { ProBadge } from '@/components/ProGate';
 
 // Inline types to avoid importing from firestore modules (Turbopack issue)
 interface VocabularyWord {
@@ -500,12 +502,21 @@ export default function WordPuzzlePage() {
             <p className="text-white/70 text-sm">Same puzzle for everyone today. Compete on the leaderboard!</p>
           </button>
           <button
-            onClick={() => startGame('practice')}
-            className="bg-gradient-to-br from-emerald-500 to-teal-600 text-white rounded-2xl p-6 text-left hover:from-emerald-600 hover:to-teal-700 transition-all shadow-lg"
+            onClick={() => { if (isPro(profile)) startGame('practice'); else window.location.href = '/pricing'; }}
+            className={`bg-gradient-to-br text-white rounded-2xl p-6 text-left transition-all shadow-lg ${
+              isPro(profile)
+                ? 'from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700'
+                : 'from-gray-400 to-gray-500 hover:from-gray-500 hover:to-gray-600'
+            }`}
           >
-            <RotateCcw className="w-8 h-8 mb-3" />
+            <div className="flex items-center justify-between mb-3">
+              <RotateCcw className="w-8 h-8" />
+              {!isPro(profile) && <ProBadge />}
+            </div>
             <h3 className="text-lg font-bold mb-1">Practice</h3>
-            <p className="text-white/70 text-sm">Random puzzle. Find as many words as you can — no leaderboard.</p>
+            <p className="text-white/70 text-sm">
+              {isPro(profile) ? 'Random puzzle. Find as many words as you can — no leaderboard.' : 'Upgrade to Pro for unlimited practice.'}
+            </p>
           </button>
         </div>
 

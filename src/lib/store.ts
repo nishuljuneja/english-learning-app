@@ -87,6 +87,7 @@ export const useAppStore = create<AppState>((set, get) => ({
             wordsLearned: 0,
             placementTestCompleted: false,
             emailReminders: true,
+            subscriptionTier: 'free',
           });
           profile = await getUserProfile(user.uid);
         }

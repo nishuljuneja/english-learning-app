@@ -42,6 +42,11 @@ export interface UserProfile {
   wordsLearned: number;
   placementTestCompleted: boolean;
   emailReminders?: boolean; // opt-in daily streak email
+  // Subscription
+  subscriptionTier: 'free' | 'pro';
+  subscriptionExpiry?: string; // YYYY-MM-DD
+  stripeCustomerId?: string;
+  stripeSubscriptionId?: string;
 }
 
 export interface VocabularyWord {

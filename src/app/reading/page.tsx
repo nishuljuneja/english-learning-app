@@ -8,6 +8,8 @@ import { MultipleChoice, ProgressBar, ScoreCard, LevelBadge } from '@/components
 import { BookOpen, ArrowLeft, Clock, BarChart3 } from 'lucide-react';
 import Link from 'next/link';
 import type { CEFRLevel, ReadingPassage } from '@/lib/firestore';
+import { isPro } from '@/lib/subscription';
+import ProGate from '@/components/ProGate';
 
 export default function ReadingPage() {
   const { profile, uiLanguage } = useAppStore();
@@ -53,6 +55,24 @@ export default function ReadingPage() {
     setActivePassage(null);
     setPhase('list');
   };
+
+  // ── PRO GATE ──
+  if (!isPro(profile)) {
+    return (
+      <div className="max-w-4xl mx-auto px-4 py-8">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+            <BookOpen className="w-6 h-6 text-green-600" />
+          </div>
+          <div>
+            <h1 className="text-2xl font-bold text-gray-800">{t('nav.reading', uiLanguage)}</h1>
+            <p className="text-gray-500 text-sm">Improve comprehension with Indian-context passages</p>
+          </div>
+        </div>
+        <ProGate feature="Reading Passages" />
+      </div>
+    );
+  }
 
   // ── PASSAGE LIST ──
   if (phase === 'list') {

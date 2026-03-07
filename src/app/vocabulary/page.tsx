@@ -5,10 +5,12 @@ import { useAppStore } from '@/lib/store';
 import { t } from '@/lib/i18n';
 import { allVocabulary, getVocabularyByLevel, getVocabularyByIds } from '@/content/vocabulary';
 import { Flashcard, LevelBadge, FillBlank, MultipleChoice, ScoreCard, ProgressBar } from '@/components/Exercises';
-import { BookOpen, Search, Filter, RotateCcw, Brain, Volume2 } from 'lucide-react';
+import { BookOpen, Search, Filter, RotateCcw, Brain, Volume2, Lock } from 'lucide-react';
 import { useIndianVoice } from '@/lib/useIndianVoice';
 import type { CEFRLevel, VocabularyWord } from '@/lib/firestore';
 import { updateUserProfile, addXP, updateStreak, updateVocabularyProgress, incrementWordsLearned } from '@/lib/firestore';
+import { isPro, isLevelAccessible } from '@/lib/subscription';
+import ProGate from '@/components/ProGate';
 
 /**
  * Try to find the target word (or common inflections) inside a sentence.
@@ -393,24 +395,33 @@ export default function VocabularyPage() {
       <div className="flex flex-wrap gap-2 mb-6">
         {levels.map((level) => {
           const count = getVocabularyByLevel(level).length;
+          const locked = !isLevelAccessible(level, profile);
           return (
             <button
               key={level}
-              onClick={() => { setSelectedLevel(level); setFlashcardIndex(0); setShuffleSeed(s => s + 1); }}
+              onClick={() => { if (!locked) { setSelectedLevel(level); setFlashcardIndex(0); setShuffleSeed(s => s + 1); } }}
               className={`px-4 py-2 rounded-xl text-sm font-medium transition ${
-                selectedLevel === level
-                  ? 'bg-indigo-600 text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                locked
+                  ? 'bg-gray-50 text-gray-400 cursor-not-allowed'
+                  : selectedLevel === level
+                    ? 'bg-indigo-600 text-white'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
+              title={locked ? 'Upgrade to Pro' : undefined}
             >
-              {level} ({count})
+              {level} ({count}) {locked && <Lock className="inline w-3 h-3 ml-1" />}
             </button>
           );
         })}
       </div>
 
+      {/* Pro gate for locked level */}
+      {!isLevelAccessible(selectedLevel, profile) && (
+        <ProGate feature={`${selectedLevel} Vocabulary`} />
+      )}
+
       {/* Flashcard Mode */}
-      {mode === 'flashcards' && flashcardWords.length > 0 && currentWord && (
+      {isLevelAccessible(selectedLevel, profile) && mode === 'flashcards' && flashcardWords.length > 0 && currentWord && (
         <div className="py-8">
           <div className="flex items-center justify-center gap-4 text-sm text-gray-400 mb-4">
             <span>{flashcardIndex + 1} / {flashcardWords.length}</span>
@@ -433,7 +444,7 @@ export default function VocabularyPage() {
       )}
 
       {/* Review Mode */}
-      {mode === 'review' && (
+      {isLevelAccessible(selectedLevel, profile) && mode === 'review' && (
         <div className="py-8">
           {reviewWords.length === 0 ? (
             <div className="text-center py-16">
@@ -511,7 +522,7 @@ export default function VocabularyPage() {
       )}
 
       {/* Fill in the Blanks Mode */}
-      {mode === 'fill-blanks' && (
+      {isLevelAccessible(selectedLevel, profile) && mode === 'fill-blanks' && (
         <div className="py-8">
           {drillDone ? (
             <ScoreCard
@@ -558,7 +569,7 @@ export default function VocabularyPage() {
       )}
 
       {/* Multiple Choice Quiz Mode */}
-      {mode === 'quiz' && (
+      {isLevelAccessible(selectedLevel, profile) && mode === 'quiz' && (
         <div className="py-8">
           {drillDone ? (
             <ScoreCard
@@ -596,7 +607,7 @@ export default function VocabularyPage() {
       )}
 
       {/* Browse Mode */}
-      {mode === 'browse' && (
+      {isLevelAccessible(selectedLevel, profile) && mode === 'browse' && (
         <>
           {/* Search */}
           <div className="relative mb-6">
