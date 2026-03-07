@@ -31,17 +31,44 @@ export async function POST(req: NextRequest) {
     // Create Checkout Session
     const origin = req.headers.get('origin') || 'http://localhost:3000';
 
-    const session = await stripe.checkout.sessions.create({
-      customer: customerId,
-      mode: 'subscription',
-      line_items: [{ price: PRO_PRICE_ID, quantity: 1 }],
-      success_url: `${origin}/pricing?success=1`,
-      cancel_url: `${origin}/pricing?canceled=1`,
-      metadata: { firebaseUid: uid },
-      subscription_data: {
+    let session;
+    try {
+      session = await stripe.checkout.sessions.create({
+        customer: customerId,
+        mode: 'subscription',
+        line_items: [{ price: PRO_PRICE_ID, quantity: 1 }],
+        success_url: `${origin}/pricing?success=1`,
+        cancel_url: `${origin}/pricing?canceled=1`,
         metadata: { firebaseUid: uid },
-      },
-    });
+        subscription_data: {
+          metadata: { firebaseUid: uid },
+        },
+      });
+    } catch (checkoutErr: unknown) {
+      // Currency mismatch — create a fresh customer and retry
+      const msg = checkoutErr instanceof Error ? checkoutErr.message : '';
+      if (msg.includes('cannot combine currencies') || msg.includes('currency')) {
+        const freshCustomer = await stripe.customers.create({
+          email,
+          name: displayName || undefined,
+          metadata: { firebaseUid: uid },
+        });
+        customerId = freshCustomer.id;
+        session = await stripe.checkout.sessions.create({
+          customer: customerId,
+          mode: 'subscription',
+          line_items: [{ price: PRO_PRICE_ID, quantity: 1 }],
+          success_url: `${origin}/pricing?success=1`,
+          cancel_url: `${origin}/pricing?canceled=1`,
+          metadata: { firebaseUid: uid },
+          subscription_data: {
+            metadata: { firebaseUid: uid },
+          },
+        });
+      } else {
+        throw checkoutErr;
+      }
+    }
 
     return NextResponse.json({ url: session.url });
   } catch (err: unknown) {
