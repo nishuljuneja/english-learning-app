@@ -25,10 +25,19 @@ function getAdminApp(): App {
     process.env.FIREBASE_ADMIN_PROJECT_ID ||
     process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID;
   const clientEmail = process.env.FIREBASE_ADMIN_CLIENT_EMAIL;
-  const privateKey = process.env.FIREBASE_ADMIN_PRIVATE_KEY?.replace(
-    /\\n/g,
-    '\n'
-  );
+
+  // Handle private key from various env var formats:
+  // - Vercel may store with literal \n or actual newlines
+  // - .env.local wraps in quotes with literal \n
+  // - Some platforms double-escape as \\n
+  let privateKey = process.env.FIREBASE_ADMIN_PRIVATE_KEY || '';
+  // Strip surrounding quotes if present
+  if ((privateKey.startsWith('"') && privateKey.endsWith('"')) ||
+      (privateKey.startsWith("'") && privateKey.endsWith("'"))) {
+    privateKey = privateKey.slice(1, -1);
+  }
+  // Replace literal \n sequences with actual newlines
+  privateKey = privateKey.replace(/\\n/g, '\n');
 
   if (!projectId || !clientEmail || !privateKey) {
     throw new Error(
