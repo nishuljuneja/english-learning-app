@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { useAppStore } from '@/lib/store';
 import { t } from '@/lib/i18n';
 import { LevelBadge, ProgressBar } from '@/components/Exercises';
-import { BookOpen, Brain, Headphones, MessageSquare, PenTool, Flame, Trophy, ArrowRight, ClipboardCheck, Sparkles, Award, BarChart3, Gamepad2, LetterText, Skull, Shuffle, Layers } from 'lucide-react';
+import { BookOpen, Brain, Headphones, MessageSquare, PenTool, Flame, Trophy, ArrowRight, ClipboardCheck, Sparkles, Award, BarChart3, Gamepad2, LetterText, Skull, Shuffle, Layers, Crown, Lock } from 'lucide-react';
+import { isPro } from '@/lib/subscription';
 import StudyPlan from '@/components/StudyPlan';
 
 export default function DashboardPage() {
@@ -66,6 +67,31 @@ export default function DashboardPage() {
           </Link>
         )}
       </div>
+
+      {/* Upgrade Banner for free users */}
+      {!isPro(profile) && (
+        <Link
+          href="/pricing"
+          className="block mb-8 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 rounded-2xl p-5 text-white hover:shadow-xl transition-all group relative overflow-hidden"
+        >
+          <div className="absolute inset-0 bg-white/5 group-hover:bg-white/10 transition-colors" />
+          <div className="relative flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                <Crown className="w-6 h-6 text-yellow-300" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold flex items-center gap-2">
+                  Upgrade to Pro
+                  <span className="text-xs font-medium bg-yellow-400/20 text-yellow-200 px-2 py-0.5 rounded-full">₹499/yr</span>
+                </h3>
+                <p className="text-white/70 text-sm">Unlock all levels (B1–C2), Reading, Listening, unlimited practice & more</p>
+              </div>
+            </div>
+            <ArrowRight className="w-6 h-6 text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all" />
+          </div>
+        </Link>
+      )}
 
       {/* Games Row */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
