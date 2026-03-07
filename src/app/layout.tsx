@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { AuthProvider } from "@/components/AuthProvider";
 import ServiceWorkerRegistration from "@/components/ServiceWorker";
 import NotificationPrompt from "@/components/NotificationPrompt";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -85,6 +86,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
         </AuthProvider>
+        <Analytics />
       </body>
     </html>
   );
