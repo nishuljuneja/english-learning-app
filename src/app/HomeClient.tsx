@@ -30,12 +30,12 @@ export default function Home() {
     {
       icon: Brain,
       title: 'Grammar Made Simple',
-      description: 'Clear explanations with Indian English examples. We address the specific mistakes Indian speakers commonly make.',
+      description: 'Clear explanations with practical examples. We address the specific mistakes English learners commonly make.',,
     },
     {
       icon: Headphones,
       title: 'Reading & Listening',
-      description: 'Graded passages set in Indian contexts — from local markets to startup ecosystems.',
+      description: 'Graded passages set in real-world contexts — from everyday situations to professional scenarios.',,
     },
     {
       icon: MessageSquare,
@@ -44,7 +44,7 @@ export default function Home() {
     },
     {
       icon: Globe,
-      title: '10 Indian Languages',
+      title: '10 Languages Supported',
       description: 'Instructions in Hindi, Tamil, Telugu, Bengali, Marathi, Kannada, Malayalam, Gujarati, Punjabi, and Odia.',
     },
     {
@@ -68,9 +68,6 @@ export default function Home() {
       <section className="relative bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32 relative">
           <div className="text-center max-w-3xl mx-auto">
-            <div className="inline-flex items-center bg-white/10 rounded-full px-4 py-1.5 text-sm font-medium mb-6 backdrop-blur-sm">
-              Built for India&apos;s English learners
-            </div>
             <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
               {t('hero.title', uiLanguage)}
             </h1>
@@ -148,22 +145,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Built for India */}
+      {/* Why SpeakEasy */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Why &ldquo;Built for India&rdquo;?</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">Why SpeakEasy?</h2>
           <div className="grid sm:grid-cols-2 gap-6 text-left">
             <div className="bg-amber-50 rounded-xl p-5 border border-amber-100">
               <h3 className="font-semibold text-amber-800 mb-2">🎯 Common Mistakes Addressed</h3>
-              <p className="text-sm text-amber-700">We specifically target errors Indian English speakers make — article usage, present perfect overuse, subject-verb agreement, and preposition confusion.</p>
+              <p className="text-sm text-amber-700">We target the specific errors English learners make — article usage, tense confusion, subject-verb agreement, and preposition mix-ups.</p>
             </div>
             <div className="bg-blue-50 rounded-xl p-5 border border-blue-100">
-              <h3 className="font-semibold text-blue-800 mb-2">🏏 Indian Context Examples</h3>
-              <p className="text-sm text-blue-700">All examples use familiar Indian names, places, food, and situations — from cricket to chai, from IT companies to railway journeys.</p>
+              <h3 className="font-semibold text-blue-800 mb-2">📚 Real-World Examples</h3>
+              <p className="text-sm text-blue-700">All examples use familiar, relatable situations — from everyday conversations to professional settings.</p>
             </div>
             <div className="bg-green-50 rounded-xl p-5 border border-green-100">
-              <h3 className="font-semibold text-green-800 mb-2">🗣️ Your Language Support</h3>
-              <p className="text-sm text-green-700">Instructions and translations in 10 Indian languages. At beginner levels, everything is explained in your mother tongue.</p>
+              <h3 className="font-semibold text-green-800 mb-2">🗣️ Multi-Language Support</h3>
+              <p className="text-sm text-green-700">Instructions and translations in 10 languages. At beginner levels, everything is explained in your mother tongue.</p>
             </div>
             <div className="bg-purple-50 rounded-xl p-5 border border-purple-100">
               <h3 className="font-semibold text-purple-800 mb-2">💼 Career-Focused</h3>
