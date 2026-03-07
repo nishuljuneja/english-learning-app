@@ -67,7 +67,7 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 relative">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
               {t('hero.title', uiLanguage)}
@@ -86,11 +86,11 @@ export default function Home() {
                 href="/placement-test"
                 className="px-8 py-4 bg-white/10 text-white rounded-xl font-bold text-lg hover:bg-white/20 transition-colors backdrop-blur-sm border border-white/20"
               >
-                {t('placement.title', uiLanguage)}
+                Free Diagnostic Test
               </Link>
             </div>
             {/* Quick language selector */}
-            <div className="mt-10 flex flex-wrap justify-center gap-2">
+            <div className="mt-6 flex flex-wrap justify-center gap-2">
               {LANGUAGES.filter(l => l.code !== 'en').map((lang) => (
                 <button
                   key={lang.code}
@@ -105,6 +105,43 @@ export default function Home() {
                 </button>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CEFR Levels */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">6 Levels, One Clear Path</h2>
+          <p className="text-center text-gray-500 mb-12 max-w-2xl mx-auto">
+            Based on the internationally recognised CEFR framework. Take a diagnostic test to find your starting point.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {levels.map((level) => (
+              <div key={level.id} className={`bg-gradient-to-br ${level.color} rounded-2xl p-6 text-white text-center shadow-lg hover:scale-105 transition-transform cursor-pointer`}>
+                <div className="text-3xl font-black mb-2">{level.id}</div>
+                <div className="text-sm font-medium opacity-90">{t(`level.${level.id}`, uiLanguage)}</div>
+                <div className="text-xs opacity-70 mt-1">{t(`level.${level.id}.desc`, uiLanguage)}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Everything you need to master English</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features.map((feature, i) => (
+              <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-indigo-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">{feature.title}</h3>
+                <p className="text-gray-500 text-sm">{feature.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -175,43 +212,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CEFR Levels */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">6 Levels, One Clear Path</h2>
-          <p className="text-center text-gray-500 mb-12 max-w-2xl mx-auto">
-            Based on the internationally recognised CEFR framework. Take a diagnostic test to find your starting point.
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {levels.map((level) => (
-              <div key={level.id} className={`bg-gradient-to-br ${level.color} rounded-2xl p-6 text-white text-center shadow-lg hover:scale-105 transition-transform cursor-pointer`}>
-                <div className="text-3xl font-black mb-2">{level.id}</div>
-                <div className="text-sm font-medium opacity-90">{t(`level.${level.id}`, uiLanguage)}</div>
-                <div className="text-xs opacity-70 mt-1">{t(`level.${level.id}.desc`, uiLanguage)}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Features */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Everything you need to master English</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {features.map((feature, i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-indigo-600" />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">{feature.title}</h3>
-                <p className="text-gray-500 text-sm">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Why SpeakEasy */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
@@ -243,7 +243,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-white mb-4">Ready to improve your English?</h2>
           <p className="text-indigo-200 mb-8">Take a free diagnostic test to find your level. No sign-up required.</p>
           <Link href="/placement-test" className="inline-block px-8 py-4 bg-white text-indigo-700 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg">
-            Start Diagnostic Test →
+            Start Free Diagnostic Test →
           </Link>
         </div>
       </section>

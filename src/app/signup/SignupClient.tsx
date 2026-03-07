@@ -5,7 +5,6 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { signUpWithEmail, signInWithGoogle } from '@/lib/auth';
 import { useAppStore } from '@/lib/store';
-import { t } from '@/lib/i18n';
 import { Mail, Lock, Eye, EyeOff, User } from 'lucide-react';
 
 export default function SignupPage() {
@@ -66,7 +65,7 @@ export default function SignupPage() {
       <div className="w-full max-w-md">
         <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-800 mb-2">{t('auth.signup', uiLanguage)}</h1>
+            <h1 className="text-3xl font-bold text-gray-800 mb-2">Create Account</h1>
             <p className="text-gray-500">Start your English learning journey today</p>
           </div>
 
@@ -93,7 +92,7 @@ export default function SignupPage() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600 mb-1">{t('auth.email', uiLanguage)}</label>
+              <label className="block text-sm font-medium text-gray-600 mb-1">Email</label>
               <div className="relative">
                 <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
                 <input
@@ -108,7 +107,7 @@ export default function SignupPage() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600 mb-1">{t('auth.password', uiLanguage)}</label>
+              <label className="block text-sm font-medium text-gray-600 mb-1">Password</label>
               <div className="relative">
                 <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
                 <input
@@ -150,7 +149,7 @@ export default function SignupPage() {
               disabled={loading}
               className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
             >
-              {loading ? 'Creating account...' : t('auth.signup', uiLanguage)}
+              {loading ? 'Creating account...' : 'Create Account'}
             </button>
           </form>
 
@@ -174,13 +173,13 @@ export default function SignupPage() {
               <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
               <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
             </svg>
-            {t('auth.googleSignIn', uiLanguage)}
+            Continue with Google
           </button>
 
           <p className="text-center text-sm text-gray-500 mt-6">
-            {t('auth.hasAccount', uiLanguage)}{' '}
+            Already have an account?{' '}
             <Link href="/login" className="text-indigo-600 font-semibold hover:underline">
-              {t('auth.login', uiLanguage)}
+              Log in
             </Link>
           </p>
         </div>
