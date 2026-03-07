@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { useAppStore } from '@/lib/store';
 import { t } from '@/lib/i18n';
-import { LANGUAGES } from '@/lib/i18n';
 import { BookOpen, Brain, Headphones, MessageSquare, PenTool, Globe, Gamepad2, LetterText, Skull, Shuffle, Layers, Volume2 } from 'lucide-react';
 import definitions from '@/content/word-definitions.json';
 
@@ -18,7 +17,7 @@ function getWordOfTheDay() {
 }
 
 export default function Home() {
-  const { uiLanguage, setUILanguage, user } = useAppStore();
+  const { uiLanguage, user } = useAppStore();
   const wotd = getWordOfTheDay();
 
   const features = [
@@ -88,22 +87,6 @@ export default function Home() {
               >
                 Free Diagnostic Test
               </Link>
-            </div>
-            {/* Quick language selector */}
-            <div className="mt-6 flex flex-wrap justify-center gap-2">
-              {LANGUAGES.filter(l => l.code !== 'en').map((lang) => (
-                <button
-                  key={lang.code}
-                  onClick={() => setUILanguage(lang.code)}
-                  className={`px-3 py-1 rounded-full text-sm transition-colors ${
-                    uiLanguage === lang.code
-                      ? 'bg-white text-indigo-700 font-medium'
-                      : 'bg-white/10 text-white/70 hover:bg-white/20'
-                  }`}
-                >
-                  {lang.nativeName}
-                </button>
-              ))}
             </div>
           </div>
         </div>
