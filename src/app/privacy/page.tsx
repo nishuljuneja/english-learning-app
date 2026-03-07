@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy - SpeakEasy',
-  description: 'Privacy policy for SpeakEasy, the English learning app built for India.',
+  description: 'Privacy policy for SpeakEasy, the English learning app.',
 };
 
 export default function PrivacyPolicyPage() {

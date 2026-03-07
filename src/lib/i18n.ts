@@ -103,7 +103,7 @@ export const translations: Record<SupportedLanguage, Record<string, string>> = {
 
     // Hero
     'hero.title': 'Learn English, Your Way',
-    'hero.subtitle': 'Master English step by step, with lessons in your language. Built for India.',
+    'hero.subtitle': 'Master English step by step, with lessons in your language.',
     'hero.cta': 'Start Learning Free',
 
     // Dashboard

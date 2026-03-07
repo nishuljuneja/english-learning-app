@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Terms of Service - SpeakEasy',
-  description: 'Terms of service for SpeakEasy, the English learning app built for India.',
+  description: 'Terms of service for SpeakEasy, the English learning app.',
 };
 
 export default function TermsOfServicePage() {
